@@ -1,0 +1,49 @@
+name: Fast medium NAND followups
+
+on:
+  push:
+    paths:
+      - "tools/offline/find_nand.py"
+      - ".github/workflows/medium-find.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        include:
+          - { name: "t183-d4-g45", task: "183", gates: 45, depth: 4 }
+          - { name: "t183-d4-g50", task: "183", gates: 50, depth: 4 }
+          - { name: "t183-d4-g58", task: "183", gates: 58, depth: 4 }
+          - { name: "t057-d4-g55", task: "057", gates: 55, depth: 4 }
+          - { name: "t057-d4-g65", task: "057", gates: 65, depth: 4 }
+          - { name: "t057-d4-g72", task: "057", gates: 72, depth: 4 }
+          - { name: "t156-d6-g57", task: "156", gates: 57, depth: 6 }
+          - { name: "t208-d5-g51", task: "208", gates: 51, depth: 5 }
+          - { name: "t059-d5-g70", task: "059", gates: 70, depth: 5 }
+          - { name: "t191-d6-g47", task: "191", gates: 47, depth: 6 }
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Fast SAT search
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/find_nand.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --timeout 1200 --seed 1 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}/result.json"
+          retention-days: 14
