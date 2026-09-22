@@ -1,0 +1,44 @@
+name: Repair task 90 near miss
+
+on:
+  push:
+    paths:
+      - "experiments/medium-repair/t090-near40.json"
+      - ".github/workflows/t90-repair.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: t090-cone8
+            free: "0,2,3,5,9,18,22,32"
+          - name: t090-expanded
+            free: "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32"
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: SAT repair
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-090-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/local_repair.py \
+            --reference "$REF" \
+            --seed-candidate "experiments/medium-repair/t090-near40.json" \
+            --free-gates "${{ matrix.free }}" --depth 5 \
+            --timeout 800 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          retention-days: 14
