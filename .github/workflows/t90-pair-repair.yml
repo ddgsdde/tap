@@ -1,0 +1,49 @@
+name: Task 90 paired-cone repairs
+
+on:
+  push:
+    paths:
+      - ".github/workflows/t90-pair-repair.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    strategy:
+      fail-fast: false
+      max-parallel: 11
+      matrix:
+        include:
+          - { name: "t090-o0", free: "0,2,3,4,5,9,12,18,22,28,32" }
+          - { name: "t090-o1", free: "0,2,3,5,9,18,22,29,32" }
+          - { name: "t090-o2", free: "0,2,3,4,5,9,18,22,30,32" }
+          - { name: "t090-o3", free: "0,1,2,3,4,5,8,9,10,14,18,20,21,22,23,27,31,32" }
+          - { name: "t090-o5", free: "0,1,2,3,4,5,9,10,14,18,22,27,32,33" }
+          - { name: "t090-o6", free: "0,1,2,3,4,5,9,10,11,14,15,18,22,25,26,32,34" }
+          - { name: "t090-o7", free: "0,1,2,3,5,9,13,18,19,22,32,35" }
+          - { name: "t090-o8", free: "0,1,2,3,4,5,6,9,10,16,18,22,32,36" }
+          - { name: "t090-o9", free: "0,1,2,3,4,5,7,9,10,11,14,18,22,26,32,37" }
+          - { name: "t090-o10", free: "0,1,2,3,5,9,11,13,17,18,22,24,32,38" }
+          - { name: "t090-o11", free: "0,1,2,3,5,9,11,15,18,22,32,39" }
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Paired-cone SAT repair
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-090-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/local_repair.py \
+            --reference "$REF" --seed-candidate "experiments/medium-repair/t090-near40.json" \
+            --free-gates "${{ matrix.free }}" --depth 5 --timeout 650 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          retention-days: 14
