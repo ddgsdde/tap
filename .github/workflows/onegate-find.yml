@@ -1,0 +1,40 @@
+name: One-gate medium attacks
+
+on:
+  push:
+    paths:
+      - ".github/workflows/onegate-find.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: "t090-d5-g40", task: "090", gates: 40, depth: 5 }
+          - { name: "t194-d5-g51", task: "194", gates: 51, depth: 5 }
+          - { name: "t175-d5-g48", task: "175", gates: 48, depth: 5 }
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Candidate SAT search
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/find_nand.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --timeout 1100 --seed 3 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          retention-days: 14
