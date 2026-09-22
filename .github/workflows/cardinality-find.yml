@@ -1,0 +1,43 @@
+name: Cardinality depth attacks
+
+on:
+  push:
+    paths:
+      - ".github/workflows/cardinality-find.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: "t204-d6-g50", task: "204", gates: 50, depth: 6 }
+          - { name: "t204-d7-g31", task: "204", gates: 31, depth: 7 }
+          - { name: "t205-d7-g68", task: "205", gates: 68, depth: 7 }
+          - { name: "t205-d8-g45", task: "205", gates: 45, depth: 8 }
+          - { name: "t169-d7-g67", task: "169", gates: 67, depth: 7 }
+          - { name: "t169-d6-g107", task: "169", gates: 107, depth: 6 }
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Candidate SAT search
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/find_nand.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --timeout 1100 --seed 4 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          retention-days: 14
