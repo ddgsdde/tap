@@ -206,18 +206,29 @@ class ChainReader {
   async multicall(address, abi, label, calls, blockTag, chunkSize = 80) {
     const iface = new Interface(abi);
     const output = [];
-    for (let offset = 0; offset < calls.length; offset += chunkSize) {
-      const chunk = calls.slice(offset, offset + chunkSize);
+    const execute = async (chunk, offset) => {
       const encoded = chunk.map(({ method, args = [] }) => ({
         target: address,
         allowFailure: true,
         callData: iface.encodeFunctionData(method, args),
       }));
-      const results = await this.read(MULTICALL_ADDRESS, MULTICALL_ABI, "multicall3", "aggregate3", [encoded], blockTag);
+      let results;
+      try {
+        results = await this.read(MULTICALL_ADDRESS, MULTICALL_ABI, "multicall3", "aggregate3", [encoded], blockTag);
+      } catch (error) {
+        if (chunk.length === 1) throw error;
+        const middle = Math.ceil(chunk.length / 2);
+        await execute(chunk.slice(0, middle), offset);
+        await execute(chunk.slice(middle), offset + middle);
+        return;
+      }
       results.forEach((result, index) => {
         if (!result.success) throw new Error(`${label} multicall ${offset + index} (${chunk[index].method}) reverted`);
         output.push(iface.decodeFunctionResult(chunk[index].method, result.returnData));
       });
+    };
+    for (let offset = 0; offset < calls.length; offset += chunkSize) {
+      await execute(calls.slice(offset, offset + chunkSize), offset);
     }
     return output;
   }
