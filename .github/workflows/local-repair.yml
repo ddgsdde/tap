@@ -1,0 +1,52 @@
+name: Repair near-miss medium circuits
+
+on:
+  push:
+    paths:
+      - "tools/offline/local_repair.py"
+      - "experiments/medium-repair/**"
+      - ".github/workflows/local-repair.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: t183-near29
+            task: "183"
+            depth: 5
+            seed: experiments/medium-repair/t183-near29.json
+            free: "0,2,3,6,7,8,9,10,11,12,13,14,25"
+          - name: t057-near36
+            task: "057"
+            depth: 5
+            seed: experiments/medium-repair/t057-near36.json
+            free: "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35"
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Local SAT repair
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          python3 tools/offline/local_repair.py \
+            --reference "$REF" \
+            --seed-candidate "${{ matrix.seed }}" \
+            --free-gates "${{ matrix.free }}" \
+            --depth ${{ matrix.depth }} \
+            --timeout 900 \
+            --out-dir "offline-results/${{ matrix.name }}" || true
+          cat "offline-results/${{ matrix.name }}/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          retention-days: 30
