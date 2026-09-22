@@ -1,0 +1,73 @@
+name: Search medium TapeOut circuits
+
+on:
+  push:
+    paths:
+      - ".github/workflows/medium-sat.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-search:
+    name: "${{ matrix.name }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        include:
+          - { name: "t057-d5-g36", task: "057", gates: 36, depth: 5 }
+          - { name: "t057-d4-g45", task: "057", gates: 45, depth: 4 }
+          - { name: "t183-d5-g29", task: "183", gates: 29, depth: 5 }
+          - { name: "t183-d4-g38", task: "183", gates: 38, depth: 4 }
+          - { name: "t156-d7-g35", task: "156", gates: 35, depth: 7 }
+          - { name: "t156-d6-g45", task: "156", gates: 45, depth: 6 }
+          - { name: "t191-d7-g29", task: "191", gates: 29, depth: 7 }
+          - { name: "t191-d6-g40", task: "191", gates: 40, depth: 6 }
+          - { name: "t191-d8-g20", task: "191", gates: 20, depth: 8 }
+          - { name: "t208-d6-g29", task: "208", gates: 29, depth: 6 }
+          - { name: "t208-d5-g40", task: "208", gates: 40, depth: 5 }
+          - { name: "t059-d6-g44", task: "059", gates: 44, depth: 6 }
+          - { name: "t059-d5-g55", task: "059", gates: 55, depth: 5 }
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build vendored SAT tools
+        run: sh tools/offline/build.sh
+
+      - name: Run exact query
+        shell: bash
+        run: |
+          set -u
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          echo "reference=$REF"
+          echo "gates=${{ matrix.gates }} depth=${{ matrix.depth }}"
+          set +e
+          python3 tools/offline/exact_nand.py prove \
+            --reference "$REF" \
+            --gates ${{ matrix.gates }} \
+            --depth ${{ matrix.depth }} \
+            --timeout 1500 \
+            --seed 1 \
+            --out-dir "$OUT"
+          CODE=$?
+          set -e
+          echo "solver_wrapper_exit=$CODE"
+          if [ -f "$OUT/result.json" ]; then
+            cat "$OUT/result.json"
+          fi
+          exit 0
+
+      - name: Upload query bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
