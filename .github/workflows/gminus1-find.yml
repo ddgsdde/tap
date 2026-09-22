@@ -1,0 +1,44 @@
+name: Fast one-gate reproductions
+
+on:
+  push:
+    paths:
+      - ".github/workflows/gminus1-find.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        include:
+          - { name: "t057-d5-g36-fast", task: "057", gates: 36, depth: 5 }
+          - { name: "t156-d7-g35-fast", task: "156", gates: 35, depth: 7 }
+          - { name: "t191-d7-g29-fast", task: "191", gates: 29, depth: 7 }
+          - { name: "t208-d6-g29-fast", task: "208", gates: 29, depth: 6 }
+          - { name: "t059-d6-g44-fast", task: "059", gates: 44, depth: 6 }
+          - { name: "t183-d5-g29-fast", task: "183", gates: 29, depth: 5 }
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Fast boundary search
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/find_nand.py --reference "$REF" \
+            --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --timeout 900 --seed 5 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          retention-days: 14
