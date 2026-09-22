@@ -1,0 +1,97 @@
+# TapeOut Behemoth task 204, circuit 2465
+.model task204_circuit2465
+.inputs i0 i1 i2 i3 i4 i5
+.outputs o0
+.names zero
+.names one
+1
+.names i3 i2 g0
+0- 1
+-0 1
+.names i2 g1
+0 1
+.names i3 g2
+0 1
+.names g2 g1 g3
+0- 1
+-0 1
+.names g3 g0 g4
+0- 1
+-0 1
+.names i0 g5
+0 1
+.names i1 g6
+0 1
+.names g6 g5 g7
+0- 1
+-0 1
+.names i1 i0 g8
+0- 1
+-0 1
+.names g8 g7 g9
+0- 1
+-0 1
+.names g9 g4 g10
+0- 1
+-0 1
+.names g7 g3 g11
+0- 1
+-0 1
+.names i4 g12
+0 1
+.names i5 g13
+0 1
+.names g13 g12 g14
+0- 1
+-0 1
+.names g8 g0 g15
+0- 1
+-0 1
+.names g14 g15 g16
+0- 1
+-0 1
+.names g11 g16 g17
+0- 1
+-0 1
+.names i4 g13 g18
+0- 1
+-0 1
+.names g15 g16 g19
+0- 1
+-0 1
+.names i5 g12 g20
+0- 1
+-0 1
+.names i4 i5 g21
+0- 1
+-0 1
+.names g11 g21 g22
+0- 1
+-0 1
+.names g21 g23
+0 1
+.names g11 g23 g24
+0- 1
+-0 1
+.names g19 g24 g25
+0- 1
+-0 1
+.names g18 g20 g26
+0- 1
+-0 1
+.names g16 g26 g27
+0- 1
+-0 1
+.names g22 g27 g28
+0- 1
+-0 1
+.names g25 g10 g29
+0- 1
+-0 1
+.names g17 g28 g30
+0- 1
+-0 1
+.names g30 g29 o0
+0- 1
+-0 1
+.end

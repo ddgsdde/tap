@@ -1,0 +1,33 @@
+# TapeOut Behemoth task 247, circuit 748
+.model task247_circuit748
+.inputs i0 i1 i2 i3
+.outputs o0 o1
+.names zero
+.names one
+1
+.names i0 g0
+0 1
+.names i1 g1
+0 1
+.names g0 g1 g2
+0- 1
+-0 1
+.names i2 i3 g3
+0- 1
+-0 1
+.names one i2 g4
+0- 1
+-0 1
+.names g2 g4 g5
+0- 1
+-0 1
+.names one i3 g6
+0- 1
+-0 1
+.names g3 g5 o0
+0- 1
+-0 1
+.names g4 g6 o1
+0- 1
+-0 1
+.end

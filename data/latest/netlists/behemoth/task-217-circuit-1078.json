@@ -1,0 +1,222 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 217,
+    "srcId": 234,
+    "name": "模 16 计数器",
+    "kind": "seq",
+    "nIn": 0,
+    "nOut": 4,
+    "cycles": 16
+  },
+  "circuit": {
+    "circuitId": "1078",
+    "owner": "0x5663F8D29F8f4bBd953721b2ddF1030Dc52aA8B2",
+    "info": {
+      "nIn": 0,
+      "nOut": 4,
+      "nState": 8,
+      "gateCount": 20
+    },
+    "mining": {
+      "taskId": 217,
+      "srcId": 234,
+      "name": "模 16 计数器",
+      "kind": "seq",
+      "nIn": 0,
+      "nOut": 4,
+      "cycles": 16,
+      "circuitId": "1078",
+      "cost": "68",
+      "depth": 1,
+      "gateCount": 20,
+      "stateCount": 8,
+      "nand": 12,
+      "latch": 8,
+      "area": "68",
+      "multiplier": 6,
+      "since": "1787436368",
+      "status": 1,
+      "registrant": "0x5663F8D29F8f4bBd953721b2ddF1030Dc52aA8B2",
+      "bstar": "20",
+      "bonus": "184",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x010000060100000c010000110100000f0000000200000200000003000006000000040000070000000100000700000002000003000000060000070000000a00000b00000004000008000000050000050000000d00000e0000000900000d0000000800001001000006010000030100000401000005",
+  "decoded": {
+    "byteLength": 116,
+    "sha256": "e25ad12e19249e9083a17e15c53fb17fefa20aa216b7ef8650dbdafb78f975df",
+    "keccak256": "0x48c15daf00d92d2e1c7d1e56dad325de72b68a2f66982d0fa83898ef012d4fe6",
+    "signalCount": 22,
+    "counts": {
+      "nand": 12,
+      "latch": 8,
+      "ref": 0,
+      "topLevelElements": 20
+    },
+    "elements": [
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 6,
+        "out": 2,
+        "byteOffset": 0
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 12,
+        "out": 3,
+        "byteOffset": 4
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 17,
+        "out": 4,
+        "byteOffset": 8
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 15,
+        "out": 5,
+        "byteOffset": 12
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 2,
+        "out": 6,
+        "byteOffset": 16
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 6,
+        "out": 7,
+        "byteOffset": 23
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 7,
+        "out": 8,
+        "byteOffset": 30
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 7,
+        "out": 9,
+        "byteOffset": 37
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 3,
+        "out": 10,
+        "byteOffset": 44
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 6,
+        "b": 7,
+        "out": 11,
+        "byteOffset": 51
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 10,
+        "b": 11,
+        "out": 12,
+        "byteOffset": 58
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 8,
+        "out": 13,
+        "byteOffset": 65
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 5,
+        "b": 5,
+        "out": 14,
+        "byteOffset": 72
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 13,
+        "b": 14,
+        "out": 15,
+        "byteOffset": 79
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 9,
+        "b": 13,
+        "out": 16,
+        "byteOffset": 86
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 8,
+        "b": 16,
+        "out": 17,
+        "byteOffset": 93
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 6,
+        "out": 18,
+        "byteOffset": 100
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 3,
+        "out": 19,
+        "byteOffset": 104
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 4,
+        "out": 20,
+        "byteOffset": 108
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 5,
+        "out": 21,
+        "byteOffset": 112
+      }
+    ]
+  },
+  "pureNandDepth": null,
+  "blifAvailable": false
+}

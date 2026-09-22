@@ -1,0 +1,107 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "TapeOut",
+    "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C"
+  },
+  "task": {
+    "taskId": 7,
+    "srcId": 7,
+    "name": "或非门 NOR",
+    "kind": "comb",
+    "nIn": 2,
+    "nOut": 1,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "910",
+    "owner": "0x9a4cD5684665a285e235D855c6922BE65efF6e8D",
+    "info": {
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 4
+    },
+    "mining": {
+      "taskId": 7,
+      "srcId": 7,
+      "name": "或非门 NOR",
+      "kind": "comb",
+      "nIn": 2,
+      "nOut": 1,
+      "cycles": 1,
+      "circuitId": "910",
+      "cost": "108",
+      "depth": 3,
+      "gateCount": 4,
+      "stateCount": 0,
+      "nand": 4,
+      "latch": 0,
+      "area": "4",
+      "multiplier": 1,
+      "since": "1787352671",
+      "status": 1,
+      "registrant": "0x9a4cD5684665a285e235D855c6922BE65efF6e8D",
+      "bstar": "4",
+      "bonus": "4",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x00000002000002000000030000030000000400000500000006000006",
+  "decoded": {
+    "byteLength": 28,
+    "sha256": "ca3668d45ebb87ff58767c6148858052e0d6161f60271d3fe25251d80bf57ed3",
+    "keccak256": "0x0799925a541b77e7aa23697f5cd7823e247904a042e4fb30ec998dbf29957ea4",
+    "signalCount": 8,
+    "counts": {
+      "nand": 4,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 4
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 2,
+        "out": 4,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 3,
+        "out": 5,
+        "byteOffset": 7
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 5,
+        "out": 6,
+        "byteOffset": 14
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 6,
+        "b": 6,
+        "out": 7,
+        "byteOffset": 21
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      3
+    ],
+    "max": 3
+  },
+  "blifAvailable": true
+}

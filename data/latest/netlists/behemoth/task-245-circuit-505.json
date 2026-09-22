@@ -1,0 +1,99 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 245,
+    "srcId": 274,
+    "name": "4 位大于 5",
+    "kind": "comb",
+    "nIn": 4,
+    "nOut": 1,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "505",
+    "owner": "0x64D5e5ef4A8d9d4f8C4A00aE2827CfaaC39136BB",
+    "info": {
+      "nIn": 4,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 3
+    },
+    "mining": {
+      "taskId": 245,
+      "srcId": 274,
+      "name": "4 位大于 5",
+      "kind": "comb",
+      "nIn": 4,
+      "nOut": 1,
+      "cycles": 1,
+      "circuitId": "505",
+      "cost": "24",
+      "depth": 2,
+      "gateCount": 3,
+      "stateCount": 0,
+      "nand": 3,
+      "latch": 0,
+      "area": "3",
+      "multiplier": 6,
+      "since": "1787340066",
+      "status": 1,
+      "registrant": "0x64D5e5ef4A8d9d4f8C4A00aE2827CfaaC39136BB",
+      "bstar": "3",
+      "bonus": "36",
+      "optimal": true,
+      "verifiedWeight": "117251173",
+      "unverifiedWeight": "230",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x000000010000050000000300000400000006000007",
+  "decoded": {
+    "byteLength": 21,
+    "sha256": "8dd9c4e39932aef0a00747ef896b12339b7369c4b517eba9ab13dfb60253ad3f",
+    "keccak256": "0xec92a7c5afdf4f6567ee9862b8eabaf7758667aa235c2a35a8795fe16584f1cc",
+    "signalCount": 9,
+    "counts": {
+      "nand": 3,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 3
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 5,
+        "out": 6,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 4,
+        "out": 7,
+        "byteOffset": 7
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 6,
+        "b": 7,
+        "out": 8,
+        "byteOffset": 14
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      2
+    ],
+    "max": 2
+  },
+  "blifAvailable": true
+}

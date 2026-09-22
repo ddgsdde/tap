@@ -1,0 +1,38 @@
+# TapeOut Behemoth task 10, circuit 462
+.model task10_circuit462
+.inputs i0 i1 i2
+.outputs o0
+.names zero
+.names one
+1
+.names one i0 g0
+0- 1
+-0 1
+.names i0 i1 g1
+0- 1
+-0 1
+.names i1 g2
+0 1
+.names i2 g3
+0 1
+.names g0 g2 g4
+0- 1
+-0 1
+.names g1 g3 g5
+0- 1
+-0 1
+.names g1 g4 g6
+0- 1
+-0 1
+.names g5 g7
+0 1
+.names i2 g6 g8
+0- 1
+-0 1
+.names g4 g7 g9
+0- 1
+-0 1
+.names g8 g9 o0
+0- 1
+-0 1
+.end

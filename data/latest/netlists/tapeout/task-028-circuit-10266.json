@@ -1,0 +1,301 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "TapeOut",
+    "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C"
+  },
+  "task": {
+    "taskId": 28,
+    "srcId": 29,
+    "name": "4 位比较器（<,=,>）",
+    "kind": "comb",
+    "nIn": 8,
+    "nOut": 3,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "10266",
+    "owner": "0xB049661bAfF1c38Bcc936A7be32263502B6dD76D",
+    "info": {
+      "nIn": 8,
+      "nOut": 3,
+      "nState": 0,
+      "gateCount": 28
+    },
+    "mining": {
+      "taskId": 28,
+      "srcId": 29,
+      "name": "4 位比较器（<,=,>）",
+      "kind": "comb",
+      "nIn": 8,
+      "nOut": 3,
+      "cycles": 1,
+      "circuitId": "10266",
+      "cost": "14336",
+      "depth": 8,
+      "gateCount": 28,
+      "stateCount": 0,
+      "nand": 28,
+      "latch": 0,
+      "area": "28",
+      "multiplier": 1,
+      "since": "1787777306",
+      "status": 1,
+      "registrant": "0xB049661bAfF1c38Bcc936A7be32263502B6dD76D",
+      "bstar": "28",
+      "bonus": "244",
+      "optimal": true,
+      "verifiedWeight": "118258076",
+      "unverifiedWeight": "10266",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x000000030000070000000a0000030000000a000007000000040000080000000d000008000000020000060000000500000900000010000009000000100000050000000d0000040000000f0000020000000f0000060000000b0000140000001600000c0000001200001300000018000011000000170000190000001100000e0000001500000c0000001b0000120000000b00001c0000001e00001d0000001a00001d0000001f00001900000021000020000000010000210000002200002200000020000001",
+  "decoded": {
+    "byteLength": 196,
+    "sha256": "4751601d4dc247740e5f4c9fd1c911be283f63e7fdc00cc0925ba2531f306bdb",
+    "keccak256": "0x5544e8a200b262af8937daef17afdafd9743d811331de4e61d97a3f68f14a78b",
+    "signalCount": 38,
+    "counts": {
+      "nand": 28,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 28
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 7,
+        "out": 10,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 10,
+        "b": 3,
+        "out": 11,
+        "byteOffset": 7
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 10,
+        "b": 7,
+        "out": 12,
+        "byteOffset": 14
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 8,
+        "out": 13,
+        "byteOffset": 21
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 13,
+        "b": 8,
+        "out": 14,
+        "byteOffset": 28
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 6,
+        "out": 15,
+        "byteOffset": 35
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 5,
+        "b": 9,
+        "out": 16,
+        "byteOffset": 42
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 16,
+        "b": 9,
+        "out": 17,
+        "byteOffset": 49
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 16,
+        "b": 5,
+        "out": 18,
+        "byteOffset": 56
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 13,
+        "b": 4,
+        "out": 19,
+        "byteOffset": 63
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 15,
+        "b": 2,
+        "out": 20,
+        "byteOffset": 70
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 15,
+        "b": 6,
+        "out": 21,
+        "byteOffset": 77
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 11,
+        "b": 20,
+        "out": 22,
+        "byteOffset": 84
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 22,
+        "b": 12,
+        "out": 23,
+        "byteOffset": 91
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 18,
+        "b": 19,
+        "out": 24,
+        "byteOffset": 98
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 24,
+        "b": 17,
+        "out": 25,
+        "byteOffset": 105
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 23,
+        "b": 25,
+        "out": 26,
+        "byteOffset": 112
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 17,
+        "b": 14,
+        "out": 27,
+        "byteOffset": 119
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 21,
+        "b": 12,
+        "out": 28,
+        "byteOffset": 126
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 27,
+        "b": 18,
+        "out": 29,
+        "byteOffset": 133
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 11,
+        "b": 28,
+        "out": 30,
+        "byteOffset": 140
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 30,
+        "b": 29,
+        "out": 31,
+        "byteOffset": 147
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 26,
+        "b": 29,
+        "out": 32,
+        "byteOffset": 154
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 31,
+        "b": 25,
+        "out": 33,
+        "byteOffset": 161
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 33,
+        "b": 32,
+        "out": 34,
+        "byteOffset": 168
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 33,
+        "out": 35,
+        "byteOffset": 175
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 34,
+        "b": 34,
+        "out": 36,
+        "byteOffset": 182
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 32,
+        "b": 1,
+        "out": 37,
+        "byteOffset": 189
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      7,
+      8,
+      7
+    ],
+    "max": 8
+  },
+  "blifAvailable": true
+}

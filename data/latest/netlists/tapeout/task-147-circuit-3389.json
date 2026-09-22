@@ -1,0 +1,221 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "TapeOut",
+    "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C"
+  },
+  "task": {
+    "taskId": 147,
+    "srcId": 156,
+    "name": "3 位取大 MAX",
+    "kind": "comb",
+    "nIn": 6,
+    "nOut": 3,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "3389",
+    "owner": "0x98f8e69Aa6d0968ea3F53a305eFE459A7afaFF0B",
+    "info": {
+      "nIn": 6,
+      "nOut": 3,
+      "nState": 0,
+      "gateCount": 18
+    },
+    "mining": {
+      "taskId": 147,
+      "srcId": 156,
+      "name": "3 位取大 MAX",
+      "kind": "comb",
+      "nIn": 6,
+      "nOut": 3,
+      "cycles": 1,
+      "circuitId": "3389",
+      "cost": "3888",
+      "depth": 6,
+      "gateCount": 18,
+      "stateCount": 0,
+      "nand": 18,
+      "latch": 0,
+      "area": "18",
+      "multiplier": 1,
+      "since": "1787452153",
+      "status": 1,
+      "registrant": "0x98f8e69Aa6d0968ea3F53a305eFE459A7afaFF0B",
+      "bstar": "18",
+      "bonus": "244",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x0000000400000400000007000008000000070000070000000a000004000000090000030000000b000006000000030000060000000300000e0000000600000e0000000b00000f000000090000100000000b000012000000090000110000000200001300000005000014000000150000160000000d00000c0000000a000008",
+  "decoded": {
+    "byteLength": 126,
+    "sha256": "bc85f5cf77807a34f93ba2fb5e104a20c0b6a83f8e9b3d7d516b05874a7fbeb1",
+    "keccak256": "0x7166a71d5dcb7c5010d27094a4caa14d859c7434b7cd2739dec6e1326b1cb8f6",
+    "signalCount": 26,
+    "counts": {
+      "nand": 18,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 18
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 4,
+        "out": 8,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 7,
+        "b": 8,
+        "out": 9,
+        "byteOffset": 7
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 7,
+        "b": 7,
+        "out": 10,
+        "byteOffset": 14
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 10,
+        "b": 4,
+        "out": 11,
+        "byteOffset": 21
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 9,
+        "b": 3,
+        "out": 12,
+        "byteOffset": 28
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 11,
+        "b": 6,
+        "out": 13,
+        "byteOffset": 35
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 6,
+        "out": 14,
+        "byteOffset": 42
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 14,
+        "out": 15,
+        "byteOffset": 49
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 6,
+        "b": 14,
+        "out": 16,
+        "byteOffset": 56
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 11,
+        "b": 15,
+        "out": 17,
+        "byteOffset": 63
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 9,
+        "b": 16,
+        "out": 18,
+        "byteOffset": 70
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 11,
+        "b": 18,
+        "out": 19,
+        "byteOffset": 77
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 9,
+        "b": 17,
+        "out": 20,
+        "byteOffset": 84
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 19,
+        "out": 21,
+        "byteOffset": 91
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 5,
+        "b": 20,
+        "out": 22,
+        "byteOffset": 98
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 21,
+        "b": 22,
+        "out": 23,
+        "byteOffset": 105
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 13,
+        "b": 12,
+        "out": 24,
+        "byteOffset": 112
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 10,
+        "b": 8,
+        "out": 25,
+        "byteOffset": 119
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      6,
+      4,
+      2
+    ],
+    "max": 6
+  },
+  "blifAvailable": true
+}

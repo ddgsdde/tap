@@ -1,0 +1,183 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "TapeOut",
+    "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C"
+  },
+  "task": {
+    "taskId": 234,
+    "srcId": 263,
+    "name": "交通灯状态机（红4黄1绿3）",
+    "kind": "seq",
+    "nIn": 0,
+    "nOut": 3,
+    "cycles": 16
+  },
+  "circuit": {
+    "circuitId": "2994",
+    "owner": "0xbd3f5CA350CE3B6BA45b3BBFd30B1b5b50de8731",
+    "info": {
+      "nIn": 0,
+      "nOut": 3,
+      "nState": 7,
+      "gateCount": 15
+    },
+    "mining": {
+      "taskId": 234,
+      "srcId": 263,
+      "name": "交通灯状态机（红4黄1绿3）",
+      "kind": "seq",
+      "nIn": 0,
+      "nOut": 3,
+      "cycles": 16,
+      "circuitId": "2994",
+      "cost": "57",
+      "depth": 1,
+      "gateCount": 15,
+      "stateCount": 7,
+      "nand": 8,
+      "latch": 7,
+      "area": "57",
+      "multiplier": 1,
+      "since": "1787399701",
+      "status": 1,
+      "registrant": "0xbd3f5CA350CE3B6BA45b3BBFd30B1b5b50de8731",
+      "bstar": "15",
+      "bonus": "160",
+      "optimal": true,
+      "verifiedWeight": "117418555",
+      "unverifiedWeight": "2994",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x0100000c0100000e010000030100000d01000009000000010000050000000200000400000007000008000000040000090000000400000a0000000100000b0000000100000a000000060000060100000201000005",
+  "decoded": {
+    "byteLength": 84,
+    "sha256": "cd5cd8ba0ea3b12c12a4e1dbb149e39b9eac5fb61bbb402eb17016962345a828",
+    "keccak256": "0xdb4f23bed21caa83bc7fef4babf5731748b0912d8c5cb30a4da7edcc6c8645b7",
+    "signalCount": 17,
+    "counts": {
+      "nand": 8,
+      "latch": 7,
+      "ref": 0,
+      "topLevelElements": 15
+    },
+    "elements": [
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 12,
+        "out": 2,
+        "byteOffset": 0
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 14,
+        "out": 3,
+        "byteOffset": 4
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 3,
+        "out": 4,
+        "byteOffset": 8
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 13,
+        "out": 5,
+        "byteOffset": 12
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 9,
+        "out": 6,
+        "byteOffset": 16
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 5,
+        "out": 7,
+        "byteOffset": 20
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 4,
+        "out": 8,
+        "byteOffset": 27
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 7,
+        "b": 8,
+        "out": 9,
+        "byteOffset": 34
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 9,
+        "out": 10,
+        "byteOffset": 41
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 10,
+        "out": 11,
+        "byteOffset": 48
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 11,
+        "out": 12,
+        "byteOffset": 55
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 10,
+        "out": 13,
+        "byteOffset": 62
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 6,
+        "b": 6,
+        "out": 14,
+        "byteOffset": 69
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 2,
+        "out": 15,
+        "byteOffset": 76
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 5,
+        "out": 16,
+        "byteOffset": 80
+      }
+    ]
+  },
+  "pureNandDepth": null,
+  "blifAvailable": false
+}

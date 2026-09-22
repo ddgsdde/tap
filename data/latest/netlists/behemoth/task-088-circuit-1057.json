@@ -1,0 +1,160 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 88,
+    "srcId": 93,
+    "name": "4 位 LFSR 序列发生器",
+    "kind": "seq",
+    "nIn": 0,
+    "nOut": 4,
+    "cycles": 16
+  },
+  "circuit": {
+    "circuitId": "1057",
+    "owner": "0x5663F8D29F8f4bBd953721b2ddF1030Dc52aA8B2",
+    "info": {
+      "nIn": 0,
+      "nOut": 4,
+      "nState": 6,
+      "gateCount": 12
+    },
+    "mining": {
+      "taskId": 88,
+      "srcId": 93,
+      "name": "4 位 LFSR 序列发生器",
+      "kind": "seq",
+      "nIn": 0,
+      "nOut": 4,
+      "cycles": 16,
+      "circuitId": "1057",
+      "cost": "48",
+      "depth": 1,
+      "gateCount": 12,
+      "stateCount": 6,
+      "nand": 6,
+      "latch": 6,
+      "area": "48",
+      "multiplier": 6,
+      "since": "1787424619",
+      "status": 1,
+      "registrant": "0x5663F8D29F8f4bBd953721b2ddF1030Dc52aA8B2",
+      "bstar": "12",
+      "bonus": "68",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x01000009010000040100000b0000000300000300000003000004000000040000040000000500000700000006000008000000020000020100000a0100000b0100000c",
+  "decoded": {
+    "byteLength": 66,
+    "sha256": "58fea29c3c1ce8255a267840f7cf9d13cebced0244393e0e9c737d1fc238ac3e",
+    "keccak256": "0x5c7737855c5604d9954f3d6551c2635a4e8bb962b067eeaae5c142693c6fa7c3",
+    "signalCount": 14,
+    "counts": {
+      "nand": 6,
+      "latch": 6,
+      "ref": 0,
+      "topLevelElements": 12
+    },
+    "elements": [
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 9,
+        "out": 2,
+        "byteOffset": 0
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 4,
+        "out": 3,
+        "byteOffset": 4
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 11,
+        "out": 4,
+        "byteOffset": 8
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 3,
+        "out": 5,
+        "byteOffset": 12
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 4,
+        "out": 6,
+        "byteOffset": 19
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 4,
+        "out": 7,
+        "byteOffset": 26
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 5,
+        "b": 7,
+        "out": 8,
+        "byteOffset": 33
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 6,
+        "b": 8,
+        "out": 9,
+        "byteOffset": 40
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 2,
+        "out": 10,
+        "byteOffset": 47
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 10,
+        "out": 11,
+        "byteOffset": 54
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 11,
+        "out": 12,
+        "byteOffset": 58
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 12,
+        "out": 13,
+        "byteOffset": 62
+      }
+    ]
+  },
+  "pureNandDepth": null,
+  "blifAvailable": false
+}

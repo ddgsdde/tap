@@ -1,0 +1,85 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 74,
+    "srcId": 75,
+    "name": "二分频",
+    "kind": "seq",
+    "nIn": 1,
+    "nOut": 1,
+    "cycles": 8
+  },
+  "circuit": {
+    "circuitId": "245",
+    "owner": "0x009E27418a7F15623FB36c8958811Bc362Afe36B",
+    "info": {
+      "nIn": 1,
+      "nOut": 1,
+      "nState": 1,
+      "gateCount": 2
+    },
+    "mining": {
+      "taskId": 74,
+      "srcId": 75,
+      "name": "二分频",
+      "kind": "seq",
+      "nIn": 1,
+      "nOut": 1,
+      "cycles": 8,
+      "circuitId": "245",
+      "cost": "8",
+      "depth": 1,
+      "gateCount": 2,
+      "stateCount": 1,
+      "nand": 1,
+      "latch": 1,
+      "area": "8",
+      "multiplier": 6,
+      "since": "1787379189",
+      "status": 1,
+      "registrant": "0xB049661bAfF1c38Bcc936A7be32263502B6dD76D",
+      "bstar": "2",
+      "bonus": "2",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x0100000400000003000003",
+  "decoded": {
+    "byteLength": 11,
+    "sha256": "74f8d2e1049b180c22d778415a8aec2a598b48c11c972bcbb4574fcfa7502bd8",
+    "keccak256": "0x93d4a151c0d0b02bfb2cc7cf659bd1c0517e59defb18ab029bbfaba8e4ae4347",
+    "signalCount": 5,
+    "counts": {
+      "nand": 1,
+      "latch": 1,
+      "ref": 0,
+      "topLevelElements": 2
+    },
+    "elements": [
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 4,
+        "out": 3,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 3,
+        "b": 3,
+        "out": 4,
+        "byteOffset": 4
+      }
+    ]
+  },
+  "pureNandDepth": null,
+  "blifAvailable": false
+}

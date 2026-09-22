@@ -1,0 +1,17 @@
+{
+  "name": "tapeout-chain-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible TapeOut Protocol on-chain leaderboards, netlists and market snapshots",
+  "scripts": {
+    "scan": "node scripts/scan.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "ethers": "6.17.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

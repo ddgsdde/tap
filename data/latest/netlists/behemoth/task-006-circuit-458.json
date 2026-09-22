@@ -1,0 +1,99 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 6,
+    "srcId": 6,
+    "name": "差集 A且非B",
+    "kind": "comb",
+    "nIn": 2,
+    "nOut": 1,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "458",
+    "owner": "0x753E928B36a7D713417b5FfCE16F77789b049656",
+    "info": {
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 3
+    },
+    "mining": {
+      "taskId": 6,
+      "srcId": 6,
+      "name": "差集 A且非B",
+      "kind": "comb",
+      "nIn": 2,
+      "nOut": 1,
+      "cycles": 1,
+      "circuitId": "458",
+      "cost": "81",
+      "depth": 3,
+      "gateCount": 3,
+      "stateCount": 0,
+      "nand": 3,
+      "latch": 0,
+      "area": "3",
+      "multiplier": 6,
+      "since": "1787338188",
+      "status": 1,
+      "registrant": "0x525d480FEfd456179f7Ec5199f1873b234239a32",
+      "bstar": "3",
+      "bonus": "3",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x000000020000030000000200000400000005000005",
+  "decoded": {
+    "byteLength": 21,
+    "sha256": "c496a7677602ff12c7a116e66d563467ebafc5d2a8c2a905d02b5fd9c6f65869",
+    "keccak256": "0x716c79aaa644c13c5f04fb39971b5d10fd73967ca78695c4586ae57f80fb5b24",
+    "signalCount": 7,
+    "counts": {
+      "nand": 3,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 3
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 3,
+        "out": 4,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 4,
+        "out": 5,
+        "byteOffset": 7
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 5,
+        "b": 5,
+        "out": 6,
+        "byteOffset": 14
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      3
+    ],
+    "max": 3
+  },
+  "blifAvailable": true
+}

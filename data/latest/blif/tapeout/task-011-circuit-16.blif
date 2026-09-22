@@ -1,0 +1,25 @@
+# TapeOut TapeOut task 11, circuit 16
+.model task11_circuit16
+.inputs i0 i1 i2
+.outputs o0
+.names zero
+.names one
+1
+.names i0 i1 g0
+0- 1
+-0 1
+.names i0 i2 g1
+0- 1
+-0 1
+.names i1 i2 g2
+0- 1
+-0 1
+.names g0 g1 g3
+0- 1
+-0 1
+.names g3 g4
+0 1
+.names g4 g2 o0
+0- 1
+-0 1
+.end

@@ -1,0 +1,101 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "TapeOut",
+    "address": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C"
+  },
+  "task": {
+    "taskId": 232,
+    "srcId": 261,
+    "name": "下降沿检测",
+    "kind": "seq",
+    "nIn": 1,
+    "nOut": 1,
+    "cycles": 8
+  },
+  "circuit": {
+    "circuitId": "2318",
+    "owner": "0x7f7f1b4434733c9b2DDAC0B655318d876A6Fe1a4",
+    "info": {
+      "nIn": 1,
+      "nOut": 1,
+      "nState": 1,
+      "gateCount": 4
+    },
+    "mining": {
+      "taskId": 232,
+      "srcId": 261,
+      "name": "下降沿检测",
+      "kind": "seq",
+      "nIn": 1,
+      "nOut": 1,
+      "cycles": 8,
+      "circuitId": "2318",
+      "cost": "270",
+      "depth": 3,
+      "gateCount": 4,
+      "stateCount": 1,
+      "nand": 3,
+      "latch": 1,
+      "area": "10",
+      "multiplier": 1,
+      "since": "1787361649",
+      "status": 1,
+      "registrant": "0x98Ce75463917E5fd1470675c6F133a38F7167712",
+      "bstar": "4",
+      "bonus": "4",
+      "optimal": true,
+      "verifiedWeight": "117334991",
+      "unverifiedWeight": "2317",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x01000002000000020000020000000400000300000005000005",
+  "decoded": {
+    "byteLength": 25,
+    "sha256": "4faa47e06ea9b709cb116cb8ff646b6ccaa94c9d696a96e44a3d5aa43e8ba20c",
+    "keccak256": "0x4bd34e57eee1f04776698bd411c31a69517c12e148aeab18e459d5dd1affede9",
+    "signalCount": 7,
+    "counts": {
+      "nand": 3,
+      "latch": 1,
+      "ref": 0,
+      "topLevelElements": 4
+    },
+    "elements": [
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 2,
+        "out": 3,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 2,
+        "out": 4,
+        "byteOffset": 4
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 4,
+        "b": 3,
+        "out": 5,
+        "byteOffset": 11
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 5,
+        "b": 5,
+        "out": 6,
+        "byteOffset": 18
+      }
+    ]
+  },
+  "pureNandDepth": null,
+  "blifAvailable": false
+}

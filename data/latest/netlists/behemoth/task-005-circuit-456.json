@@ -1,0 +1,91 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 5,
+    "srcId": 5,
+    "name": "蕴含 A→B",
+    "kind": "comb",
+    "nIn": 2,
+    "nOut": 1,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "456",
+    "owner": "0x753E928B36a7D713417b5FfCE16F77789b049656",
+    "info": {
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 2
+    },
+    "mining": {
+      "taskId": 5,
+      "srcId": 5,
+      "name": "蕴含 A→B",
+      "kind": "comb",
+      "nIn": 2,
+      "nOut": 1,
+      "cycles": 1,
+      "circuitId": "456",
+      "cost": "16",
+      "depth": 2,
+      "gateCount": 2,
+      "stateCount": 0,
+      "nand": 2,
+      "latch": 0,
+      "area": "2",
+      "multiplier": 6,
+      "since": "1787338136",
+      "status": 1,
+      "registrant": "0x525d480FEfd456179f7Ec5199f1873b234239a32",
+      "bstar": "2",
+      "bonus": "2",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x0000000200000300000002000004",
+  "decoded": {
+    "byteLength": 14,
+    "sha256": "51bea4789606523b49b57b854e1d6fedfd988cbfb1f6e497f57bd075392271f2",
+    "keccak256": "0x12c88bfe7ad1a6278a9e679913316710ad48a711e3244542315c34525e12e55e",
+    "signalCount": 6,
+    "counts": {
+      "nand": 2,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 2
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 3,
+        "out": 4,
+        "byteOffset": 0
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 4,
+        "out": 5,
+        "byteOffset": 7
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      2
+    ],
+    "max": 2
+  },
+  "blifAvailable": true
+}

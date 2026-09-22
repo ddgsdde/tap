@@ -1,0 +1,51 @@
+name: Update TapeOut chain data
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tapeout-chain-data
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scan chain and markets
+        env:
+          TAPEOUT_RPC_URLS: https://bsc-rpc.publicnode.com,https://bsc-dataseed.binance.org,https://rpc-bsc.48.club
+        run: npm run scan
+
+      - name: Validate generated data
+        run: npm run validate
+
+      - name: Commit updated snapshot
+        run: |
+          if git diff --quiet --exit-code && [ -z "$(git status --porcelain)" ]; then
+            echo "No data changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data README.md
+          block="$(node -p "require('./data/latest/manifest.json').block.number")"
+          git commit -m "data: update TapeOut snapshot at block ${block}"
+          git push

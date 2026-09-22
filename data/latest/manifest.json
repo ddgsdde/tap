@@ -1,0 +1,4866 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-22T15:58:18.246Z",
+  "sources": {
+    "config": "https://tapeout.net/pod/pod-mainnet.json",
+    "vectors": "https://tapeout.net/pod/pod-vectors-all.json",
+    "transistorMarket": "https://tapeout.net/market.json",
+    "circuitMarket": "https://tapeout.net/circuit-market.json",
+    "dexBem": "https://api.dexscreener.com/latest/dex/tokens/0x5ce033B2bFCa3Af30b3e8C8457DeaF776A8b695a",
+    "bnbUsd": "https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT"
+  },
+  "chainId": 56,
+  "rpcEndpointsConfigured": 3,
+  "block": {
+    "number": 123400993,
+    "hash": "0x6df8478e8f58c1c87521caa217f6cfd829859ca7c39375213e9c4297c8aeabfe",
+    "parentHash": "0x17b027e9c0cd2ef7827374aa7e8f34f1d31a1f52741a485fa21c54b9122db365",
+    "timestamp": 1790092647,
+    "timeUTC": "2026-09-22T15:57:27.000Z",
+    "gasLimit": "69863351",
+    "gasUsed": "14897093",
+    "baseFeePerGas": "0",
+    "gasPrice": "50000000"
+  },
+  "coverage": {
+    "taskCount": 267,
+    "officialProcessorsConfigured": 3,
+    "officialProcessorsScanned": 3,
+    "registeredProcessors": 1034,
+    "leaderboardSlotsRead": 801,
+    "occupiedLeaderboardSlots": 533,
+    "netlistsExported": 533,
+    "blifExported": 417,
+    "transistorTokens": 2068,
+    "transistorOpenBids": 738,
+    "circuitListings": 2313,
+    "circuitTradesInSnapshot": 3000
+  },
+  "changes": {
+    "total": 533,
+    "costImproved": 0,
+    "holderRefreshSameMetrics": 0
+  },
+  "files": [
+    {
+      "path": "blif/behemoth/task-001-circuit-230.blif",
+      "bytes": 162,
+      "sha256": "061599dc50b45fc0b60d1d8b875b19cc7f9efb93460717880400bdc87a2e77e4"
+    },
+    {
+      "path": "blif/behemoth/task-002-circuit-453.blif",
+      "bytes": 179,
+      "sha256": "c3190830f6b5da74fae4845ba81fdf010e18d15f63b460f2baaf520dbf94fbb2"
+    },
+    {
+      "path": "blif/behemoth/task-003-circuit-455.blif",
+      "bytes": 223,
+      "sha256": "756910dc944d9c34a5deab10aa28021cfaae7a333727a39b3111490a1aa11824"
+    },
+    {
+      "path": "blif/behemoth/task-004-circuit-298.blif",
+      "bytes": 145,
+      "sha256": "190b56e18796253a4d1601d294bfb3c8a7c920c7119a303c04c33da7af6a04c0"
+    },
+    {
+      "path": "blif/behemoth/task-005-circuit-456.blif",
+      "bytes": 171,
+      "sha256": "3e86ddde23d74cfe36c2455a658decf21ce172054e15054b5d35d0fe150914bc"
+    },
+    {
+      "path": "blif/behemoth/task-006-circuit-458.blif",
+      "bytes": 188,
+      "sha256": "fa44bc2f15b9120ba3f61ae7ff22b61688097072d1b944fc90c931c06d7496a0"
+    },
+    {
+      "path": "blif/behemoth/task-007-circuit-459.blif",
+      "bytes": 196,
+      "sha256": "97b01b85781f4500675165616b5ceb92c6b9a16202207c58e28dffe0b3c76085"
+    },
+    {
+      "path": "blif/behemoth/task-008-circuit-745.blif",
+      "bytes": 241,
+      "sha256": "ce50d56953971d45580c624eb134de8cf1d7c3b7a92d431a3f85363ab8131477"
+    },
+    {
+      "path": "blif/behemoth/task-009-circuit-52.blif",
+      "bytes": 206,
+      "sha256": "e55d6f9e359ad56602ee05dda4d9a3246663943a10aa5031636fec05266856cc"
+    },
+    {
+      "path": "blif/behemoth/task-010-circuit-462.blif",
+      "bytes": 384,
+      "sha256": "e0d38bbf45a7de597d37078651a4b184dd37960847b569d0485a318309cdfc62"
+    },
+    {
+      "path": "blif/behemoth/task-011-circuit-54.blif",
+      "bytes": 269,
+      "sha256": "c91b2175a8ac87c73f0e3adcea701e7de8ac444cb9fd7007d2577fda447fb1b5"
+    },
+    {
+      "path": "blif/behemoth/task-012-circuit-634.blif",
+      "bytes": 219,
+      "sha256": "9252cacf26a233a82b22dcddef0a06deae41102f7f4fbbc02234c3451d03d393"
+    },
+    {
+      "path": "blif/behemoth/task-013-circuit-398.blif",
+      "bytes": 601,
+      "sha256": "d39cfda3ee8aec490cd35343719421508b4378ead31aa43737d79b99151eb2f3"
+    },
+    {
+      "path": "blif/behemoth/task-014-circuit-645.blif",
+      "bytes": 554,
+      "sha256": "cdf94b1420cad59189952f7477e0815571008c3ac1e20534cd5f8c04724f0a64"
+    },
+    {
+      "path": "blif/behemoth/task-015-circuit-959.blif",
+      "bytes": 1371,
+      "sha256": "86e2edd24771e145ed282729cf7295b30a934306743f11da4a7e1cd93c348c21"
+    },
+    {
+      "path": "blif/behemoth/task-016-circuit-962.blif",
+      "bytes": 598,
+      "sha256": "d4d6fc259e076b5efd49fa50ad3809bfc360cbe1091e4e494be8f7b2dd19e1e9"
+    },
+    {
+      "path": "blif/behemoth/task-017-circuit-55.blif",
+      "bytes": 243,
+      "sha256": "bf2672874eb00ac9787e8e28b607d2615198d7982de14ed8cafb7fcc6beed47e"
+    },
+    {
+      "path": "blif/behemoth/task-018-circuit-441.blif",
+      "bytes": 412,
+      "sha256": "aa17541d075fcfa9fea27962b4d7afa31d2b3d5713d6a26aa75f5506eac6082d"
+    },
+    {
+      "path": "blif/behemoth/task-019-circuit-944.blif",
+      "bytes": 439,
+      "sha256": "b19e0d82b460cd37512bd9f57c0944bce40b7c9ff9916b78aaec8b33ce531068"
+    },
+    {
+      "path": "blif/behemoth/task-020-circuit-469.blif",
+      "bytes": 336,
+      "sha256": "dfa7c2141f0581aa85b67accb9552c0ace8ee885fc655f4a73055276089c32e6"
+    },
+    {
+      "path": "blif/behemoth/task-021-circuit-607.blif",
+      "bytes": 710,
+      "sha256": "8a85cf62996669f56f61bce94dbb2a4b81e268f46f46adfa990287bf3022b989"
+    },
+    {
+      "path": "blif/behemoth/task-022-circuit-797.blif",
+      "bytes": 384,
+      "sha256": "e4591d5326adf33683cbb64ea5ed5c8ad04a41cfe6b057b2c7e25439c1608813"
+    },
+    {
+      "path": "blif/behemoth/task-023-circuit-1624.blif",
+      "bytes": 677,
+      "sha256": "bbdaad0c3a1bc16d1e8dc9a2032e015cf2b9a0e51e8ab8a3f0f83f11ec408244"
+    },
+    {
+      "path": "blif/behemoth/task-024-circuit-1013.blif",
+      "bytes": 403,
+      "sha256": "597e88abb34dccc7c6c26d0a8f4fb9d7db8564b810ca89339f1c504aa7f748cc"
+    },
+    {
+      "path": "blif/behemoth/task-025-circuit-2134.blif",
+      "bytes": 879,
+      "sha256": "02dce9226368b4f2eb06e3f9d47a47160f71e02713d4486da0f08aa92e026957"
+    },
+    {
+      "path": "blif/behemoth/task-026-circuit-946.blif",
+      "bytes": 325,
+      "sha256": "08112eb39b68cb20a4b1b296e328f565348118d2521511629685f016274b1f55"
+    },
+    {
+      "path": "blif/behemoth/task-027-circuit-637.blif",
+      "bytes": 732,
+      "sha256": "01623437a1049b5d5c35aea061767e8749a4f8df9d0a511399c5b43a2b845819"
+    },
+    {
+      "path": "blif/behemoth/task-028-circuit-2115.blif",
+      "bytes": 902,
+      "sha256": "ec27a02e019f78f29e8e8300491d0762e54647683676debbc05015c7cfa8c9eb"
+    },
+    {
+      "path": "blif/behemoth/task-029-circuit-483.blif",
+      "bytes": 746,
+      "sha256": "e37f23b32ce4ea7dab9a28199deaf01b1498c4e28484924fd82d5a60988d3f93"
+    },
+    {
+      "path": "blif/behemoth/task-030-circuit-1112.blif",
+      "bytes": 625,
+      "sha256": "36ab8f2177752769349cec1f0911b6ddda822988da012ad67f52e410e8596c1b"
+    },
+    {
+      "path": "blif/behemoth/task-031-circuit-1413.blif",
+      "bytes": 444,
+      "sha256": "1b1ab442cf13285098eb3bfee9d7d97e648f2ab4adc88beecf0ad350b66706ed"
+    },
+    {
+      "path": "blif/behemoth/task-032-circuit-1986.blif",
+      "bytes": 734,
+      "sha256": "cec5e2c181faf577354dd722c53a978a4171d3246ff032e16c4cfba4e785e0bb"
+    },
+    {
+      "path": "blif/behemoth/task-033-circuit-2025.blif",
+      "bytes": 1417,
+      "sha256": "48670ddb65bdb58f2c99c7b48808049746ffd13e42cb51d41c024b82091249d9"
+    },
+    {
+      "path": "blif/behemoth/task-034-circuit-2183.blif",
+      "bytes": 2954,
+      "sha256": "b448b080d2367f994a66ae7fe22479f2677a3de1605ff1fe2f813d63f772b65b"
+    },
+    {
+      "path": "blif/behemoth/task-035-circuit-2517.blif",
+      "bytes": 6886,
+      "sha256": "391d189d3caf26f6cb2d8f0264deeeb0d5c6fac7ea230cb77870ec5e5171e9dd"
+    },
+    {
+      "path": "blif/behemoth/task-036-circuit-672.blif",
+      "bytes": 548,
+      "sha256": "05d489064ac0342c49e3f16c442a31341f0c3e5e4adb06b13dda5fd47113bd64"
+    },
+    {
+      "path": "blif/behemoth/task-037-circuit-2520.blif",
+      "bytes": 1205,
+      "sha256": "3a0b32962ceffe8b1e1aee9ef49ad967f96710f7562a3e949e146b2d883822af"
+    },
+    {
+      "path": "blif/behemoth/task-038-circuit-2457.blif",
+      "bytes": 2849,
+      "sha256": "580ef16291f52980cf4d46a57de410673e22ff17ff44a8729130b6975597930a"
+    },
+    {
+      "path": "blif/behemoth/task-039-circuit-2466.blif",
+      "bytes": 6563,
+      "sha256": "e3f3b43de84e67db27e432408156d254170c4754b77b1db22d276121cbaf168a"
+    },
+    {
+      "path": "blif/behemoth/task-040-circuit-1987.blif",
+      "bytes": 1720,
+      "sha256": "72912a804f1f7b7d8531706858ab53995eb486f59b7bd0f92fc8aa96f52d0de6"
+    },
+    {
+      "path": "blif/behemoth/task-041-circuit-2510.blif",
+      "bytes": 3614,
+      "sha256": "3752c8b6c28a042ddb5b4cf4aa7519eb7f2b8d07e4b1ca72c5e2b301c31b5a7b"
+    },
+    {
+      "path": "blif/behemoth/task-042-circuit-2082.blif",
+      "bytes": 2602,
+      "sha256": "004963b2042a67ca798914b58e629c7a1a90f98e19031bf0c6f089a2e00b8f24"
+    },
+    {
+      "path": "blif/behemoth/task-043-circuit-636.blif",
+      "bytes": 635,
+      "sha256": "1ecac779775d486108e391e8f1ba86a3c3316ad19b354dba43774f358912c2d5"
+    },
+    {
+      "path": "blif/behemoth/task-044-circuit-477.blif",
+      "bytes": 566,
+      "sha256": "4711bcce4c6880773771ddbd51c56b8ae9c43d92b5a8ba24b229393d9f88def2"
+    },
+    {
+      "path": "blif/behemoth/task-045-circuit-646.blif",
+      "bytes": 614,
+      "sha256": "833be737bd9251abd010fcdc5cba04f44323f2aeabd0ff7de1f60d11b1d1329a"
+    },
+    {
+      "path": "blif/behemoth/task-046-circuit-2434.blif",
+      "bytes": 1432,
+      "sha256": "2528f93a9760b66ac1e9b9e717198545fe75b3bfded0e5846a730e09d1781e00"
+    },
+    {
+      "path": "blif/behemoth/task-047-circuit-1004.blif",
+      "bytes": 806,
+      "sha256": "b105e7631e7570f2705386183bdbc2123216ac1ab222409fdd1d24ede8dfaf54"
+    },
+    {
+      "path": "blif/behemoth/task-048-circuit-2476.blif",
+      "bytes": 2573,
+      "sha256": "8ff2e52fd15921cf1737b6f4b6b1db51a94969634be1dd1ae407d61e2f683141"
+    },
+    {
+      "path": "blif/behemoth/task-049-circuit-815.blif",
+      "bytes": 543,
+      "sha256": "db56f2a5cf5a6cbdaa944ec6309e9c813186b838c711bff7f27ad8bde0f85a95"
+    },
+    {
+      "path": "blif/behemoth/task-050-circuit-1146.blif",
+      "bytes": 718,
+      "sha256": "f07088b6add461e84d84645a87d8b76543a867499474701b2259efc8e6101260"
+    },
+    {
+      "path": "blif/behemoth/task-051-circuit-1153.blif",
+      "bytes": 719,
+      "sha256": "30d37ba9c7c7bea0768039f40e00c8cdbd8d853f0a644a70edc5427f6198bac2"
+    },
+    {
+      "path": "blif/behemoth/task-052-circuit-2049.blif",
+      "bytes": 812,
+      "sha256": "31ba7414143908b40fc9763c2668b3eb16ad04cc93cd4f2e0a7673c49771e003"
+    },
+    {
+      "path": "blif/behemoth/task-053-circuit-2467.blif",
+      "bytes": 2591,
+      "sha256": "0b5c6714f83c5d3b48b430f26cd87bd82739ff6a2f8750f76b2c590bc614021d"
+    },
+    {
+      "path": "blif/behemoth/task-054-circuit-520.blif",
+      "bytes": 474,
+      "sha256": "d2d8fdf25be3e8e905ec5ee732d6f4416032a33607d6b2b1a9db5de2d449476c"
+    },
+    {
+      "path": "blif/behemoth/task-055-circuit-1903.blif",
+      "bytes": 738,
+      "sha256": "faba78447a1e5a134d01a4970529349d2b0ed7c02743a7a82facb8a4219b0a27"
+    },
+    {
+      "path": "blif/behemoth/task-056-circuit-697.blif",
+      "bytes": 721,
+      "sha256": "f640dacc3d58aff415ee44f0640d4f59148455be8659e960f9f2f5d953900be9"
+    },
+    {
+      "path": "blif/behemoth/task-057-circuit-2129.blif",
+      "bytes": 1127,
+      "sha256": "efd57db33b62c0dbec996f25b857cbc3a4fee59a219c2a983b547fea229df200"
+    },
+    {
+      "path": "blif/behemoth/task-058-circuit-940.blif",
+      "bytes": 494,
+      "sha256": "26cfe2d39ccd3031e3d66b5ff0057d24ed6b3eb738ebd32ed7d76ff5cea3e42d"
+    },
+    {
+      "path": "blif/behemoth/task-059-circuit-2469.blif",
+      "bytes": 1351,
+      "sha256": "1ee086252d8b94c0d089ee470665a05616f753760a133922598b20ba3867f85d"
+    },
+    {
+      "path": "blif/behemoth/task-060-circuit-1998.blif",
+      "bytes": 3419,
+      "sha256": "59f2fd2eddddb57f267518a48bfc97c742f009398f7a3b9adea9981e2be92a0b"
+    },
+    {
+      "path": "blif/behemoth/task-061-circuit-2475.blif",
+      "bytes": 21327,
+      "sha256": "6f3167af968d38126c2c38d79a08bf4bc33a54001bd364a33c6690c5ce1da212"
+    },
+    {
+      "path": "blif/behemoth/task-062-circuit-740.blif",
+      "bytes": 780,
+      "sha256": "77caee615a20d2d7dd100615ba735b01cc3f893698f0b6b0ccb7dabef036bdd3"
+    },
+    {
+      "path": "blif/behemoth/task-063-circuit-2479.blif",
+      "bytes": 7732,
+      "sha256": "893ac2885a2ede77eec90a1b483994b800d55ff1d11f53ad74df031c6528028b"
+    },
+    {
+      "path": "blif/behemoth/task-064-circuit-766.blif",
+      "bytes": 569,
+      "sha256": "c9a0300272b2a3333021aa5a7a6c5f534184b9984b67780ae21e4d2988be7fcd"
+    },
+    {
+      "path": "blif/behemoth/task-065-circuit-2213.blif",
+      "bytes": 643,
+      "sha256": "c9dd7a434f21454ad344a250774ea64d0c3dcaff5feff51dd3fdc2e35c710e72"
+    },
+    {
+      "path": "blif/behemoth/task-066-circuit-2174.blif",
+      "bytes": 1123,
+      "sha256": "b85018b373432900d34849fe24085c94e40b56cc651c55f6f6b489d7e29c1c01"
+    },
+    {
+      "path": "blif/behemoth/task-067-circuit-2415.blif",
+      "bytes": 818,
+      "sha256": "f27e6035fd5e775aa30f9ba0e22ed45e7e9ac84108b8aa6e7d0e339157994340"
+    },
+    {
+      "path": "blif/behemoth/task-068-circuit-2442.blif",
+      "bytes": 1539,
+      "sha256": "f954c1fdbd028ab76f2d55d123a532608951d7a629e492fbc83bcb4d6e6bf9b9"
+    },
+    {
+      "path": "blif/behemoth/task-069-circuit-524.blif",
+      "bytes": 1705,
+      "sha256": "5c993534c006ae304c470445edccccffdb0505ce0599f1ca1a675c091364a8a9"
+    },
+    {
+      "path": "blif/behemoth/task-070-circuit-2519.blif",
+      "bytes": 2766,
+      "sha256": "872cfeba6798a985cfeedaadc31a5cb96fda0c379be8bf73c706bcba31a101ed"
+    },
+    {
+      "path": "blif/behemoth/task-071-circuit-631.blif",
+      "bytes": 518,
+      "sha256": "5dbbea410c713689c50531e947e3b3a87bfc7b762cf3c7defb4f2169d50bd443"
+    },
+    {
+      "path": "blif/behemoth/task-072-circuit-2074.blif",
+      "bytes": 1296,
+      "sha256": "bdc7febcd9a6d647a23b53f656d08c723cd6a00acd3d43a77a20647a4c0d4f97"
+    },
+    {
+      "path": "blif/behemoth/task-090-circuit-1567.blif",
+      "bytes": 1287,
+      "sha256": "a04a361391adf3d177dfa351adba5191ea697c8afbe74ffd94d75aac2a93b761"
+    },
+    {
+      "path": "blif/behemoth/task-091-circuit-2185.blif",
+      "bytes": 1558,
+      "sha256": "0957f2c33e692460b7b607296dd807a1a07652ccee62de08c20a5d5a8c8841c8"
+    },
+    {
+      "path": "blif/behemoth/task-092-circuit-941.blif",
+      "bytes": 382,
+      "sha256": "7d5cb439173be7360cd846046ccb772651ea432bc8d467ccbdb45214324f6a7c"
+    },
+    {
+      "path": "blif/behemoth/task-093-circuit-2471.blif",
+      "bytes": 3234,
+      "sha256": "fb6cd232711a4e45b9238875311222acca2124e6c74f087767961ff65e2e426f"
+    },
+    {
+      "path": "blif/behemoth/task-102-circuit-601.blif",
+      "bytes": 322,
+      "sha256": "aed187b6e92010c3ff847effb7aaf8f9ed5dd149e40024a0977eda18a430c873"
+    },
+    {
+      "path": "blif/behemoth/task-103-circuit-675.blif",
+      "bytes": 390,
+      "sha256": "44c36ccf4e7d2ca79d5650f446c4cec953515574efef819fba9d9a0d2fe267e0"
+    },
+    {
+      "path": "blif/behemoth/task-104-circuit-677.blif",
+      "bytes": 570,
+      "sha256": "a288711dc4fcb76ed605124df1e5b1b2295630621368aafe180251427bd397d9"
+    },
+    {
+      "path": "blif/behemoth/task-105-circuit-684.blif",
+      "bytes": 610,
+      "sha256": "6793a34c37a9b589c69747ad3db7dcbd52d84f609f3877d004c265ffc236d056"
+    },
+    {
+      "path": "blif/behemoth/task-106-circuit-786.blif",
+      "bytes": 542,
+      "sha256": "e504d63f1f3d39c935819b253c34f5360c15cb197745a73334c8e28120907ef6"
+    },
+    {
+      "path": "blif/behemoth/task-107-circuit-397.blif",
+      "bytes": 690,
+      "sha256": "74953eb08f4285c86f0acdce4981394d3266f4bff18d0b05ffc86eb383990346"
+    },
+    {
+      "path": "blif/behemoth/task-108-circuit-589.blif",
+      "bytes": 1068,
+      "sha256": "674d9b3e4f5ad2db40436262f2f7199b9bb6f8c942986f1da36ba03874965efe"
+    },
+    {
+      "path": "blif/behemoth/task-109-circuit-2027.blif",
+      "bytes": 1146,
+      "sha256": "61d3f6144aad366c9c3a6708efc83291e632610db7ad9cf82a4020ac2388e38c"
+    },
+    {
+      "path": "blif/behemoth/task-110-circuit-2050.blif",
+      "bytes": 855,
+      "sha256": "7e63bf302a9f7fef50328439700222bc6b26b82aa065c7ea5d1d64d1382b8a50"
+    },
+    {
+      "path": "blif/behemoth/task-111-circuit-2400.blif",
+      "bytes": 1057,
+      "sha256": "0a46969f6395f60f60aad79e970434b31ea4d356ebfdc2105cd89798f10520c5"
+    },
+    {
+      "path": "blif/behemoth/task-112-circuit-2047.blif",
+      "bytes": 1507,
+      "sha256": "09dedf37cea420eaf0ec2f2843bbed0d24e51fbcbcb3a8797aa6803690fdd97c"
+    },
+    {
+      "path": "blif/behemoth/task-113-circuit-2404.blif",
+      "bytes": 1775,
+      "sha256": "571152db3ffe80118f5062f2aada4e2d2052c05812814f626727ef58c1538b37"
+    },
+    {
+      "path": "blif/behemoth/task-114-circuit-2437.blif",
+      "bytes": 1913,
+      "sha256": "af62cfe12e8f21cc27fa5339dbf84b9961d76712d8855f0d6725eba68cb055e5"
+    },
+    {
+      "path": "blif/behemoth/task-115-circuit-2509.blif",
+      "bytes": 2162,
+      "sha256": "67f2110989c547e5c9459ef9b5bfa6a6490fd6d19decfac1ae41be21e22755ef"
+    },
+    {
+      "path": "blif/behemoth/task-116-circuit-2101.blif",
+      "bytes": 2292,
+      "sha256": "13977e17db4fe4cf58c04be13b582c7ac270c58920ed9e47eca3f19830e6b16d"
+    },
+    {
+      "path": "blif/behemoth/task-117-circuit-2511.blif",
+      "bytes": 2772,
+      "sha256": "50d65ee2646b4bd8e762c30480e41629e30bb98c7bdb8f58604c70b67bbbb998"
+    },
+    {
+      "path": "blif/behemoth/task-118-circuit-2296.blif",
+      "bytes": 679,
+      "sha256": "646dc8bae6425aee11b5f63434d7cff7ddb04c0c770fc07820a625aa1923b1ca"
+    },
+    {
+      "path": "blif/behemoth/task-119-circuit-2248.blif",
+      "bytes": 1026,
+      "sha256": "4c9c747a66ec0d9bf665505e95a33e0762b52113fce2e5fbb95b099df3ffbf07"
+    },
+    {
+      "path": "blif/behemoth/task-120-circuit-2347.blif",
+      "bytes": 1911,
+      "sha256": "250e2c004228bcf241d8d2d38c8e884f3442f14c07db17e7a6192278d8aaa33a"
+    },
+    {
+      "path": "blif/behemoth/task-121-circuit-2493.blif",
+      "bytes": 2207,
+      "sha256": "fe86a7a63435b8789ee8161d8335f9ad014702047a5b25240ed690f159691b40"
+    },
+    {
+      "path": "blif/behemoth/task-122-circuit-934.blif",
+      "bytes": 267,
+      "sha256": "0ea9088ba5778af161fa846356f2dd3b97383ccc50f2f144553bdfb7b4db703d"
+    },
+    {
+      "path": "blif/behemoth/task-123-circuit-945.blif",
+      "bytes": 450,
+      "sha256": "a65faedc92748ca01e2af8a5df759982f35a1e192f2abd8723ff849b326d6a9d"
+    },
+    {
+      "path": "blif/behemoth/task-124-circuit-1637.blif",
+      "bytes": 726,
+      "sha256": "cb361d088ed62dfd586014f906e932350848665cad633c67d54ef4a5efafbfa6"
+    },
+    {
+      "path": "blif/behemoth/task-125-circuit-2345.blif",
+      "bytes": 989,
+      "sha256": "ba863ad79d09b381f1a982aa022af767c9b148dab69c6295053b97f118367d06"
+    },
+    {
+      "path": "blif/behemoth/task-126-circuit-2249.blif",
+      "bytes": 1187,
+      "sha256": "1c60341b98635ed8c68d61b7804cb422b1d05dbbddb810eaf9ae947266a46554"
+    },
+    {
+      "path": "blif/behemoth/task-127-circuit-868.blif",
+      "bytes": 382,
+      "sha256": "c3254f2bc5723ebece174e4a2543ec8d4050ac69ab09d1e9bbdf7e8a874c47b0"
+    },
+    {
+      "path": "blif/behemoth/task-128-circuit-2287.blif",
+      "bytes": 791,
+      "sha256": "b80661b5fef408ab0d62e416da1f5e91339acce7127631f41270460d1f36c9c8"
+    },
+    {
+      "path": "blif/behemoth/task-129-circuit-2051.blif",
+      "bytes": 1023,
+      "sha256": "c68054aa5c658bc688e44f0de6b14eb2f354da44368b33310841863961c24f76"
+    },
+    {
+      "path": "blif/behemoth/task-130-circuit-2432.blif",
+      "bytes": 1436,
+      "sha256": "4566c2f083a71ff0ecd543b23bfca98e1e332bc23d3b73ab1eef1ce5d1fe7b2c"
+    },
+    {
+      "path": "blif/behemoth/task-131-circuit-1569.blif",
+      "bytes": 743,
+      "sha256": "6f1ba6a66e936881c76719e1977e4f2607900e51d31b8a1c0cec4b501a817898"
+    },
+    {
+      "path": "blif/behemoth/task-132-circuit-1867.blif",
+      "bytes": 950,
+      "sha256": "c44ff3697f4c4e38ed11cf32951c84b3aa16ecaf7fb07ff883ba0330fcd36bfe"
+    },
+    {
+      "path": "blif/behemoth/task-133-circuit-2227.blif",
+      "bytes": 1474,
+      "sha256": "b88a1a1be8dbfaf3848b7d885a4ec6a7c0251961698a5d5ef5e40ec64fa2257b"
+    },
+    {
+      "path": "blif/behemoth/task-134-circuit-2222.blif",
+      "bytes": 893,
+      "sha256": "1bf6bd1ae12551b796147b7e77d0964f6c91076bc5b93f82d45c85fc75a6de1c"
+    },
+    {
+      "path": "blif/behemoth/task-135-circuit-2269.blif",
+      "bytes": 1312,
+      "sha256": "1a8efe01971634be6da8b933bdb706e35dfd593d7afcc9e1d61e79e47de82020"
+    },
+    {
+      "path": "blif/behemoth/task-136-circuit-2121.blif",
+      "bytes": 1616,
+      "sha256": "0ae2649ac660cf4d8c9263ad298540a49c150ce95355c00d8b8a46b82d2ecc4a"
+    },
+    {
+      "path": "blif/behemoth/task-137-circuit-747.blif",
+      "bytes": 398,
+      "sha256": "f953e3e1de3c182cc6958b4c5b55693cdb8901d0f4e7c578e30893fe125b9101"
+    },
+    {
+      "path": "blif/behemoth/task-138-circuit-509.blif",
+      "bytes": 329,
+      "sha256": "b7a1e025879db76160da30004950e1aae14562b34cd3e149f13a056a3e595fb8"
+    },
+    {
+      "path": "blif/behemoth/task-139-circuit-1074.blif",
+      "bytes": 575,
+      "sha256": "aadf05c43cafb7e52d6bc784bc546142d63bfa332b90bbfabb17fbf7d9c6c381"
+    },
+    {
+      "path": "blif/behemoth/task-140-circuit-929.blif",
+      "bytes": 592,
+      "sha256": "4925ddd01ca4ae9985fd68e75463b7f824d79a2e829f7636ef9db872dbf701b8"
+    },
+    {
+      "path": "blif/behemoth/task-141-circuit-2429.blif",
+      "bytes": 937,
+      "sha256": "f925b2d30a3ff5a598463cf158ab84b942f61253e3e5b14e1769fa52e645916b"
+    },
+    {
+      "path": "blif/behemoth/task-142-circuit-2110.blif",
+      "bytes": 917,
+      "sha256": "ac727b672ee857ed80f854c19d16e2eee782d06091818a22d4e5b92facaea4a0"
+    },
+    {
+      "path": "blif/behemoth/task-143-circuit-2452.blif",
+      "bytes": 1118,
+      "sha256": "63907f022b495725a64f06ced5d842dd67f8b1b5b445e3e379601ebd075c7f0f"
+    },
+    {
+      "path": "blif/behemoth/task-144-circuit-2123.blif",
+      "bytes": 1204,
+      "sha256": "de3d0cfe2bd8784cedc4408f23ca37c9e750edbdb24347d83c4e6b75e4017850"
+    },
+    {
+      "path": "blif/behemoth/task-145-circuit-2320.blif",
+      "bytes": 1468,
+      "sha256": "323026a91bd80b861ec768e22f84b0f649c063ac23b70780e8b0b1daa6f9c752"
+    },
+    {
+      "path": "blif/behemoth/task-146-circuit-2083.blif",
+      "bytes": 1335,
+      "sha256": "66046fcfa8d0924b1a29dd9b16da8423fed84accd74a65ffa5b6df88ea00d242"
+    },
+    {
+      "path": "blif/behemoth/task-147-circuit-1100.blif",
+      "bytes": 603,
+      "sha256": "f142cbf43867258e9f45be296bafd456082840c13d7d861afdbdc7dbd9dc8c93"
+    },
+    {
+      "path": "blif/behemoth/task-148-circuit-521.blif",
+      "bytes": 641,
+      "sha256": "e2656f98c13298010418e64c638dbd556206ed5c749694217b233aef8196c48a"
+    },
+    {
+      "path": "blif/behemoth/task-149-circuit-2512.blif",
+      "bytes": 1700,
+      "sha256": "69b19cd6dd9e254cf6a59991f5db42f6281c50c55556ee1c553cadf2a862b1f7"
+    },
+    {
+      "path": "blif/behemoth/task-150-circuit-2421.blif",
+      "bytes": 1653,
+      "sha256": "16969b2601dd1d910460cbb281955d8a610c37193c1f63587b8a871fa6ec0888"
+    },
+    {
+      "path": "blif/behemoth/task-151-circuit-2332.blif",
+      "bytes": 1755,
+      "sha256": "40a4366cf7b057ac7054f73f71c86fc46ea9f2a0b70a1b61b7bef733d6136388"
+    },
+    {
+      "path": "blif/behemoth/task-152-circuit-2503.blif",
+      "bytes": 1878,
+      "sha256": "37385a817f4014051f2d0b41497fb4a11602858efc83644175adbd39101e908c"
+    },
+    {
+      "path": "blif/behemoth/task-153-circuit-2237.blif",
+      "bytes": 2094,
+      "sha256": "5fa9aafb42b24c822de85646bb642eaf854b572b3af6ec11cd38e35eec8b9d55"
+    },
+    {
+      "path": "blif/behemoth/task-154-circuit-2496.blif",
+      "bytes": 2056,
+      "sha256": "8c3cb1c32dcee2b3e866b43c008011e7b540fccbefffeec997cf6a9aaa5d918d"
+    },
+    {
+      "path": "blif/behemoth/task-155-circuit-943.blif",
+      "bytes": 444,
+      "sha256": "eca166f58dc114eec010c149864e4f12c7e8efac1561eb384d4e48e8b67ccb1a"
+    },
+    {
+      "path": "blif/behemoth/task-156-circuit-2305.blif",
+      "bytes": 1105,
+      "sha256": "6bd23c6b4c5e1fd84ad0bf8d5dd6a906ce23859715b6ab026a9e610544d7e6a4"
+    },
+    {
+      "path": "blif/behemoth/task-157-circuit-2430.blif",
+      "bytes": 1767,
+      "sha256": "8b570ddc9f9b853627921e4be6bdc84d389d71b621abf4ef6aa1f6b80dfbad06"
+    },
+    {
+      "path": "blif/behemoth/task-158-circuit-2499.blif",
+      "bytes": 4659,
+      "sha256": "01fcc2466473bbe27318f9e1e857eb250f8b8b5d075aea2172acac7bdddf43d0"
+    },
+    {
+      "path": "blif/behemoth/task-159-circuit-670.blif",
+      "bytes": 1005,
+      "sha256": "42607f57c76446e626ab87f7d082eb7d4d3faca07c0fb150939f9c25d45674e5"
+    },
+    {
+      "path": "blif/behemoth/task-160-circuit-933.blif",
+      "bytes": 525,
+      "sha256": "d14203e016cd09b6e978d745409779e90292764714bc4f1018c84e6a2d24c49a"
+    },
+    {
+      "path": "blif/behemoth/task-161-circuit-2096.blif",
+      "bytes": 1007,
+      "sha256": "e367fbf72f951465f79601d1c8ff7b409734b810c7a7ed0ea8476a6072956ecd"
+    },
+    {
+      "path": "blif/behemoth/task-162-circuit-517.blif",
+      "bytes": 366,
+      "sha256": "19a101b276ebac009c46dcd3e89adc3a0651adc33a7e9b0a06cf8a796152cb1f"
+    },
+    {
+      "path": "blif/behemoth/task-163-circuit-553.blif",
+      "bytes": 446,
+      "sha256": "853acf5f612d4925f9facce13c86258ccb0580f173efa3145c6f007fe0c3b16c"
+    },
+    {
+      "path": "blif/behemoth/task-164-circuit-663.blif",
+      "bytes": 591,
+      "sha256": "aae5007ee1a83b4ec7c3b887b75d46b4e5843e552533e8fb626b8b6908616c84"
+    },
+    {
+      "path": "blif/behemoth/task-165-circuit-2319.blif",
+      "bytes": 951,
+      "sha256": "3f3ff1ceeda35e5515130f00f19b46518377ca26fc72ee6ff15d1594862b16e5"
+    },
+    {
+      "path": "blif/behemoth/task-166-circuit-664.blif",
+      "bytes": 709,
+      "sha256": "a0a9fabea9dcf9bea126c688c5b97e0d75b2262c32f55e337071bcf8224f0bf1"
+    },
+    {
+      "path": "blif/behemoth/task-167-circuit-2131.blif",
+      "bytes": 1247,
+      "sha256": "7e3058657be045986e74a0eae86767816b3e941cc0081dc52591b260083172fc"
+    },
+    {
+      "path": "blif/behemoth/task-168-circuit-391.blif",
+      "bytes": 939,
+      "sha256": "e819b20e13fb7de4a7fa22d59e537142608378c19ee840d00515cf2bdb932579"
+    },
+    {
+      "path": "blif/behemoth/task-169-circuit-1163.blif",
+      "bytes": 1957,
+      "sha256": "c31bcaf53aa6767499b95adb757bc94630e85fc958627584407dff77343e7e03"
+    },
+    {
+      "path": "blif/behemoth/task-170-circuit-1159.blif",
+      "bytes": 1980,
+      "sha256": "4ed848321684a65ee9fbf3690768baffa76f4ede704860fb07f60b1437216792"
+    },
+    {
+      "path": "blif/behemoth/task-171-circuit-2407.blif",
+      "bytes": 2231,
+      "sha256": "42f258f7adbc809db7ea1f45f59ddae3b6d4efccdbeeb65ade7c18565b1e5ed4"
+    },
+    {
+      "path": "blif/behemoth/task-172-circuit-1157.blif",
+      "bytes": 2247,
+      "sha256": "7f2f0aedf8962367498f0d3aa645ff04200cb66f44c076a8a164ea518f3f032d"
+    },
+    {
+      "path": "blif/behemoth/task-173-circuit-2506.blif",
+      "bytes": 6261,
+      "sha256": "87f99ae0ae156241fc6917accd7b5a0bcdbde6784e986af158b8f022cbfe2519"
+    },
+    {
+      "path": "blif/behemoth/task-174-circuit-2472.blif",
+      "bytes": 10691,
+      "sha256": "b421887fff4cefe8caec24ae0909fed2f492cc2de3ea7a5f9381c53deb8dd67a"
+    },
+    {
+      "path": "blif/behemoth/task-175-circuit-1925.blif",
+      "bytes": 1502,
+      "sha256": "38b70e9e7f6d1ee4cda8bd86db8e84d39a7e817a6729ea3812c96bb6abbb9882"
+    },
+    {
+      "path": "blif/behemoth/task-176-circuit-2414.blif",
+      "bytes": 2511,
+      "sha256": "f0636aeab42a575ee0a3a65886a4f2a3a94dc8f57e22fe06eb7fb419989cb3af"
+    },
+    {
+      "path": "blif/behemoth/task-177-circuit-931.blif",
+      "bytes": 638,
+      "sha256": "ec104bcc0be84344bc3d03bf0c0925b2557351696059a03a4679924c8ee5c480"
+    },
+    {
+      "path": "blif/behemoth/task-178-circuit-768.blif",
+      "bytes": 763,
+      "sha256": "266b72802027101f5e57081d0a188c0789158b744f188902efcb6fc8961a2212"
+    },
+    {
+      "path": "blif/behemoth/task-179-circuit-1741.blif",
+      "bytes": 915,
+      "sha256": "76cdb1b744f1304d16fb8228ac4567d88cd9538720c16072e77dbb1545e06147"
+    },
+    {
+      "path": "blif/behemoth/task-180-circuit-669.blif",
+      "bytes": 753,
+      "sha256": "84424320ab2c856bb46211029656eed4c4d83e5cec2cc867774d42f1f4f236c9"
+    },
+    {
+      "path": "blif/behemoth/task-181-circuit-1570.blif",
+      "bytes": 925,
+      "sha256": "f78987bccb512b2a0d328cb1a3e3e9adbcbeb3b90d6c29af5758532fc0a62dc0"
+    },
+    {
+      "path": "blif/behemoth/task-182-circuit-651.blif",
+      "bytes": 705,
+      "sha256": "9748024d2fd78c1bdf933d086eb6f2770bacbb53a1b2cbafb6f64999d3843582"
+    },
+    {
+      "path": "blif/behemoth/task-183-circuit-1173.blif",
+      "bytes": 936,
+      "sha256": "1988f1f1c23f6d8c3ce87745ed1599f9e3a8034413ab4efab5265ad61d4af0b6"
+    },
+    {
+      "path": "blif/behemoth/task-184-circuit-639.blif",
+      "bytes": 451,
+      "sha256": "0ded3bca54d62f4de241624cf78bae060cdbef012a59e9c7debfb7d7ca1cb0e0"
+    },
+    {
+      "path": "blif/behemoth/task-185-circuit-511.blif",
+      "bytes": 358,
+      "sha256": "07758e0aeac889eb213fbaa4876b380eb43ac1deaa4aec8c97681cd49171f044"
+    },
+    {
+      "path": "blif/behemoth/task-186-circuit-640.blif",
+      "bytes": 435,
+      "sha256": "7b6a8f11b2e52b27a9f849e465837a38fe88ef436a7ff0dcc3ea17d0be3540b2"
+    },
+    {
+      "path": "blif/behemoth/task-187-circuit-2221.blif",
+      "bytes": 863,
+      "sha256": "d0bc00bf77834298c3b46b6a38278d9c2a2fe06e0e7a92c421c37634085bf683"
+    },
+    {
+      "path": "blif/behemoth/task-188-circuit-478.blif",
+      "bytes": 530,
+      "sha256": "35052b778567065bc31855cefe84641337f8a90eac8cdc2a269de002a5117088"
+    },
+    {
+      "path": "blif/behemoth/task-189-circuit-644.blif",
+      "bytes": 680,
+      "sha256": "6b94fe1514f41fb12898c62e2ff7af9c831dae7279ea85c94434b666ad61f724"
+    },
+    {
+      "path": "blif/behemoth/task-190-circuit-2024.blif",
+      "bytes": 686,
+      "sha256": "fbdf87c5d310d2b375bf1eb1727190a23e594febecb31e86d49f41c6bc03f798"
+    },
+    {
+      "path": "blif/behemoth/task-191-circuit-2338.blif",
+      "bytes": 915,
+      "sha256": "0d5c056e89cea874333d66398a32de6cd726122e76e64df43139c829a7d08724"
+    },
+    {
+      "path": "blif/behemoth/task-192-circuit-965.blif",
+      "bytes": 1251,
+      "sha256": "cc884b40a32f6b1d752d638c4294a3df375bb8ae14bca9891123ab6bcc3ccb8a"
+    },
+    {
+      "path": "blif/behemoth/task-193-circuit-1155.blif",
+      "bytes": 1867,
+      "sha256": "12c3c09860bf444b7051b5b0bd4b3e21414f83f50c1bae89cc6635cbc068ac35"
+    },
+    {
+      "path": "blif/behemoth/task-194-circuit-600.blif",
+      "bytes": 1353,
+      "sha256": "366a7cb7516bb4383858bf6876953508b2c0aa2384ce3f39bd25c3a4c890066e"
+    },
+    {
+      "path": "blif/behemoth/task-195-circuit-2182.blif",
+      "bytes": 1823,
+      "sha256": "c650a12f6a5a13254b1385e2635756d65e778e28e0fa3f1d974c2716f2b5856a"
+    },
+    {
+      "path": "blif/behemoth/task-196-circuit-2468.blif",
+      "bytes": 1725,
+      "sha256": "679f9450895258c38d3d0e0628aca448312ae0b4d90be01d107a15efdf421d7d"
+    },
+    {
+      "path": "blif/behemoth/task-197-circuit-794.blif",
+      "bytes": 482,
+      "sha256": "a9af7216a672240d84e1ff11086a1b4981a23e8418c6e03d625b259ac31a79bf"
+    },
+    {
+      "path": "blif/behemoth/task-198-circuit-818.blif",
+      "bytes": 866,
+      "sha256": "2621e12ebfb5575e081ac6b1251b58dfdcb4574d67909941f43a5919521f3790"
+    },
+    {
+      "path": "blif/behemoth/task-199-circuit-394.blif",
+      "bytes": 1229,
+      "sha256": "b098a59702e936346a99364ca249eaaf720480dd15e0ae73c464352ff23b8ae0"
+    },
+    {
+      "path": "blif/behemoth/task-200-circuit-989.blif",
+      "bytes": 1807,
+      "sha256": "f2ab28be040aed2bb7299879e8da68837372d97e01aa5fed0a3c03d873a3099b"
+    },
+    {
+      "path": "blif/behemoth/task-201-circuit-2420.blif",
+      "bytes": 1137,
+      "sha256": "2ca8df496a461e23eb63d9539630714ab6dc0720bb80408a5eb321f183f58d34"
+    },
+    {
+      "path": "blif/behemoth/task-202-circuit-630.blif",
+      "bytes": 520,
+      "sha256": "7fc877f2fb1b7d2c39c71414f886601c326b2035c4c6c8836313c4eda96a34ef"
+    },
+    {
+      "path": "blif/behemoth/task-203-circuit-798.blif",
+      "bytes": 443,
+      "sha256": "bab2cc6bd6e99f1023b256816dfdf0bbf1f5ebde2cfc42265e826f36e35bd396"
+    },
+    {
+      "path": "blif/behemoth/task-204-circuit-2465.blif",
+      "bytes": 956,
+      "sha256": "f666023588686488e904a7f9b1ea1086230a94ed91e691dbcc277ef7e32d88a2"
+    },
+    {
+      "path": "blif/behemoth/task-205-circuit-2495.blif",
+      "bytes": 1391,
+      "sha256": "66c1859cc02232594d606b4ea9bcc120251f1f568342769af04af13ad7eb868d"
+    },
+    {
+      "path": "blif/behemoth/task-206-circuit-935.blif",
+      "bytes": 258,
+      "sha256": "0cf389f0ae6ded27338f26fe8965327391c2ab225d6a7a59a55b516ab3565419"
+    },
+    {
+      "path": "blif/behemoth/task-207-circuit-1933.blif",
+      "bytes": 888,
+      "sha256": "f975e6d246f79d5ad6941dfd00383abdb5d2f6d6baf3ee23c9629c3d1c2da99b"
+    },
+    {
+      "path": "blif/behemoth/task-208-circuit-1479.blif",
+      "bytes": 956,
+      "sha256": "4ae8d900821f74a7b6d020a8709e906403775493f75aac8f0e594d07524b0360"
+    },
+    {
+      "path": "blif/behemoth/task-209-circuit-2522.blif",
+      "bytes": 3020,
+      "sha256": "6bf0ed6a91af72c6b4eb6427ae1d1afa3e326dab792b69cab740c726276d1ae6"
+    },
+    {
+      "path": "blif/behemoth/task-210-circuit-2524.blif",
+      "bytes": 3225,
+      "sha256": "0f6de91d728d4ce8bc93a3936f6463ee87f41e7494294b8d843bad9c1924f0d6"
+    },
+    {
+      "path": "blif/behemoth/task-238-circuit-353.blif",
+      "bytes": 254,
+      "sha256": "7ca680b8631acb7a1eb27322a3e9cc6c0d2f1c29c036b8d0fc3f1acddeae8539"
+    },
+    {
+      "path": "blif/behemoth/task-239-circuit-680.blif",
+      "bytes": 462,
+      "sha256": "0a7076c4d90e252866315f478450da8c7a65d5137952bf8e16f84d40068f7a24"
+    },
+    {
+      "path": "blif/behemoth/task-240-circuit-480.blif",
+      "bytes": 406,
+      "sha256": "f5a27091a51865e11720b1c6bf42de1f9a2cbd03f331e6224d39adef882ff7a6"
+    },
+    {
+      "path": "blif/behemoth/task-241-circuit-395.blif",
+      "bytes": 842,
+      "sha256": "10c5330d770d8ff33158cebc0e1e19e07d0a89e1e85099279f20dcd42abe1872"
+    },
+    {
+      "path": "blif/behemoth/task-242-circuit-641.blif",
+      "bytes": 599,
+      "sha256": "576980b16cd0fb2e00ba9ab78f5b279135506b6b9bc03570965dbf477a76f936"
+    },
+    {
+      "path": "blif/behemoth/task-243-circuit-489.blif",
+      "bytes": 515,
+      "sha256": "50cb39283da2cbc9e14868740b60ffb0fa1992babb25642a9542848a657f8b3a"
+    },
+    {
+      "path": "blif/behemoth/task-244-circuit-939.blif",
+      "bytes": 676,
+      "sha256": "363071dfc159c145ca3295831af2a8d0b1caaa91a8bc8ad16aa55dc854671a1f"
+    },
+    {
+      "path": "blif/behemoth/task-245-circuit-505.blif",
+      "bytes": 208,
+      "sha256": "49d0e6321503c754d6881eeb7e6bcb7e57e72c74d36e3bf03d06729c6b2f2e23"
+    },
+    {
+      "path": "blif/behemoth/task-246-circuit-506.blif",
+      "bytes": 215,
+      "sha256": "0673b82da113bae58284ce02563c1758dc16a205d48448439ab669d3f049ebea"
+    },
+    {
+      "path": "blif/behemoth/task-247-circuit-748.blif",
+      "bytes": 350,
+      "sha256": "2c9dfe9f981b7a06f8ba673e4548eba83ca3f06198f8ed0551149991b176f4e2"
+    },
+    {
+      "path": "blif/behemoth/task-248-circuit-507.blif",
+      "bytes": 264,
+      "sha256": "944ee55c631b37857b8cc1a502c8452f14cac6cd76792ffb6d143d2391b37775"
+    },
+    {
+      "path": "blif/behemoth/task-249-circuit-1625.blif",
+      "bytes": 679,
+      "sha256": "092a58db69749cfa874830e3c253a9521897b657542bbb1928be99296e7de965"
+    },
+    {
+      "path": "blif/behemoth/task-250-circuit-1172.blif",
+      "bytes": 506,
+      "sha256": "80a6c7127f5c61d533271d72ab923f513aca211dcb012e650974e404f646b30b"
+    },
+    {
+      "path": "blif/behemoth/task-251-circuit-1571.blif",
+      "bytes": 921,
+      "sha256": "feda19d9fbeb909e024d1bce1dd92f182433ca284579f70b9050905e1814e6d8"
+    },
+    {
+      "path": "blif/behemoth/task-252-circuit-418.blif",
+      "bytes": 810,
+      "sha256": "8d44e0e1ae0835725d12ac4a532d390df61c5d2d1aad32bdf467a666d0d93c28"
+    },
+    {
+      "path": "blif/behemoth/task-253-circuit-928.blif",
+      "bytes": 1110,
+      "sha256": "7947c9f9493624206786a60ce9eaf2ba5af57aec90c0e46b0bb71bc1e236babb"
+    },
+    {
+      "path": "blif/behemoth/task-254-circuit-2461.blif",
+      "bytes": 2856,
+      "sha256": "8098270d519e99968baa7cb2e57c6fb31ff7f4d1fc766872dcb253e7d4a1da35"
+    },
+    {
+      "path": "blif/behemoth/task-255-circuit-1001.blif",
+      "bytes": 2156,
+      "sha256": "247422b98d3e14b60298be1699ff77a75c1442def228195f270e01a4c41217ab"
+    },
+    {
+      "path": "blif/behemoth/task-256-circuit-2445.blif",
+      "bytes": 2166,
+      "sha256": "2f80dc5b8c50b90e64d263b5c9480f17925775e47ee3d4e27d63f0f972181b06"
+    },
+    {
+      "path": "blif/behemoth/task-257-circuit-796.blif",
+      "bytes": 523,
+      "sha256": "5e4a2acc58044067cbc16bd1f73a625ec5779c448495c4908a62578c8df06656"
+    },
+    {
+      "path": "blif/behemoth/task-258-circuit-2234.blif",
+      "bytes": 741,
+      "sha256": "86ddf3fcf67ca8f26bd4635fc2d6c94c04ce0d4a8732e0cca641e067d917872e"
+    },
+    {
+      "path": "blif/behemoth/task-259-circuit-2443.blif",
+      "bytes": 750,
+      "sha256": "8f12f833f174005243ab43449cb36b42ae360dcc6ebd429796895e99429d5821"
+    },
+    {
+      "path": "blif/behemoth/task-260-circuit-2075.blif",
+      "bytes": 2056,
+      "sha256": "62593845f1e9e1b57abd97bcdb4ba3b4061ebbdbd5477bf58acb5c643d9d6c72"
+    },
+    {
+      "path": "blif/tapeout/task-001-circuit-904.blif",
+      "bytes": 161,
+      "sha256": "4e883fc76c029a2e28a9b84b58e7580d6e00f74dbc0434caac4b759258b1edad"
+    },
+    {
+      "path": "blif/tapeout/task-002-circuit-905.blif",
+      "bytes": 178,
+      "sha256": "ba3b9b8741958a0137d3d00943684125f535cca265e66104f641a321a971895b"
+    },
+    {
+      "path": "blif/tapeout/task-003-circuit-906.blif",
+      "bytes": 222,
+      "sha256": "8bb007c7bedd7def47420b00a00f45a4ed5eaf4be5f8019bdf16ffe77a744df8"
+    },
+    {
+      "path": "blif/tapeout/task-004-circuit-907.blif",
+      "bytes": 144,
+      "sha256": "07ef09160c414170eb5ca593e648168fa759712b50b424c0c280e10c986d2556"
+    },
+    {
+      "path": "blif/tapeout/task-005-circuit-908.blif",
+      "bytes": 161,
+      "sha256": "87aa8a0f33a4a19521d3e37831ac2d1fa1daabdd9a7bd31755e3f2752e7b0caf"
+    },
+    {
+      "path": "blif/tapeout/task-006-circuit-1048.blif",
+      "bytes": 200,
+      "sha256": "77c6038a61022f6e7cd63f73e411b2aacfe31eff6fa3621f2227198b45353e28"
+    },
+    {
+      "path": "blif/tapeout/task-007-circuit-910.blif",
+      "bytes": 195,
+      "sha256": "5bd44f11c11fb548ab8f548908a2f694c6bdeae686d99af56b12c3637ed56df6"
+    },
+    {
+      "path": "blif/tapeout/task-008-circuit-1050.blif",
+      "bytes": 242,
+      "sha256": "2e55dc68c9e2023be7e75f5e3ab6bffaa52485558d85f015462a4e19f02e91e8"
+    },
+    {
+      "path": "blif/tapeout/task-009-circuit-912.blif",
+      "bytes": 207,
+      "sha256": "8a29d46d7c554ab46ab268ac37246d1be52b722b2be7600e38a95c71f90d435b"
+    },
+    {
+      "path": "blif/tapeout/task-010-circuit-1052.blif",
+      "bytes": 414,
+      "sha256": "b7143264eac66843276a7b01cbedc06bf796e2f2127dec74a86ac879845f99b7"
+    },
+    {
+      "path": "blif/tapeout/task-011-circuit-16.blif",
+      "bytes": 268,
+      "sha256": "b0a32c7b319ab77c9c59c3317831b22773eb87583b760a08568befec856bbc03"
+    },
+    {
+      "path": "blif/tapeout/task-012-circuit-1704.blif",
+      "bytes": 220,
+      "sha256": "e8bdf3bc90d5d493a8e8f738a20e74f73e8f4a0011ecc38e301f7527b7ae5654"
+    },
+    {
+      "path": "blif/tapeout/task-013-circuit-1194.blif",
+      "bytes": 602,
+      "sha256": "8ff5a50057f39dc148cec5a3f0e87cfb6e5b9ea648a18c28261fc8f900fd7d6a"
+    },
+    {
+      "path": "blif/tapeout/task-014-circuit-2232.blif",
+      "bytes": 555,
+      "sha256": "24c9f7934e8e228b0e80e373e6f65a590317977acdbfa5380fcd3fa71a90386c"
+    },
+    {
+      "path": "blif/tapeout/task-015-circuit-2779.blif",
+      "bytes": 1373,
+      "sha256": "d35a3e616aa020df02ea0c498f58b0e58066db02f81cfc8cde902b7aec75080a"
+    },
+    {
+      "path": "blif/tapeout/task-016-circuit-1784.blif",
+      "bytes": 599,
+      "sha256": "df681f2b1d9a9d1dc8c2d2dc63d3101cd0ed27ac5d1eae525371ae9fa72b13f5"
+    },
+    {
+      "path": "blif/tapeout/task-017-circuit-917.blif",
+      "bytes": 244,
+      "sha256": "905f09a130e8d8fad6202c81ba87ec1072b88237d20c3a149f3df2309051d246"
+    },
+    {
+      "path": "blif/tapeout/task-018-circuit-1056.blif",
+      "bytes": 443,
+      "sha256": "904cd0cbc7540ae7797a21bc9c4787dc2a0c2ee2da232c23edd9aec263469a3b"
+    },
+    {
+      "path": "blif/tapeout/task-019-circuit-1057.blif",
+      "bytes": 440,
+      "sha256": "579ebee74db5e7a0cf3c876ba37ffce0c6333fd41e37bcb627f5c7b564502491"
+    },
+    {
+      "path": "blif/tapeout/task-020-circuit-919.blif",
+      "bytes": 335,
+      "sha256": "d123f6a7609c978a8de7bc47e4a07dc52126875586b96a695dae42ced19bcd6a"
+    },
+    {
+      "path": "blif/tapeout/task-021-circuit-1880.blif",
+      "bytes": 711,
+      "sha256": "b561892bbbd46ff2961ad2c82fe17ce96336aab74b1665a5aa870f5e8add578e"
+    },
+    {
+      "path": "blif/tapeout/task-022-circuit-1059.blif",
+      "bytes": 385,
+      "sha256": "41a9d27e4cf95e8de2be4efb5969f8eff71d0b42a6087fb6f15a23fe1bb9b8d0"
+    },
+    {
+      "path": "blif/tapeout/task-023-circuit-3422.blif",
+      "bytes": 676,
+      "sha256": "2142c1c6145cd7d785620d936654b6020e11b4852a48276d247963dda599e761"
+    },
+    {
+      "path": "blif/tapeout/task-024-circuit-1706.blif",
+      "bytes": 402,
+      "sha256": "3abd65915e44faa7d61ec9a703ef1dc118b5b078efc415034ef1a36b13b920cf"
+    },
+    {
+      "path": "blif/tapeout/task-025-circuit-11405.blif",
+      "bytes": 880,
+      "sha256": "94ed827f6a25290c813286af1f624bf86600227f995a5d6de20786303d69d5ff"
+    },
+    {
+      "path": "blif/tapeout/task-026-circuit-1061.blif",
+      "bytes": 326,
+      "sha256": "0adcd4b1345728be28dcb8407fb5a108df69ad8bb1c226a22b6c77d38c121a08"
+    },
+    {
+      "path": "blif/tapeout/task-027-circuit-1656.blif",
+      "bytes": 661,
+      "sha256": "27f863530a8faa5f573ccef6aa5663d15bea1536b1b3ebb2af5057d94f940944"
+    },
+    {
+      "path": "blif/tapeout/task-028-circuit-10266.blif",
+      "bytes": 903,
+      "sha256": "1575905616778ed6aebdce36db7ffc70c0b1530e8b49aabaefd9acfc123bcf47"
+    },
+    {
+      "path": "blif/tapeout/task-029-circuit-12781.blif",
+      "bytes": 749,
+      "sha256": "95cbccf5cde968c5ceb380c2d0f0741f99ec325c30b6f5ed55993dc85ebc864b"
+    },
+    {
+      "path": "blif/tapeout/task-030-circuit-3430.blif",
+      "bytes": 624,
+      "sha256": "436e3b945867efb92ec8b6b27d93597b9028ccedd5cb6a36de83015268ccde32"
+    },
+    {
+      "path": "blif/tapeout/task-031-circuit-1062.blif",
+      "bytes": 443,
+      "sha256": "bf5f7ce62fdf2f224f5cf7e46bb99cdb7b5f20958f8f0e0162381bfd574c3d46"
+    },
+    {
+      "path": "blif/tapeout/task-032-circuit-12094.blif",
+      "bytes": 735,
+      "sha256": "0281304c24719dd2795fd09dac68b81dbed015c291dc661d54f4b0b7ee816ea2"
+    },
+    {
+      "path": "blif/tapeout/task-033-circuit-13234.blif",
+      "bytes": 1571,
+      "sha256": "468bb645a861c9e946565a56abf47ac23bdbba0e29bf667514e0e5b5045256e5"
+    },
+    {
+      "path": "blif/tapeout/task-034-circuit-15532.blif",
+      "bytes": 3329,
+      "sha256": "fc5f5b5dfd75f1c7c273ae9c9eb15f3a152003491775afb0a542c00edae19ae4"
+    },
+    {
+      "path": "blif/tapeout/task-035-circuit-13809.blif",
+      "bytes": 6887,
+      "sha256": "a8391c966b237d93c910ae7f66b5e66c3831a5fbce48c7245c3814c2f281f1e5"
+    },
+    {
+      "path": "blif/tapeout/task-036-circuit-1063.blif",
+      "bytes": 549,
+      "sha256": "079169252ac9f18a3fb5a186ade918077f80c3e7d630e35c86bbc83b71b87ccf"
+    },
+    {
+      "path": "blif/tapeout/task-037-circuit-8871.blif",
+      "bytes": 1204,
+      "sha256": "2098d1efbce2a2df6772a336bd5ae92b76c0660adbd682655ddc435bfeafb5f2"
+    },
+    {
+      "path": "blif/tapeout/task-038-circuit-12033.blif",
+      "bytes": 2850,
+      "sha256": "a96e8b0619cc6ee69f7f8a058e6582224a4a4d020b72188dd0a3270d7022dc27"
+    },
+    {
+      "path": "blif/tapeout/task-039-circuit-13808.blif",
+      "bytes": 6564,
+      "sha256": "86d1d4774bd2e86895b51341427dbcf4f16a8a60b26e7218bfeadc628e45fb31"
+    },
+    {
+      "path": "blif/tapeout/task-040-circuit-12054.blif",
+      "bytes": 1721,
+      "sha256": "4c800eff269bc32f1275b2873e3d1845eb5ef19e7bcf7c674b0d4ea02cf9a660"
+    },
+    {
+      "path": "blif/tapeout/task-041-circuit-14642.blif",
+      "bytes": 3615,
+      "sha256": "73c190dd7ea97b321614b6f117afc57ea1545bfbe4d99a886562d80d6f39ea3c"
+    },
+    {
+      "path": "blif/tapeout/task-042-circuit-12733.blif",
+      "bytes": 2603,
+      "sha256": "0be21155b79662d96a82917d0654b0b87a57d799e520f9511a98bc2cb0041fbd"
+    },
+    {
+      "path": "blif/tapeout/task-043-circuit-2712.blif",
+      "bytes": 636,
+      "sha256": "010112ddca4fa862bfd43be0590b998900ec2bf2f840e3903364d836fa0c5724"
+    },
+    {
+      "path": "blif/tapeout/task-044-circuit-1644.blif",
+      "bytes": 567,
+      "sha256": "14d21d4d39c583af0560c884469a602e88c874262b82f3371ae46596f8aa39d4"
+    },
+    {
+      "path": "blif/tapeout/task-045-circuit-2004.blif",
+      "bytes": 615,
+      "sha256": "1e8b9e09489732f80400b28d01dca27baf2a21ee2e0a303fe63c7e5ad55a4dd7"
+    },
+    {
+      "path": "blif/tapeout/task-046-circuit-11490.blif",
+      "bytes": 1433,
+      "sha256": "562fa00d302817001fe338e1480731e1f4dcdd2451c2ad1b1c10831821707053"
+    },
+    {
+      "path": "blif/tapeout/task-047-circuit-3341.blif",
+      "bytes": 805,
+      "sha256": "09011204c1f5a7a5d48f734a68de68da26e65aa042884b0e21e6766568192fd2"
+    },
+    {
+      "path": "blif/tapeout/task-048-circuit-14947.blif",
+      "bytes": 2574,
+      "sha256": "c01cca93aac6f6fe0ecd5665b11c7a926408f3ad46c9fdfeca6abba1fa05ee89"
+    },
+    {
+      "path": "blif/tapeout/task-049-circuit-1064.blif",
+      "bytes": 544,
+      "sha256": "3ca888db7263d8a61211a5ce26c2ae78171bf1b0dab067f736aa7bb6937608c5"
+    },
+    {
+      "path": "blif/tapeout/task-050-circuit-1786.blif",
+      "bytes": 717,
+      "sha256": "fa14aec7800c60b24b3accb5f32f4b4204b00e811af026f86c69cd54494951cf"
+    },
+    {
+      "path": "blif/tapeout/task-051-circuit-1788.blif",
+      "bytes": 718,
+      "sha256": "dcab8c39f19af1b815cceb63d99d27ba45c6c56f31ee58bfc8dfe54a86da11bb"
+    },
+    {
+      "path": "blif/tapeout/task-052-circuit-3464.blif",
+      "bytes": 811,
+      "sha256": "169cd090c1d3d74fe707b0b7a38b4a71d28ca5f110429c9c9838c93bbd82be5c"
+    },
+    {
+      "path": "blif/tapeout/task-053-circuit-13432.blif",
+      "bytes": 2592,
+      "sha256": "af9269f82b19a17e26ca5b306e60617bc571fb8db6b2c3acff16de5138671fe3"
+    },
+    {
+      "path": "blif/tapeout/task-054-circuit-1065.blif",
+      "bytes": 475,
+      "sha256": "e4197e3ab74ba0d014bfa31a347e8c1705649c82ceb36e61ab1ade80864b29a5"
+    },
+    {
+      "path": "blif/tapeout/task-055-circuit-3206.blif",
+      "bytes": 737,
+      "sha256": "1b68029932c46c5cccd074382acfda3d93d1e44faac9c0c37e30299519cb2e65"
+    },
+    {
+      "path": "blif/tapeout/task-056-circuit-2031.blif",
+      "bytes": 722,
+      "sha256": "c6c505ba1e6d4fe3289c991be718abc2ecc4f39ed60f7769c9b864dee4fe834b"
+    },
+    {
+      "path": "blif/tapeout/task-057-circuit-13147.blif",
+      "bytes": 1125,
+      "sha256": "98f9f0cc316057f949a5bbf4e57c6296cc7ad76f63b0959743178e7b45276ff5"
+    },
+    {
+      "path": "blif/tapeout/task-058-circuit-1066.blif",
+      "bytes": 495,
+      "sha256": "495bc751b71faa5caade8f1e53615ad66e544c759028d1916e77c3e4b9e1d0d3"
+    },
+    {
+      "path": "blif/tapeout/task-059-circuit-14079.blif",
+      "bytes": 1352,
+      "sha256": "bcccc381d7e29b3f084ffb9d39f21f8792fd3c93beed55a37c28389af8509b8b"
+    },
+    {
+      "path": "blif/tapeout/task-060-circuit-13130.blif",
+      "bytes": 3496,
+      "sha256": "7ce19709d07254d783a9987874e41baf0382a27bf04990a19e2c953f1d68418b"
+    },
+    {
+      "path": "blif/tapeout/task-061-circuit-14335.blif",
+      "bytes": 21328,
+      "sha256": "7915d78ca2c205f9c9ff1d204037ea09c39bc605e9808515f4a3cd51f578d543"
+    },
+    {
+      "path": "blif/tapeout/task-062-circuit-2217.blif",
+      "bytes": 781,
+      "sha256": "68e25b3bf698b476c18b2c1d54fe63916cd0d0656c61ad7b4b1b7f0d179012bc"
+    },
+    {
+      "path": "blif/tapeout/task-063-circuit-15255.blif",
+      "bytes": 7733,
+      "sha256": "ac1c328d326c60648caab134dd3a345da97d687a2eebdead9ce7bc942e622127"
+    },
+    {
+      "path": "blif/tapeout/task-064-circuit-2527.blif",
+      "bytes": 570,
+      "sha256": "7e63ed52eb73528a440616d1d24a81ccdd8b5b11e685e9b220a58459b94c67b5"
+    },
+    {
+      "path": "blif/tapeout/task-065-circuit-4889.blif",
+      "bytes": 642,
+      "sha256": "aeaac1f1cd25d4c2c7d25ce8175dd816621d3d45d23e4083d0f33ae22a8f8698"
+    },
+    {
+      "path": "blif/tapeout/task-066-circuit-6030.blif",
+      "bytes": 1126,
+      "sha256": "5e315c39e0055f5b49c0345dd255ba54f9a47e3ef541b75d8f81ddaff9e10c7a"
+    },
+    {
+      "path": "blif/tapeout/task-067-circuit-4465.blif",
+      "bytes": 817,
+      "sha256": "bd64100f62b3268cead25598b30acc14bd651fbb753fd13fd8dbf2a7078d6efc"
+    },
+    {
+      "path": "blif/tapeout/task-068-circuit-2739.blif",
+      "bytes": 1538,
+      "sha256": "7b87ffbbe2537a2473279ab84702ef4eb28f90d8a2091eff3d7a989d94cb2a77"
+    },
+    {
+      "path": "blif/tapeout/task-069-circuit-2082.blif",
+      "bytes": 1706,
+      "sha256": "fae608fc4b6964ab50daacf5c7118d8258a0d2f545ff4164d55352c1b638c627"
+    },
+    {
+      "path": "blif/tapeout/task-070-circuit-15752.blif",
+      "bytes": 2767,
+      "sha256": "bd27a1aeb2e1473c156554084775b7b399b9da915d914b9e8e6aa9107057ab10"
+    },
+    {
+      "path": "blif/tapeout/task-071-circuit-2573.blif",
+      "bytes": 528,
+      "sha256": "c308bd8f654a614f24be82bc8b295c9c3ab9a6de50ca2380c6b86389a1188369"
+    },
+    {
+      "path": "blif/tapeout/task-072-circuit-12714.blif",
+      "bytes": 1297,
+      "sha256": "2e80bedea71b2e808b7e54c31e799382b59de3928b291e2e83b4e174383af2ea"
+    },
+    {
+      "path": "blif/tapeout/task-090-circuit-3848.blif",
+      "bytes": 1286,
+      "sha256": "18da2607b7d2889ac2c1c061df3450426fefb6cb5d092ff720280e95010433f2"
+    },
+    {
+      "path": "blif/tapeout/task-091-circuit-13236.blif",
+      "bytes": 1559,
+      "sha256": "78b450df94fd88d072d510e2b3cc26c1904b7be868a5e6381f98e2c8ec588edc"
+    },
+    {
+      "path": "blif/tapeout/task-092-circuit-1067.blif",
+      "bytes": 383,
+      "sha256": "e75c5bedbc2208ce1b9048bede221c8ec6171543a6e639ee5cf09bc5c406e22e"
+    },
+    {
+      "path": "blif/tapeout/task-093-circuit-13883.blif",
+      "bytes": 3235,
+      "sha256": "13ba14e8a8c867452f6cc525768f80e73f03e05a7173e4d16c5573d4d70f41de"
+    },
+    {
+      "path": "blif/tapeout/task-094-circuit-14917.blif",
+      "bytes": 4783,
+      "sha256": "cc107f6fba29ec832e06af450dffb1aa36e99c7744bf6287f4f6019b0bd0708b"
+    },
+    {
+      "path": "blif/tapeout/task-102-circuit-929.blif",
+      "bytes": 321,
+      "sha256": "373885691d5405813b10baa35b13343b61e1d2f67379dcb126eefd62a8342df4"
+    },
+    {
+      "path": "blif/tapeout/task-103-circuit-930.blif",
+      "bytes": 389,
+      "sha256": "aa58ffeaa35e7f0da9e1b627b61e58e95ae6cee0577b355486a9246a7792e5b9"
+    },
+    {
+      "path": "blif/tapeout/task-104-circuit-931.blif",
+      "bytes": 569,
+      "sha256": "b7ddd6fcfbf05357259a30459b40200100e13f26ae7a3210b606d8128e71ab95"
+    },
+    {
+      "path": "blif/tapeout/task-105-circuit-1670.blif",
+      "bytes": 611,
+      "sha256": "3bbf88ff02b0218ab3a447b2528ff191daf0fbab9b4e28786c31af0dff28a30c"
+    },
+    {
+      "path": "blif/tapeout/task-106-circuit-933.blif",
+      "bytes": 541,
+      "sha256": "be811a3d3f9fdb4fcb95e07e91caa349139d37b231224d50da40b0e953d4904d"
+    },
+    {
+      "path": "blif/tapeout/task-107-circuit-934.blif",
+      "bytes": 689,
+      "sha256": "321f504b4c3e5c76fb9342bfa8b9ce7ee936cd4355be5460e771edd6fed984e4"
+    },
+    {
+      "path": "blif/tapeout/task-108-circuit-935.blif",
+      "bytes": 1067,
+      "sha256": "d834455b185761a935087fddc4a220832a5e4e873f9cf54ce9bd7d466d86704b"
+    },
+    {
+      "path": "blif/tapeout/task-109-circuit-1233.blif",
+      "bytes": 1145,
+      "sha256": "00be2b439f6f2065e4a1e9a3588fe7464cc5581570385346b03b645c54f98f1d"
+    },
+    {
+      "path": "blif/tapeout/task-110-circuit-9147.blif",
+      "bytes": 854,
+      "sha256": "208eceb9dd82deb46880e0e1c43dfcf028f3fa0a1cc0c4f1baa17a78fb3c9c68"
+    },
+    {
+      "path": "blif/tapeout/task-111-circuit-13803.blif",
+      "bytes": 1058,
+      "sha256": "71e50826a4ba9f6e0eec68afca42631f27a0c9f84b53d71fe17b0e2f0b5e8c90"
+    },
+    {
+      "path": "blif/tapeout/task-112-circuit-15930.blif",
+      "bytes": 1810,
+      "sha256": "c695c9d568be805f907fd0e2a800791a0857444ec200e1f9d00e6cd627fb1bdc"
+    },
+    {
+      "path": "blif/tapeout/task-113-circuit-11384.blif",
+      "bytes": 1776,
+      "sha256": "6001db016d0791a205d6cb5564f2ef0625e044172b4d52df1686777f5482ce55"
+    },
+    {
+      "path": "blif/tapeout/task-114-circuit-13740.blif",
+      "bytes": 1914,
+      "sha256": "074ed68c41dd0df5e73fbca66313cefa61c0a92169c947dc3e6eb6823574d8da"
+    },
+    {
+      "path": "blif/tapeout/task-115-circuit-13529.blif",
+      "bytes": 2163,
+      "sha256": "3bdff43ee115295544c3e804eb87c2392ca9045cf1b4b216866888b1a6c84905"
+    },
+    {
+      "path": "blif/tapeout/task-116-circuit-12281.blif",
+      "bytes": 2293,
+      "sha256": "414083b6ef3f2d83dbb252cada03dbd93dfc53379f756f0e1327cc25a54815a0"
+    },
+    {
+      "path": "blif/tapeout/task-117-circuit-13305.blif",
+      "bytes": 2773,
+      "sha256": "e350cd7956a89ed2408cb788917e5b8704d22ef8c21323e57bfb5caf461af0b8"
+    },
+    {
+      "path": "blif/tapeout/task-118-circuit-7920.blif",
+      "bytes": 678,
+      "sha256": "fd13f763827c8fa993e7d807b674687a59f9d94917480d381f23dcf98a615fcf"
+    },
+    {
+      "path": "blif/tapeout/task-119-circuit-12989.blif",
+      "bytes": 1027,
+      "sha256": "a171be52ffd20e0b1243a5f74364d2e05b301aac284d16dd2f7f3afd8a62b387"
+    },
+    {
+      "path": "blif/tapeout/task-120-circuit-13427.blif",
+      "bytes": 1880,
+      "sha256": "8e5b0c979b4534583916da70f9348fcf8f4d61c7fa2f2dc1cf10c40b0d9a1bee"
+    },
+    {
+      "path": "blif/tapeout/task-121-circuit-15685.blif",
+      "bytes": 2116,
+      "sha256": "89904819d6d9f910c9d83e830feca85ea312a4725019ea79b991c83043a08a5c"
+    },
+    {
+      "path": "blif/tapeout/task-122-circuit-939.blif",
+      "bytes": 266,
+      "sha256": "697cc277d0f32327116d8db962f82f72f860e20b0b6a982556cb3e91d4c80624"
+    },
+    {
+      "path": "blif/tapeout/task-123-circuit-1074.blif",
+      "bytes": 451,
+      "sha256": "d5fb054d757976bfc8515419be4991087215525439465325506ce49afd19b1f2"
+    },
+    {
+      "path": "blif/tapeout/task-124-circuit-2252.blif",
+      "bytes": 725,
+      "sha256": "b7fa4bfc7a8169f7129a1ba189aaf80de8cd625e6682b748609e7f8d3dace34b"
+    },
+    {
+      "path": "blif/tapeout/task-125-circuit-7832.blif",
+      "bytes": 988,
+      "sha256": "76c8615ea8ef91175b6d2aa4d6bd88ade4b1a6dbab3ed181f33cb48f9723f9ff"
+    },
+    {
+      "path": "blif/tapeout/task-126-circuit-13059.blif",
+      "bytes": 1188,
+      "sha256": "e51835ee5d84f8d87d14112afba331dc14634daf2d0c30a111d377b8affc45a2"
+    },
+    {
+      "path": "blif/tapeout/task-127-circuit-1075.blif",
+      "bytes": 383,
+      "sha256": "31dab7f409ededc760bb482e8c490d4a87d385662293a01aacf2cc428899a7bf"
+    },
+    {
+      "path": "blif/tapeout/task-128-circuit-5960.blif",
+      "bytes": 790,
+      "sha256": "ff1ebd8442255b67d7524f6864e25299585f5bceac856a49dcf195288e19f96b"
+    },
+    {
+      "path": "blif/tapeout/task-129-circuit-11469.blif",
+      "bytes": 1024,
+      "sha256": "6bb29fd57434e3a1df5147ac83851ec0d676f49022ba8370fab39fc4f672ee7c"
+    },
+    {
+      "path": "blif/tapeout/task-130-circuit-9022.blif",
+      "bytes": 1435,
+      "sha256": "8514fb6de61672af50e715c8e95f1cf6a712f76bd518dd416282d18dc6a816a6"
+    },
+    {
+      "path": "blif/tapeout/task-131-circuit-3408.blif",
+      "bytes": 742,
+      "sha256": "8d79feb694c60052442fa329bb09e959986bde4cd318c59cd361b2b304786d6c"
+    },
+    {
+      "path": "blif/tapeout/task-132-circuit-6060.blif",
+      "bytes": 949,
+      "sha256": "b3cee58cc014e17dc744a01426e936e4f1b2f7e1a2da6bc421ff6f8baeb5fe84"
+    },
+    {
+      "path": "blif/tapeout/task-133-circuit-8692.blif",
+      "bytes": 1473,
+      "sha256": "b829400b68499296e79713bff4b63c818769fbf79aa20e63c4d4cfa9ebf5e404"
+    },
+    {
+      "path": "blif/tapeout/task-134-circuit-10265.blif",
+      "bytes": 894,
+      "sha256": "fe83f765b1fb9d525540667d903e981882747867efe316e415b0b557cd13333b"
+    },
+    {
+      "path": "blif/tapeout/task-135-circuit-13644.blif",
+      "bytes": 1313,
+      "sha256": "529582e66cc140f2e2ebc65470820aed18fb45c5406059e8741bd9b04a343602"
+    },
+    {
+      "path": "blif/tapeout/task-136-circuit-14078.blif",
+      "bytes": 1617,
+      "sha256": "2749aaeed93cc754275c30a567e7d3bdcc788e201684a32d73b27ced716fbd40"
+    },
+    {
+      "path": "blif/tapeout/task-137-circuit-1076.blif",
+      "bytes": 399,
+      "sha256": "7b09eca3d4c472ed220e3f1e3f59da1f5b3ab1318bdbca0290a7fa4d80d4c079"
+    },
+    {
+      "path": "blif/tapeout/task-138-circuit-1077.blif",
+      "bytes": 330,
+      "sha256": "bf13fe8d7b1616f71fda516a70d15fba620574c6a51bae86c764aa7d7f0dda1a"
+    },
+    {
+      "path": "blif/tapeout/task-139-circuit-1848.blif",
+      "bytes": 574,
+      "sha256": "c14047e6d541e0fb280f9afeaf146ef6376bdddf5faf7fdf40a7252a7742df40"
+    },
+    {
+      "path": "blif/tapeout/task-140-circuit-2649.blif",
+      "bytes": 593,
+      "sha256": "4c505137589fae098d5831eda350e36a48e15af3b89b4468fa2cd242e2619e8e"
+    },
+    {
+      "path": "blif/tapeout/task-141-circuit-13445.blif",
+      "bytes": 939,
+      "sha256": "e6a2e0f435f65fff3a86d0f4d14bcc6d1c2f711adfc289cda02fc253864e3cb3"
+    },
+    {
+      "path": "blif/tapeout/task-142-circuit-12806.blif",
+      "bytes": 918,
+      "sha256": "986642714d9078659a0e3be814884fb914df98921cd74e033abb7bd1c3a7913a"
+    },
+    {
+      "path": "blif/tapeout/task-143-circuit-15650.blif",
+      "bytes": 1129,
+      "sha256": "93acd2adb38c2391c89cf4fde4978ecc2d2eea8f90fca26706d130375621e56a"
+    },
+    {
+      "path": "blif/tapeout/task-144-circuit-12836.blif",
+      "bytes": 1205,
+      "sha256": "6698488cbcd9122b29bf937593aabeb805567e06eedf4df0fab2f7ff042f4eb4"
+    },
+    {
+      "path": "blif/tapeout/task-145-circuit-13319.blif",
+      "bytes": 1699,
+      "sha256": "341fcfe53d949d3cfe6905ac3a4470ca20c767ae57b7b46c5750c670489e837e"
+    },
+    {
+      "path": "blif/tapeout/task-146-circuit-12763.blif",
+      "bytes": 1336,
+      "sha256": "48f38d07a955a2fcfb85054c99697a6038fb41e68890058b78142a9135a39bd5"
+    },
+    {
+      "path": "blif/tapeout/task-147-circuit-3389.blif",
+      "bytes": 602,
+      "sha256": "bd9b8b46949752ebc7d4ee8bf23d8d0eab9dfc29cf0a000f6ee3597cbb441428"
+    },
+    {
+      "path": "blif/tapeout/task-148-circuit-2032.blif",
+      "bytes": 642,
+      "sha256": "1f21bd28be78f84007183c5f61d919530d0578a961488a981bb18395610c48bb"
+    },
+    {
+      "path": "blif/tapeout/task-149-circuit-15677.blif",
+      "bytes": 1694,
+      "sha256": "b49c2391d11acd19291606e814e190b3be65f520016760a6541d3403f5c37f78"
+    },
+    {
+      "path": "blif/tapeout/task-150-circuit-13056.blif",
+      "bytes": 1654,
+      "sha256": "fd0881dd70c123a16526dfbfd78dda91836944333a23a8d431b6707d6ef13f9e"
+    },
+    {
+      "path": "blif/tapeout/task-151-circuit-12903.blif",
+      "bytes": 1756,
+      "sha256": "c2743e94b0d7e50bd043461045fe62bf7f07fae69b5e1a2ae129a7a6ffecf3af"
+    },
+    {
+      "path": "blif/tapeout/task-152-circuit-15208.blif",
+      "bytes": 1879,
+      "sha256": "8e3d4a2fab13365feb5acd2f1af5cd3d29abb5a52f29df95e992640dccc7b653"
+    },
+    {
+      "path": "blif/tapeout/task-153-circuit-7667.blif",
+      "bytes": 2093,
+      "sha256": "eb27e50a9249502a7bc12beac72a1debd4dd887164cd0043a6c33303dd6a153c"
+    },
+    {
+      "path": "blif/tapeout/task-154-circuit-15250.blif",
+      "bytes": 2057,
+      "sha256": "b6ffd23215d6d19f2c40a92585cffb26f9ba6faf89243a5364cfb48cd6d02ea5"
+    },
+    {
+      "path": "blif/tapeout/task-155-circuit-1078.blif",
+      "bytes": 445,
+      "sha256": "b6f63266899cee8d490aa3dcc71d14b4748f83db175dacfe793a2af5a51f9cd2"
+    },
+    {
+      "path": "blif/tapeout/task-156-circuit-12046.blif",
+      "bytes": 1106,
+      "sha256": "af8364030773b295f05f7c1f6eef6a56d2b31536d9154394e7ae33265700cdd3"
+    },
+    {
+      "path": "blif/tapeout/task-157-circuit-15253.blif",
+      "bytes": 1729,
+      "sha256": "78c814b27faabace3ca254b76f19efa70549c4802e2bd997269b71bb96312f5d"
+    },
+    {
+      "path": "blif/tapeout/task-158-circuit-13224.blif",
+      "bytes": 4660,
+      "sha256": "5a45e42fc2f240690a5ae3402a7471a0c5c4a2701c05ac28f9deb8d82081c098"
+    },
+    {
+      "path": "blif/tapeout/task-159-circuit-1655.blif",
+      "bytes": 1006,
+      "sha256": "36c3d1f8ed0b3a86285c1691596eca74b908560d3717e7165171a56a1d3cf7af"
+    },
+    {
+      "path": "blif/tapeout/task-160-circuit-1079.blif",
+      "bytes": 526,
+      "sha256": "100999b608a0fa43a52f074a414d31b88d9825b08e9342d6b9c0135d8e00a64f"
+    },
+    {
+      "path": "blif/tapeout/task-161-circuit-12689.blif",
+      "bytes": 1008,
+      "sha256": "c3fc351c1133c5dd4fef579ec67372bd71ef56e0bb5c7fca1fafcd636d93490a"
+    },
+    {
+      "path": "blif/tapeout/task-162-circuit-1080.blif",
+      "bytes": 367,
+      "sha256": "64d2d0aa0485a0f6659f368d5a0992b105f5b136c23f7e813411c30c9fa33fac"
+    },
+    {
+      "path": "blif/tapeout/task-163-circuit-1081.blif",
+      "bytes": 447,
+      "sha256": "983092e3566dad2bca85dfb80db7a9a8da51a6cc1dc0f32c8ccc821700e17b37"
+    },
+    {
+      "path": "blif/tapeout/task-164-circuit-1082.blif",
+      "bytes": 592,
+      "sha256": "baa30801b1138844861df42923acfd725d8db853d4457d865f6158e60f40584e"
+    },
+    {
+      "path": "blif/tapeout/task-165-circuit-13744.blif",
+      "bytes": 952,
+      "sha256": "a05b40c9fac2fd4035e5199468eae0d55a22ea04ec4aa0d174da7abb87b17a3a"
+    },
+    {
+      "path": "blif/tapeout/task-166-circuit-1764.blif",
+      "bytes": 710,
+      "sha256": "65264ff866fc8e311f23f03b55a80a628fa6738928bef2fbd5ca45ce0f2f1480"
+    },
+    {
+      "path": "blif/tapeout/task-167-circuit-4232.blif",
+      "bytes": 1246,
+      "sha256": "ae9e1d33a592af377e33516c6c2f86dca5cb8ae2f6038720d0bd6af72c9729a6"
+    },
+    {
+      "path": "blif/tapeout/task-168-circuit-1312.blif",
+      "bytes": 940,
+      "sha256": "c55c96ac239f970ab633f664434db007120add84d11ed28c9592611f02bc1076"
+    },
+    {
+      "path": "blif/tapeout/task-169-circuit-1508.blif",
+      "bytes": 1984,
+      "sha256": "83f2a6c313a2456c52d1f8423c5fc6d0f2ddfb378439d618eb5b37aad06ca0a8"
+    },
+    {
+      "path": "blif/tapeout/task-170-circuit-13806.blif",
+      "bytes": 2594,
+      "sha256": "61772d2dcd9c145cb59e7c8bd832e0f606739fd3cd7255e806fb13f40415997a"
+    },
+    {
+      "path": "blif/tapeout/task-171-circuit-4390.blif",
+      "bytes": 2230,
+      "sha256": "4a3dd4ce60d85064360522d283514b69f0fe7e2424040275630e2022dc077f7a"
+    },
+    {
+      "path": "blif/tapeout/task-172-circuit-4417.blif",
+      "bytes": 2230,
+      "sha256": "8c094729aeed610a89aae8d0872a32ede213d954b1c10ca713e2056247cac4dd"
+    },
+    {
+      "path": "blif/tapeout/task-173-circuit-15577.blif",
+      "bytes": 6395,
+      "sha256": "ba4bec3618bb0f1e7027a65de1a829c264e86d6319f21f25231c0d662b7371ae"
+    },
+    {
+      "path": "blif/tapeout/task-174-circuit-15900.blif",
+      "bytes": 10093,
+      "sha256": "e582289a05420eb97fb62886db43bc119d5f247973e45852d203c9d7567d1b6b"
+    },
+    {
+      "path": "blif/tapeout/task-175-circuit-10843.blif",
+      "bytes": 1503,
+      "sha256": "4f2886dd02406f700bbc91bc3359f2c6c1e758ffc2e008f827d409ed9dc8b07e"
+    },
+    {
+      "path": "blif/tapeout/task-176-circuit-15720.blif",
+      "bytes": 2486,
+      "sha256": "9606dbc0889aecbff3a7309578144d9bfdf7e1d82bf07b89665388657e0bf5e7"
+    },
+    {
+      "path": "blif/tapeout/task-177-circuit-1083.blif",
+      "bytes": 639,
+      "sha256": "46ebd8bcd8f7eac40fb544fa8e04aee60ad891585c302ff70d8735d74b271064"
+    },
+    {
+      "path": "blif/tapeout/task-178-circuit-2618.blif",
+      "bytes": 764,
+      "sha256": "798dd70a776691b2ab295c2552ffff20138e30d24df73f4b8ba118f8015d39f9"
+    },
+    {
+      "path": "blif/tapeout/task-179-circuit-3171.blif",
+      "bytes": 914,
+      "sha256": "58cab7510fc21601b49f23a06a68d26314f601707f5278b7df1a6f273fe0777e"
+    },
+    {
+      "path": "blif/tapeout/task-180-circuit-1993.blif",
+      "bytes": 754,
+      "sha256": "f004f09d6a59f7e3b001fed7bb65b3d1d2635a4770e7710769e379e67dbd0a05"
+    },
+    {
+      "path": "blif/tapeout/task-181-circuit-4456.blif",
+      "bytes": 924,
+      "sha256": "f1c12f2ee0e1a16d7bcacd8a9c5c943993754e28a2d26bc34b6e880b1b24173a"
+    },
+    {
+      "path": "blif/tapeout/task-182-circuit-2025.blif",
+      "bytes": 706,
+      "sha256": "aacd4842f94853d937298eb3692f10e7bac525780742878e6e52588eba77dc75"
+    },
+    {
+      "path": "blif/tapeout/task-183-circuit-3505.blif",
+      "bytes": 936,
+      "sha256": "385d6f56213d8ff9f164c5f59d1b0ca959a19c13e4df9cd0bd56d48e715453e0"
+    },
+    {
+      "path": "blif/tapeout/task-184-circuit-1084.blif",
+      "bytes": 452,
+      "sha256": "da37af7e51ece1ffed647898fba4109c54fc6b3b228bd54e242d79bb14c78178"
+    },
+    {
+      "path": "blif/tapeout/task-185-circuit-1085.blif",
+      "bytes": 359,
+      "sha256": "e1313824cce6d281b5c8aac01f18e283b9fac3a20dbd6bbf413f8fd545f9f04f"
+    },
+    {
+      "path": "blif/tapeout/task-186-circuit-1086.blif",
+      "bytes": 436,
+      "sha256": "914459959579c3926d3ffef034071f1abecd85a1b32541122cb99a09f509c199"
+    },
+    {
+      "path": "blif/tapeout/task-187-circuit-10917.blif",
+      "bytes": 864,
+      "sha256": "46062c99f6b2cf64537be3ad7353ed1cedf27ba5b80c9658c20146c5515d30c0"
+    },
+    {
+      "path": "blif/tapeout/task-188-circuit-1653.blif",
+      "bytes": 531,
+      "sha256": "df4661eb9057198d5ad02a4f8b54acb9cb7fa06c897b8860e7312d771774ec9f"
+    },
+    {
+      "path": "blif/tapeout/task-189-circuit-1992.blif",
+      "bytes": 681,
+      "sha256": "5df923dc6ce918cf608dfdee53b92d927dd75eba612700b65b5dd84bffb1795f"
+    },
+    {
+      "path": "blif/tapeout/task-190-circuit-11401.blif",
+      "bytes": 687,
+      "sha256": "2a50c8cf82f6023de5dcd26c40223a76bc3a2a882045969ad2ab8395dd852220"
+    },
+    {
+      "path": "blif/tapeout/task-191-circuit-7644.blif",
+      "bytes": 914,
+      "sha256": "8d67f6129c5f727944bce4921f7a9b84e5c9cf18af3c47a9a6fe646b14814173"
+    },
+    {
+      "path": "blif/tapeout/task-192-circuit-2808.blif",
+      "bytes": 1181,
+      "sha256": "60cef10f423cc87fbdad2594b3464fbe4fca891b4c51ad4119f5578797cdda03"
+    },
+    {
+      "path": "blif/tapeout/task-193-circuit-2913.blif",
+      "bytes": 2942,
+      "sha256": "0be319b55a3f327d744a68b3918438f97292e3026384ebf2f21afa1ac65e69aa"
+    },
+    {
+      "path": "blif/tapeout/task-194-circuit-1977.blif",
+      "bytes": 1354,
+      "sha256": "a90d20145994097b8be4095d43b37b6aea204070e20603ce948a0c76100590b3"
+    },
+    {
+      "path": "blif/tapeout/task-195-circuit-12883.blif",
+      "bytes": 1824,
+      "sha256": "527465d08c854b00a99583180e6d4441f7b2f81a385acf5d1c67750eae7b9577"
+    },
+    {
+      "path": "blif/tapeout/task-196-circuit-12999.blif",
+      "bytes": 1726,
+      "sha256": "9046379bc8ce9ee56dd1df6dd4974b82d3390ba1b26da55f525392b682f7bac7"
+    },
+    {
+      "path": "blif/tapeout/task-197-circuit-952.blif",
+      "bytes": 481,
+      "sha256": "3eb609e46038f9fb16b4e6e982e6a5e2c31385aaa82b339ed70e91e1e011edd6"
+    },
+    {
+      "path": "blif/tapeout/task-198-circuit-953.blif",
+      "bytes": 865,
+      "sha256": "f7ebe51dd7fed945f017cc7a486961221366fb24be73b665ffd1ec330d9f2d7b"
+    },
+    {
+      "path": "blif/tapeout/task-199-circuit-954.blif",
+      "bytes": 1225,
+      "sha256": "20dd7a2cd8d592acf522171c65e69fbe40b92fbace3ad4d1b362595a6d2cb525"
+    },
+    {
+      "path": "blif/tapeout/task-200-circuit-2214.blif",
+      "bytes": 1801,
+      "sha256": "e213e002ee20414d1c638749e2a5155484e9ba575f5d5841d9ede38f1259d618"
+    },
+    {
+      "path": "blif/tapeout/task-201-circuit-15163.blif",
+      "bytes": 1178,
+      "sha256": "0fa41a8c56a84b60c14b505771bede25c95ae7f76e7973546cb69922eec23437"
+    },
+    {
+      "path": "blif/tapeout/task-202-circuit-1889.blif",
+      "bytes": 530,
+      "sha256": "328cc9729db35bbfc9600a2819efd523a7f0d373f9945f67a753547faec46422"
+    },
+    {
+      "path": "blif/tapeout/task-203-circuit-1088.blif",
+      "bytes": 444,
+      "sha256": "5b431c12499aa738abf68a6759c54dcc1daf816e63ee2d55c1ca1812914c778a"
+    },
+    {
+      "path": "blif/tapeout/task-204-circuit-10320.blif",
+      "bytes": 957,
+      "sha256": "a25e77c6a7a2af21580bbc3d6028ff8d2230c2c35acb15f103f433267c986527"
+    },
+    {
+      "path": "blif/tapeout/task-205-circuit-14652.blif",
+      "bytes": 1392,
+      "sha256": "823c88d900d7ccea6a9311248065f3193e7a440d2d6a312368bc1145e53356b6"
+    },
+    {
+      "path": "blif/tapeout/task-206-circuit-1089.blif",
+      "bytes": 259,
+      "sha256": "46969cf68fac2c28b0753518126f309414d1488356d0870f5c22e805ccbbca5c"
+    },
+    {
+      "path": "blif/tapeout/task-207-circuit-11880.blif",
+      "bytes": 889,
+      "sha256": "1063c0aeee885021d45a7180cd5de0dbb5947be40966bddca012f49ec9152355"
+    },
+    {
+      "path": "blif/tapeout/task-208-circuit-3490.blif",
+      "bytes": 955,
+      "sha256": "1572505b66bf3a98dd28866764259cbedf628dd970825a3f5e67b1250ca91797"
+    },
+    {
+      "path": "blif/tapeout/task-209-circuit-15742.blif",
+      "bytes": 3021,
+      "sha256": "7321d3785e78a447c1f8bf20adb5509951bfdd76dc6a7c25d8e8378e4c6e7ecd"
+    },
+    {
+      "path": "blif/tapeout/task-210-circuit-13308.blif",
+      "bytes": 3226,
+      "sha256": "093fe9a26850eed8153f2230cc9889542daa94a320ea798e74348133a0e771a7"
+    },
+    {
+      "path": "blif/tapeout/task-238-circuit-955.blif",
+      "bytes": 253,
+      "sha256": "c938364a2364a2b84ebfac23dc24fcf9c83f736809b08dfba34c87f8aa92c9c9"
+    },
+    {
+      "path": "blif/tapeout/task-239-circuit-956.blif",
+      "bytes": 461,
+      "sha256": "bb81db92bde78aa8d211ec2e4212cc22ef0b3c8ada6f0e8ccbcfe8de34d1e84e"
+    },
+    {
+      "path": "blif/tapeout/task-240-circuit-957.blif",
+      "bytes": 405,
+      "sha256": "2fb3eb5b12bc033ab8ea0164098db02abdd6778efe01f950d775c8522bc18f66"
+    },
+    {
+      "path": "blif/tapeout/task-241-circuit-958.blif",
+      "bytes": 841,
+      "sha256": "42810aee29183c8dfce995e3a19a954269c8b58e07ebef84d14f73c53c899e66"
+    },
+    {
+      "path": "blif/tapeout/task-242-circuit-1092.blif",
+      "bytes": 600,
+      "sha256": "8894003168f635f2826fab4a2d7aad3feb6cc95fd5c636bb43a2ef2901ea2dee"
+    },
+    {
+      "path": "blif/tapeout/task-243-circuit-1093.blif",
+      "bytes": 516,
+      "sha256": "44f5860fdec2f1965bd0363d6adfe1328a99beb9ec519fe6d1830a06738919ba"
+    },
+    {
+      "path": "blif/tapeout/task-244-circuit-2487.blif",
+      "bytes": 677,
+      "sha256": "d879fe8fb75c05eca8690d9561d6414ca70bfd1a4b8399deff335fd0a554ee68"
+    },
+    {
+      "path": "blif/tapeout/task-245-circuit-1094.blif",
+      "bytes": 209,
+      "sha256": "36cea0adb5c37b340aa387509c5801c03f322c4e72e4aa208632d373fc7d2a11"
+    },
+    {
+      "path": "blif/tapeout/task-246-circuit-1095.blif",
+      "bytes": 216,
+      "sha256": "6646c468479ae075897024f1db01d6b3bb5fe32dee91dc85df97c63a2d37f709"
+    },
+    {
+      "path": "blif/tapeout/task-247-circuit-1096.blif",
+      "bytes": 351,
+      "sha256": "bfbc2b53da827e9e7926f82f9801e742dfd98cc8338c11bb20844d8e62f33a85"
+    },
+    {
+      "path": "blif/tapeout/task-248-circuit-1097.blif",
+      "bytes": 265,
+      "sha256": "83436c8abcb884107c8059560bf55f160d7926666cc71e1994479566159a08e6"
+    },
+    {
+      "path": "blif/tapeout/task-249-circuit-3424.blif",
+      "bytes": 678,
+      "sha256": "038dabf39b07f07e93e1f793d264509c4ecccaa8e369a0e2f5e7d09a1b67a009"
+    },
+    {
+      "path": "blif/tapeout/task-250-circuit-3372.blif",
+      "bytes": 505,
+      "sha256": "032a506f8aecf6a1fe74a8f8c079d92340dee1d69edde7be332e62b192bc2215"
+    },
+    {
+      "path": "blif/tapeout/task-251-circuit-5044.blif",
+      "bytes": 920,
+      "sha256": "3f4f2c971aa5359e5a90b365ffe5b373c321ae034d7d94d249b247b1cbcf4201"
+    },
+    {
+      "path": "blif/tapeout/task-252-circuit-1750.blif",
+      "bytes": 813,
+      "sha256": "1b6b5f9af907def5b81d7273e262d8100bfc3b22841d10ff5e68524089db43a6"
+    },
+    {
+      "path": "blif/tapeout/task-253-circuit-2951.blif",
+      "bytes": 1111,
+      "sha256": "854396232ee2d2097f05bef88351744abb04e89566c4dab24903c5358125b8a3"
+    },
+    {
+      "path": "blif/tapeout/task-254-circuit-12221.blif",
+      "bytes": 2857,
+      "sha256": "414abe1bfae0c188f80a9a080228a5dec5645b484eb56803488c3861bb916e72"
+    },
+    {
+      "path": "blif/tapeout/task-255-circuit-3194.blif",
+      "bytes": 2155,
+      "sha256": "73d5ef4187ff90dd543ad38f027339d148d2ada19cac9ba279a0a89d5df31578"
+    },
+    {
+      "path": "blif/tapeout/task-256-circuit-14923.blif",
+      "bytes": 2167,
+      "sha256": "b2c07627a950cd338a4e408a919098f87f9d47cb3eda6a661d795f1a5651bd4c"
+    },
+    {
+      "path": "blif/tapeout/task-257-circuit-1098.blif",
+      "bytes": 524,
+      "sha256": "853db3fa5b2e91634c2db02442bcbbbd6a4282081c2151ea6299ba9f7b60624b"
+    },
+    {
+      "path": "blif/tapeout/task-258-circuit-7097.blif",
+      "bytes": 740,
+      "sha256": "6d81059c75ecc5695604046d3e07fa1550eb6d7eeccdbc10870af4d0a04d1db3"
+    },
+    {
+      "path": "blif/tapeout/task-259-circuit-12688.blif",
+      "bytes": 751,
+      "sha256": "6ada5c4f588a6208ca68235a41e340dadf9614b8566ea9c451fc7b35918677e3"
+    },
+    {
+      "path": "blif/tapeout/task-260-circuit-12723.blif",
+      "bytes": 2057,
+      "sha256": "fcd309baa9da038d491df6477fc540671f9dcdd2f5c0789b2e84985bdb19257c"
+    },
+    {
+      "path": "leaderboards/behemoth.json",
+      "bytes": 276617,
+      "sha256": "ccd1adf1c447c9d6282ee2726602bffd461e2ece4cdf4c238effaa0babbefcb9"
+    },
+    {
+      "path": "leaderboards/refbench.json",
+      "bytes": 36518,
+      "sha256": "31e8090bf8ea6a4c40940dd8cf8323121d7189de2053d94ec8093ae5427be50a"
+    },
+    {
+      "path": "leaderboards/tapeout.json",
+      "bytes": 277460,
+      "sha256": "e83c416bb03224afe5d9710df0757b7ac8cd115457c3c4361d44933466356470"
+    },
+    {
+      "path": "markets/bnb-usdt.json",
+      "bytes": 119,
+      "sha256": "28f39c86b35cbdb5c23c46dd010dcd6d2b47284dde18f08e6fd78442083a2b3a"
+    },
+    {
+      "path": "markets/circuits-raw.json",
+      "bytes": 2409423,
+      "sha256": "5c920c646016649a35990915702b79553620f798c342c7b0f8d20eac2d4015b9"
+    },
+    {
+      "path": "markets/circuits-summary.json",
+      "bytes": 107457,
+      "sha256": "d79a3e5a0a856547b4a0e44ffc63efa2ccdf0bee171dc9981b85006f788eaabe"
+    },
+    {
+      "path": "markets/dexscreener-bem.json",
+      "bytes": 45664,
+      "sha256": "45c6d0faf27e0d294b40d7057a10d3307192bf0be7fb89117663e0a88fac2a02"
+    },
+    {
+      "path": "markets/transistors-raw.json",
+      "bytes": 2175557,
+      "sha256": "a054c46b6a9ea04b5787fd957ddb3527b5f8ff0b123d23982df38db3fc2317d3"
+    },
+    {
+      "path": "markets/transistors-summary.json",
+      "bytes": 1447834,
+      "sha256": "35b5045ae84dc7d55e098003f3cefd8e6bf7ac9279150d923d851bdbfb21b022"
+    },
+    {
+      "path": "netlists/behemoth/task-001-circuit-230.json",
+      "bytes": 1851,
+      "sha256": "26c3381d8f11059d8d75fa2f9834db802463e20995b4f1ce37fa5eb430a21b63"
+    },
+    {
+      "path": "netlists/behemoth/task-002-circuit-453.json",
+      "bytes": 1998,
+      "sha256": "fcc8f8c8d17a25ad70831d939ae71afa18c302ce4bcc71a411e0297fef88551b"
+    },
+    {
+      "path": "netlists/behemoth/task-003-circuit-455.json",
+      "bytes": 2156,
+      "sha256": "78c0f2fd367ea14570f4af5800778bdce2affd0f4b2cebfecbdb8e4dddb9593e"
+    },
+    {
+      "path": "netlists/behemoth/task-004-circuit-298.json",
+      "bytes": 1709,
+      "sha256": "dfaa63ea32fcfc7b0c46bf413c80536f836f68e3971412e62fca9e145e889dc2"
+    },
+    {
+      "path": "netlists/behemoth/task-005-circuit-456.json",
+      "bytes": 1855,
+      "sha256": "db84f062d034f3877e848d23a7cd31cdff671eeae47c3980523f08b57a70e8f4"
+    },
+    {
+      "path": "netlists/behemoth/task-006-circuit-458.json",
+      "bytes": 2010,
+      "sha256": "9e4b0813595dde6a323b6fddbe609f4a02a2cccc0e8e3bee9a9655e0f67eb979"
+    },
+    {
+      "path": "netlists/behemoth/task-007-circuit-459.json",
+      "bytes": 2156,
+      "sha256": "f02f3f53dc4d7d5661017581d5a18ec3bade39c03cac9bb0e3f585a6d0f5def6"
+    },
+    {
+      "path": "netlists/behemoth/task-008-circuit-745.json",
+      "bytes": 2318,
+      "sha256": "087bbbb0115119d3f5456c77028ad6d650a84eecd642a4142437e6d55fb71991"
+    },
+    {
+      "path": "netlists/behemoth/task-009-circuit-52.json",
+      "bytes": 2164,
+      "sha256": "f2932261318fc09b1931446b16b6111c3a91d11089b33f96f78629111e73a9a8"
+    },
+    {
+      "path": "netlists/behemoth/task-010-circuit-462.json",
+      "bytes": 3245,
+      "sha256": "d7d8b25138d18b8dae14517e1ca7469a0eea58f9923614753da32d90e2eed1f1"
+    },
+    {
+      "path": "netlists/behemoth/task-011-circuit-54.json",
+      "bytes": 2466,
+      "sha256": "43673759fbaf733306c07dfc2bd45e6a23087c399e3616ef1cc9dee857bdaac9"
+    },
+    {
+      "path": "netlists/behemoth/task-012-circuit-634.json",
+      "bytes": 2172,
+      "sha256": "33e72b096f7ed46fbc16effb751568d0ff51f2f2215bbd3878e98601427aeb18"
+    },
+    {
+      "path": "netlists/behemoth/task-013-circuit-398.json",
+      "bytes": 4449,
+      "sha256": "0b0fd8e6f3624d7dc56bb1cbe40940eeae3917dfa6fd6b066178da5e41ce5498"
+    },
+    {
+      "path": "netlists/behemoth/task-014-circuit-645.json",
+      "bytes": 4007,
+      "sha256": "4130591caa673fd9b84ea121567500bfa6181c1653121798084e6901b6cf1e1b"
+    },
+    {
+      "path": "netlists/behemoth/task-015-circuit-959.json",
+      "bytes": 8730,
+      "sha256": "26cc76e981297a036a07d960aff07edbae1ef16b894b63479eef8eec39a86ce1"
+    },
+    {
+      "path": "netlists/behemoth/task-016-circuit-962.json",
+      "bytes": 4930,
+      "sha256": "b0e21a083609ad6666957f5da8089c78766618ac56f33926e96fd259d4a64cc6"
+    },
+    {
+      "path": "netlists/behemoth/task-017-circuit-55.json",
+      "bytes": 2308,
+      "sha256": "28b652d9d5c2c3b5a0d28f85ae49d437ef84a02433484a4a833134a82da38ce9"
+    },
+    {
+      "path": "netlists/behemoth/task-018-circuit-441.json",
+      "bytes": 3376,
+      "sha256": "8b4a01d250b392355f8faeb9651c4ba16b5554175c7004081fe00aae5c332f00"
+    },
+    {
+      "path": "netlists/behemoth/task-019-circuit-944.json",
+      "bytes": 3387,
+      "sha256": "e041e0ddebceeb2a25eecc765da2c16fbe58c1f17200d2121b3856c121c1587b"
+    },
+    {
+      "path": "netlists/behemoth/task-020-circuit-469.json",
+      "bytes": 3094,
+      "sha256": "ede9ef2fd0633a0d74f09fd138a4cf3791f2dcdd26febeba0436d903c2865872"
+    },
+    {
+      "path": "netlists/behemoth/task-021-circuit-607.json",
+      "bytes": 5419,
+      "sha256": "6e222c3e0dcc30904abeabd71efe73d69dcb07b15ef944a775665a2706f7cc6e"
+    },
+    {
+      "path": "netlists/behemoth/task-022-circuit-797.json",
+      "bytes": 3265,
+      "sha256": "c751c952772f68a929957721520372b81c9bbea5d3faaa0d54c7718a09630a2b"
+    },
+    {
+      "path": "netlists/behemoth/task-023-circuit-1624.json",
+      "bytes": 4805,
+      "sha256": "9623066b387814179cd6b6090d08eddd26e52057e4948fb8cc0f50e8a37b663d"
+    },
+    {
+      "path": "netlists/behemoth/task-024-circuit-1013.json",
+      "bytes": 3234,
+      "sha256": "0fab922e7e7b28d6c1a2737c5dc480662ba8e33970d9b49f43ebe31f864a52d6"
+    },
+    {
+      "path": "netlists/behemoth/task-025-circuit-2134.json",
+      "bytes": 5688,
+      "sha256": "6ba1bb3d429c822d98cd9b73606df18adcef43d47bb30ca8dcc07ce3976ac713"
+    },
+    {
+      "path": "netlists/behemoth/task-026-circuit-946.json",
+      "bytes": 2962,
+      "sha256": "44ada38eb4bb2304588cda32c7d108384e88a00f7387a4db6486fe5188f71976"
+    },
+    {
+      "path": "netlists/behemoth/task-027-circuit-637.json",
+      "bytes": 4940,
+      "sha256": "ea1f08395236a2be070d8ad716663dee4f429dc3799c68f1a86b5d0f85ed9daa"
+    },
+    {
+      "path": "netlists/behemoth/task-028-circuit-2115.json",
+      "bytes": 5883,
+      "sha256": "1c96ac8c081b26e025671d49eb318b36bdbe8f9de71a9037f3ae05b103fec730"
+    },
+    {
+      "path": "netlists/behemoth/task-029-circuit-483.json",
+      "bytes": 5522,
+      "sha256": "bb1677839582069a23ecc196e7b3e0e3ee15b874bd2f6c30648f296bbc82318b"
+    },
+    {
+      "path": "netlists/behemoth/task-030-circuit-1112.json",
+      "bytes": 4311,
+      "sha256": "aee65b78fb3ef58d1bfe524ac395b48e37bbfe3aea39d0d51507612cc171cc07"
+    },
+    {
+      "path": "netlists/behemoth/task-031-circuit-1413.json",
+      "bytes": 3414,
+      "sha256": "7febf5ec1cd5893ec7c8825a9d318d782d5e076ea9f9e9f1200e09b197d9f718"
+    },
+    {
+      "path": "netlists/behemoth/task-032-circuit-1986.json",
+      "bytes": 4964,
+      "sha256": "6ca818ac34dac216f5949d23f2a25125eb6f87a30f4bed7f4f8792fc6f9980dd"
+    },
+    {
+      "path": "netlists/behemoth/task-033-circuit-2025.json",
+      "bytes": 9113,
+      "sha256": "577b1ce8f34af36ecab2c067944e33b0da7a89da6a9038190b32d1e5e5761300"
+    },
+    {
+      "path": "netlists/behemoth/task-034-circuit-2183.json",
+      "bytes": 16998,
+      "sha256": "3ccdd88ffbc723cab7365e73bd9cb8da6e571d1d3f2759be69b68fc4f252a05d"
+    },
+    {
+      "path": "netlists/behemoth/task-035-circuit-2517.json",
+      "bytes": 35838,
+      "sha256": "d7176455b989421dc55508a6af4b31acdd99707f20ee20eaeda3473f8fd8c82f"
+    },
+    {
+      "path": "netlists/behemoth/task-036-circuit-672.json",
+      "bytes": 4030,
+      "sha256": "a0f7837918b2c38f799f4eddb68944c0e9555db70b10d4a5427f640c4f282cff"
+    },
+    {
+      "path": "netlists/behemoth/task-037-circuit-2520.json",
+      "bytes": 7723,
+      "sha256": "1c18d0fa895f5ace78835fa68df611b51f4331c08d33b257762e4067cfc5d1f5"
+    },
+    {
+      "path": "netlists/behemoth/task-038-circuit-2457.json",
+      "bytes": 16829,
+      "sha256": "623b10306cd7c5a38627005a85f3d9fb5186e2fedb202245e838530425e4f987"
+    },
+    {
+      "path": "netlists/behemoth/task-039-circuit-2466.json",
+      "bytes": 34268,
+      "sha256": "ce410b28d4fb2fd8b0993d867d10cb155a81a043e6c6683ee85455631278f6ea"
+    },
+    {
+      "path": "netlists/behemoth/task-040-circuit-1987.json",
+      "bytes": 10338,
+      "sha256": "f1b2c0b8f34cf52770f1041d511721b8174ed52f67fa6c818458e40913de3dba"
+    },
+    {
+      "path": "netlists/behemoth/task-041-circuit-2510.json",
+      "bytes": 19944,
+      "sha256": "1dde59b87a6c4e3afdd98100d484e4004e907a13b25c0dd858023620872ac14d"
+    },
+    {
+      "path": "netlists/behemoth/task-042-circuit-2082.json",
+      "bytes": 15077,
+      "sha256": "a22cd963a19479c6e95af705d5f0d28b0ebf2d60b093681e16c429002862bd39"
+    },
+    {
+      "path": "netlists/behemoth/task-043-circuit-636.json",
+      "bytes": 4483,
+      "sha256": "0ab67bfde50d704274ef6389b4132637c88f66d6947569d026b8c5456ebef5a7"
+    },
+    {
+      "path": "netlists/behemoth/task-044-circuit-477.json",
+      "bytes": 4198,
+      "sha256": "6f5c103ba7fe98009281327f3faa791141e7f218c3ac4f7b058f91acd1b04dc3"
+    },
+    {
+      "path": "netlists/behemoth/task-045-circuit-646.json",
+      "bytes": 4511,
+      "sha256": "73704a487a0f048a9a03b93c2bac773ee6f44b18cfded56361629c276b609a40"
+    },
+    {
+      "path": "netlists/behemoth/task-046-circuit-2434.json",
+      "bytes": 9000,
+      "sha256": "21c83a19d1a746743c47949ed8d80b08f32c84d55557e16a67d4a0d3870f821a"
+    },
+    {
+      "path": "netlists/behemoth/task-047-circuit-1004.json",
+      "bytes": 5704,
+      "sha256": "afba7eb47274a714bd87e5baf27a96c38584a03a0ab13b76ccb7acfbc6e9d37a"
+    },
+    {
+      "path": "netlists/behemoth/task-048-circuit-2476.json",
+      "bytes": 15040,
+      "sha256": "62d179220516b71833b0078681810d252fdee1df334a7d24d74b1c78b72b5d43"
+    },
+    {
+      "path": "netlists/behemoth/task-049-circuit-815.json",
+      "bytes": 4027,
+      "sha256": "2cfb77f1198833ca52bbc20c035767c5aef9bd46ec066deb9159568f2904ccfd"
+    },
+    {
+      "path": "netlists/behemoth/task-050-circuit-1146.json",
+      "bytes": 5092,
+      "sha256": "ddb4826e5aac580db9a30fac23e6d962f4cf517c42e3a8fa3bce3fee6ba4d247"
+    },
+    {
+      "path": "netlists/behemoth/task-051-circuit-1153.json",
+      "bytes": 5093,
+      "sha256": "7e33aaf009928d87fa9b3c0c019e1ebd62e791c476ff1ada64fbc2062741ddb3"
+    },
+    {
+      "path": "netlists/behemoth/task-052-circuit-2049.json",
+      "bytes": 5409,
+      "sha256": "4c3bacac59de97d32c510e34860426c28b6ff743d45a599b93f6d8e7841e6a35"
+    },
+    {
+      "path": "netlists/behemoth/task-053-circuit-2467.json",
+      "bytes": 14930,
+      "sha256": "8d4bbf0fa5fbeb42de072f6e7068795d9ec8a2245ac553cb6f85a46173ce8fc7"
+    },
+    {
+      "path": "netlists/behemoth/task-054-circuit-520.json",
+      "bytes": 3578,
+      "sha256": "6ddc614cb3368b56d4bcd6805147b18222cb8337c43f6622061f73a261119e06"
+    },
+    {
+      "path": "netlists/behemoth/task-055-circuit-1903.json",
+      "bytes": 5259,
+      "sha256": "129f1b334108dc1062d16d2d0ae49fc9b1b430bf4fb617e30ea0ecf2a793c680"
+    },
+    {
+      "path": "netlists/behemoth/task-056-circuit-697.json",
+      "bytes": 5073,
+      "sha256": "f672fba6ae641afb25edc0fd8d9b59ff413996760a462edfbbd31476c0371532"
+    },
+    {
+      "path": "netlists/behemoth/task-057-circuit-2129.json",
+      "bytes": 7273,
+      "sha256": "4035d9cf7e44d3f1553bde6ff6f66006dbb2330fd85853d2948c1454e6ba3a9e"
+    },
+    {
+      "path": "netlists/behemoth/task-058-circuit-940.json",
+      "bytes": 3871,
+      "sha256": "d98dda74bf86e04b0fc0ac05906ef70fda6b382032fb0b3c76c94ef78207ac6c"
+    },
+    {
+      "path": "netlists/behemoth/task-059-circuit-2469.json",
+      "bytes": 8474,
+      "sha256": "9d425b33f09331f6148c76a92f1edec23237cf40c2964ccb72c5c53426c0f5b8"
+    },
+    {
+      "path": "netlists/behemoth/task-060-circuit-1998.json",
+      "bytes": 19412,
+      "sha256": "f2ec13916729e98c260b699d750dbfce76d4c7b5dcbe0d83ed79892368de7a79"
+    },
+    {
+      "path": "netlists/behemoth/task-061-circuit-2475.json",
+      "bytes": 108635,
+      "sha256": "a07eb4fc6289bba5fdbd13d70678c54ebee8a9a67492151f1949b8a845df10f6"
+    },
+    {
+      "path": "netlists/behemoth/task-062-circuit-740.json",
+      "bytes": 5412,
+      "sha256": "aa80339b92857b36416e3a1c938da4d10b3efad41c8792f930b6e5d1df528d73"
+    },
+    {
+      "path": "netlists/behemoth/task-063-circuit-2479.json",
+      "bytes": 41111,
+      "sha256": "2e67b1a1f02c6d37fd252b33f503fcd6ce939a5f273ad8565f125b5eca58c50b"
+    },
+    {
+      "path": "netlists/behemoth/task-064-circuit-766.json",
+      "bytes": 4180,
+      "sha256": "bb369e168629e1ec13f51722073df6e8b37237d13615fb44d6bea39f6154c48d"
+    },
+    {
+      "path": "netlists/behemoth/task-065-circuit-2213.json",
+      "bytes": 4462,
+      "sha256": "1e6a2f2f3f9a18a7cbcd97faad470c91dbdd42cf4f3a2ce96d2b9caa18b42ce9"
+    },
+    {
+      "path": "netlists/behemoth/task-066-circuit-2174.json",
+      "bytes": 7089,
+      "sha256": "8fe6de828d57c000e7ffbd59ccc60a13d163327357e6c21bd673d2e5240ad3db"
+    },
+    {
+      "path": "netlists/behemoth/task-067-circuit-2415.json",
+      "bytes": 5888,
+      "sha256": "faddbd915156429353042fe8bfd4ecfb944ed94e172facd92366c9a1c9386eca"
+    },
+    {
+      "path": "netlists/behemoth/task-068-circuit-2442.json",
+      "bytes": 10068,
+      "sha256": "d9be8589f7ac66694d05c169f1461af0ecd4589ce2b7dfa79435f21265945d8a"
+    },
+    {
+      "path": "netlists/behemoth/task-069-circuit-524.json",
+      "bytes": 10586,
+      "sha256": "15d1398960d14b8ba8b544501144e2cb6a1c46c37bd100fbbafb08a86d4fd5db"
+    },
+    {
+      "path": "netlists/behemoth/task-070-circuit-2519.json",
+      "bytes": 15851,
+      "sha256": "8ebcd9479c9d02f1fad6a1672d326515c8de08dec7868a4d8fcf21eaf914143a"
+    },
+    {
+      "path": "netlists/behemoth/task-071-circuit-631.json",
+      "bytes": 3998,
+      "sha256": "b6f519b4bc5d64839e63004c05f1d86a0d88ce5bbe07e0d9ee04df1697808aa6"
+    },
+    {
+      "path": "netlists/behemoth/task-072-circuit-2074.json",
+      "bytes": 8314,
+      "sha256": "1141017cc7c8f1d498421132edb99194c0a0e625337781de47c8ab3e7faa6791"
+    },
+    {
+      "path": "netlists/behemoth/task-073-circuit-921.json",
+      "bytes": 2262,
+      "sha256": "7436f0b551961d21bb4e959c9ad60c95bbca6d3ecf325335bf095613e8017198"
+    },
+    {
+      "path": "netlists/behemoth/task-074-circuit-245.json",
+      "bytes": 1784,
+      "sha256": "a821f2a2f6d186bf7110789f695e60ab818bbc27ff9ac4cab18303591eb31cd2"
+    },
+    {
+      "path": "netlists/behemoth/task-075-circuit-648.json",
+      "bytes": 2097,
+      "sha256": "cbbbfab4efa9e004410fe1d86fa9e6dd9ad993b30b2288dcf793e5fb83ebaa6c"
+    },
+    {
+      "path": "netlists/behemoth/task-076-circuit-2021.json",
+      "bytes": 3626,
+      "sha256": "36dc10d521ef7aa8883f601c6364109b316f2f7eb1b2d685ec71ae7476bd3614"
+    },
+    {
+      "path": "netlists/behemoth/task-077-circuit-2133.json",
+      "bytes": 5571,
+      "sha256": "ee4fb2d9e181d9f4d5d6ef60f957b873c5652ce61f47eb366c165d991ea9bf1c"
+    },
+    {
+      "path": "netlists/behemoth/task-078-circuit-1061.json",
+      "bytes": 5232,
+      "sha256": "09e6573d68e96200dd0bae763aaec2a51e0367e22d155b9b86572e296c3023be"
+    },
+    {
+      "path": "netlists/behemoth/task-079-circuit-465.json",
+      "bytes": 2966,
+      "sha256": "f271386380364b4976f88225ffd35a11ef8e99d87b379f7e7320cb9c1d4cedb4"
+    },
+    {
+      "path": "netlists/behemoth/task-080-circuit-2406.json",
+      "bytes": 8607,
+      "sha256": "7bae3cfaf9963ec7832c0d52dcfcadcf53d03e955407017148a7076102700f31"
+    },
+    {
+      "path": "netlists/behemoth/task-081-circuit-1878.json",
+      "bytes": 3490,
+      "sha256": "064d61ba139f8e47bb6a70ea4247781bed0baa66f8b7130de89d680e11357310"
+    },
+    {
+      "path": "netlists/behemoth/task-082-circuit-512.json",
+      "bytes": 1806,
+      "sha256": "e5d872b1a16335d64f5a39d2db196770d6619825a4827e8370b195668644ddd6"
+    },
+    {
+      "path": "netlists/behemoth/task-083-circuit-871.json",
+      "bytes": 2065,
+      "sha256": "af420a9c103dcf8813590df14e4c26640281a6d5d682321ec52fd89942c96ab3"
+    },
+    {
+      "path": "netlists/behemoth/task-084-circuit-1019.json",
+      "bytes": 2802,
+      "sha256": "fdc524f1e702ac6ee41b4c3695dfad72e2bd1b425585220e62009f174df906c0"
+    },
+    {
+      "path": "netlists/behemoth/task-085-circuit-1066.json",
+      "bytes": 4384,
+      "sha256": "95152f2c9a92998f63ca1e5797637dc2e4cc6a8cdeb482ab215a9ae45fe1e57b"
+    },
+    {
+      "path": "netlists/behemoth/task-086-circuit-437.json",
+      "bytes": 2329,
+      "sha256": "8af24ef69bc627b47bb828a756b4533113c957af54c05267b2b1887bd6720799"
+    },
+    {
+      "path": "netlists/behemoth/task-087-circuit-906.json",
+      "bytes": 2471,
+      "sha256": "5fac8252c1e18a3745f4fcb3cbfecaa0aafc14e24084eefa8cc8b29b2a0755d4"
+    },
+    {
+      "path": "netlists/behemoth/task-088-circuit-1057.json",
+      "bytes": 3222,
+      "sha256": "3b98056eaa40b832af1ec574032476ed6f0082264c84d071efb451e0b85b60e0"
+    },
+    {
+      "path": "netlists/behemoth/task-089-circuit-1065.json",
+      "bytes": 4401,
+      "sha256": "ce3dd8969fa581cb6ed9cdd1b12f1760c7c63454df7ed8f2cf420fbd54f24bc3"
+    },
+    {
+      "path": "netlists/behemoth/task-090-circuit-1567.json",
+      "bytes": 7905,
+      "sha256": "1a40f042254cf82963dd349684efcb9da80400dd1ec3c796c1a8f3d4fdd67bee"
+    },
+    {
+      "path": "netlists/behemoth/task-091-circuit-2185.json",
+      "bytes": 9679,
+      "sha256": "949ae556b6f8e90662c4fc6d9590ae6093291b2cce94df506fdb425837cd1773"
+    },
+    {
+      "path": "netlists/behemoth/task-092-circuit-941.json",
+      "bytes": 3116,
+      "sha256": "143d5c8856cf466da890b7f11cfb5e85d4a0600b8829bcb2b653ca1703b2a904"
+    },
+    {
+      "path": "netlists/behemoth/task-093-circuit-2471.json",
+      "bytes": 19400,
+      "sha256": "8de71c9cce71da08d53d3b3ac936632919cff3145b1b7a1cb5ad915d192bcd46"
+    },
+    {
+      "path": "netlists/behemoth/task-095-circuit-866.json",
+      "bytes": 2371,
+      "sha256": "8fd6efb3844b3bbf0ef20ab8a2c0880416f60c208b37fb0c25fadcc914c87be8"
+    },
+    {
+      "path": "netlists/behemoth/task-096-circuit-870.json",
+      "bytes": 3500,
+      "sha256": "33eabb73757ef98291eff7fc31c4fcec2a1d190382018ee3befd0eb290641f57"
+    },
+    {
+      "path": "netlists/behemoth/task-097-circuit-895.json",
+      "bytes": 3501,
+      "sha256": "41bf35174c23a502d56db1f4c748e9f8a4bc4d65d594b24f3524bfddd1657c56"
+    },
+    {
+      "path": "netlists/behemoth/task-098-circuit-1039.json",
+      "bytes": 3806,
+      "sha256": "ec5c88e2706d2d97b5746df9afe3f7923b3f24ce07b3c3f47cad246b6a637494"
+    },
+    {
+      "path": "netlists/behemoth/task-099-circuit-1064.json",
+      "bytes": 4881,
+      "sha256": "a87f75fcd3ff66c4187d4f214662fe2af025b6b26a50305d105bd60abc8ea9ed"
+    },
+    {
+      "path": "netlists/behemoth/task-100-circuit-823.json",
+      "bytes": 3035,
+      "sha256": "13ca02c918384dfb41277e4d04ebdeec124269651dec016f36f7d3aaa3e9b4cb"
+    },
+    {
+      "path": "netlists/behemoth/task-101-circuit-1006.json",
+      "bytes": 2829,
+      "sha256": "4f25b59ecc22d19d8ea8cae8a83dc587a8d7697c5f611f7f83e598dec5a87813"
+    },
+    {
+      "path": "netlists/behemoth/task-102-circuit-601.json",
+      "bytes": 2813,
+      "sha256": "49e914ea709fdb80aae113e82c450d04ecc11352b57702005a3f080603c9e55e"
+    },
+    {
+      "path": "netlists/behemoth/task-103-circuit-675.json",
+      "bytes": 3419,
+      "sha256": "e99994780a6e802fd035c16824515d0ca4f7dbd963f9ec6d81574b5596d3d4ea"
+    },
+    {
+      "path": "netlists/behemoth/task-104-circuit-677.json",
+      "bytes": 4038,
+      "sha256": "86b4f16f3f7e302f8eb59c02db33ff9bfdeb7f11dcbf1d79589f5a12d043f5f4"
+    },
+    {
+      "path": "netlists/behemoth/task-105-circuit-684.json",
+      "bytes": 4644,
+      "sha256": "9f53ba9c2ce34f28d67fbd5dd97ac8eeabe4e5dcbcd7bb7538bd60529aa98e6f"
+    },
+    {
+      "path": "netlists/behemoth/task-106-circuit-786.json",
+      "bytes": 4079,
+      "sha256": "47c48d3392d6807c277dedfaeaf485436eb5107e36e81f24bc27ba9edbf28f8f"
+    },
+    {
+      "path": "netlists/behemoth/task-107-circuit-397.json",
+      "bytes": 5293,
+      "sha256": "76834bd3edd842e2484e2a4e449e601e26c38cd15cfad876bb3b063426b930f6"
+    },
+    {
+      "path": "netlists/behemoth/task-108-circuit-589.json",
+      "bytes": 6535,
+      "sha256": "507a8f77b33564f961175155f3f2b08a91c46a166a97439e46fe1baa1074ccc6"
+    },
+    {
+      "path": "netlists/behemoth/task-109-circuit-2027.json",
+      "bytes": 7746,
+      "sha256": "f6b08694f83cee9061188c894500dd0cdaff720c2f225b69814fc3c28837b653"
+    },
+    {
+      "path": "netlists/behemoth/task-110-circuit-2050.json",
+      "bytes": 5587,
+      "sha256": "a69c46419d53601013eeb65a74a4de2c61930c747ce24ff525e682477f1c5bc3"
+    },
+    {
+      "path": "netlists/behemoth/task-111-circuit-2400.json",
+      "bytes": 6811,
+      "sha256": "7842e819fec4769a0153202cf4f1041adf4c128c3a4ff7bfd4a0dede9511b82d"
+    },
+    {
+      "path": "netlists/behemoth/task-112-circuit-2047.json",
+      "bytes": 9425,
+      "sha256": "248e1d8203fb16b2e611b46cbdc3d291afbc3541c9834e42c9dc73390642fbcf"
+    },
+    {
+      "path": "netlists/behemoth/task-113-circuit-2404.json",
+      "bytes": 10963,
+      "sha256": "fbb765fa0e9cf12d42d6baff4f9141e3a4e62a0be9bb28884b58d7120da572f1"
+    },
+    {
+      "path": "netlists/behemoth/task-114-circuit-2437.json",
+      "bytes": 11588,
+      "sha256": "dd9864032fff44e06039891e72fa63c1ae6d132945cbfd72fa1df29de0a11507"
+    },
+    {
+      "path": "netlists/behemoth/task-115-circuit-2509.json",
+      "bytes": 12965,
+      "sha256": "b0841578b8f59e02c7559b0e474a5c5c98b32499fbca4933093954afb132caf8"
+    },
+    {
+      "path": "netlists/behemoth/task-116-circuit-2101.json",
+      "bytes": 13587,
+      "sha256": "87bd2d89840a1be7159962b023d4869cfbece1d7f3d6314545942046921df9fc"
+    },
+    {
+      "path": "netlists/behemoth/task-117-circuit-2511.json",
+      "bytes": 16197,
+      "sha256": "d1b63b25e8d39f37134970d22b93ee4ba5f9a550f6dd5799dcf97b8d86f021c6"
+    },
+    {
+      "path": "netlists/behemoth/task-118-circuit-2296.json",
+      "bytes": 4666,
+      "sha256": "ea820bcac571ec7698ee109a0324028446da105504260c80c8e8684777b243b0"
+    },
+    {
+      "path": "netlists/behemoth/task-119-circuit-2248.json",
+      "bytes": 6818,
+      "sha256": "de2b5035571855a3e61b45ce0348a63951f715981189cee56240ccc9243d7c0b"
+    },
+    {
+      "path": "netlists/behemoth/task-120-circuit-2347.json",
+      "bytes": 11269,
+      "sha256": "b7fa3f66521f77fc9d3082c1d5d06e5e2ebc7f6bc70556788382ef0393f4a797"
+    },
+    {
+      "path": "netlists/behemoth/task-121-circuit-2493.json",
+      "bytes": 12973,
+      "sha256": "300187f512aaa0ace97a73933ab70aa74de34c43990cbf971e816d1c9e4792d4"
+    },
+    {
+      "path": "netlists/behemoth/task-122-circuit-934.json",
+      "bytes": 2530,
+      "sha256": "5804fd199c70657b20e7582a6150231afc2e914c50928346fb0189c9288d66a1"
+    },
+    {
+      "path": "netlists/behemoth/task-123-circuit-945.json",
+      "bytes": 3450,
+      "sha256": "7006f40d44e0b91e7b6bb09d3d5f00cead6e6e0330eb953944f1669126d2bdce"
+    },
+    {
+      "path": "netlists/behemoth/task-124-circuit-1637.json",
+      "bytes": 5295,
+      "sha256": "1c6167603ef6c414b3d5104fb9de12eac014afea6884dd9610d8e8a8f0a08203"
+    },
+    {
+      "path": "netlists/behemoth/task-125-circuit-2345.json",
+      "bytes": 6385,
+      "sha256": "6c18bdfeffd61b66280963ddc7cffca0c645fbcc40135e34a0dd421d9c9d6939"
+    },
+    {
+      "path": "netlists/behemoth/task-126-circuit-2249.json",
+      "bytes": 7773,
+      "sha256": "a6e56d1f7e23bb10166e37bd95a375ca1d589b1a1adc529c5aa9f95076b5492c"
+    },
+    {
+      "path": "netlists/behemoth/task-127-circuit-868.json",
+      "bytes": 3269,
+      "sha256": "1cb5b736647b217dc782cd7f72e49738a25bbd8a191eb6e3b8b1b6f08527cdd4"
+    },
+    {
+      "path": "netlists/behemoth/task-128-circuit-2287.json",
+      "bytes": 5273,
+      "sha256": "b0d3923e323c687ee8d0570e7dd70713d4dec5270c560fabe477cd7021a0149c"
+    },
+    {
+      "path": "netlists/behemoth/task-129-circuit-2051.json",
+      "bytes": 6503,
+      "sha256": "d4d3e4b7174881375227d179e36beea0f933cc66cb939c7b7503b7f5b9ba61a1"
+    },
+    {
+      "path": "netlists/behemoth/task-130-circuit-2432.json",
+      "bytes": 9432,
+      "sha256": "097d408c41e64e174effec4f1a978e8d4ebffd2c7cd4f47fe1dda225e327c9e1"
+    },
+    {
+      "path": "netlists/behemoth/task-131-circuit-1569.json",
+      "bytes": 5139,
+      "sha256": "c9261207f346f47e909c2eca15da4de0f6be184930c6583fc46efc18b39abec2"
+    },
+    {
+      "path": "netlists/behemoth/task-132-circuit-1867.json",
+      "bytes": 6219,
+      "sha256": "a435736e8b86c4536c7f021836f0b794d6030b7768e4a2d6e001ac2a79f0ee81"
+    },
+    {
+      "path": "netlists/behemoth/task-133-circuit-2227.json",
+      "bytes": 9145,
+      "sha256": "6ed79c59f40abdd5c31fece88a2ce39680eb44186e39a48cfabde144db1a882d"
+    },
+    {
+      "path": "netlists/behemoth/task-134-circuit-2222.json",
+      "bytes": 6034,
+      "sha256": "a41a2bf86478e36c7e3b4b1952cc46d4f5a699f22be32ce3f5597451431f2fea"
+    },
+    {
+      "path": "netlists/behemoth/task-135-circuit-2269.json",
+      "bytes": 8180,
+      "sha256": "14dd2c64da37559749992a82ecb4d3559a0afb5ffb2f7b29783bdae409f093db"
+    },
+    {
+      "path": "netlists/behemoth/task-136-circuit-2121.json",
+      "bytes": 10166,
+      "sha256": "2a155209b2dca381f1b9a83b09d81b5f36188d27a819d3eda5b6767d98041a5f"
+    },
+    {
+      "path": "netlists/behemoth/task-137-circuit-747.json",
+      "bytes": 3400,
+      "sha256": "62694faafd2dad56b32de31a72ec6eabea11f702067eff5cd5220d5e20f5f6b6"
+    },
+    {
+      "path": "netlists/behemoth/task-138-circuit-509.json",
+      "bytes": 2789,
+      "sha256": "bb02a441084da2635cf8e104d23692b505027948bc02bfb8bb9e443d8fa9fc0d"
+    },
+    {
+      "path": "netlists/behemoth/task-139-circuit-1074.json",
+      "bytes": 4470,
+      "sha256": "4ebf1e34ac022cc0041e8c25bd27a4fd6db0fed2e63e23fb94730f8fe691c5bd"
+    },
+    {
+      "path": "netlists/behemoth/task-140-circuit-929.json",
+      "bytes": 4154,
+      "sha256": "9ee2b44a28d6b1c3f8e254c92b1594f1b4edebba205230db328256cba89a316c"
+    },
+    {
+      "path": "netlists/behemoth/task-141-circuit-2429.json",
+      "bytes": 6453,
+      "sha256": "16632f197f32334e83b31b534186d7d1b771f4749e5768a5e62437a7e6c93243"
+    },
+    {
+      "path": "netlists/behemoth/task-142-circuit-2110.json",
+      "bytes": 5855,
+      "sha256": "8b76bd465a5d3660e9e2d2c5d0691a0b4eb870da23ebc54b563a73631c181238"
+    },
+    {
+      "path": "netlists/behemoth/task-143-circuit-2452.json",
+      "bytes": 7524,
+      "sha256": "64363fa26c7db0bd9f167e59338357d5ededa9d267dccb890961e8b1462f846c"
+    },
+    {
+      "path": "netlists/behemoth/task-144-circuit-2123.json",
+      "bytes": 7537,
+      "sha256": "3cc3c81b96d1abfa45f5fee21950d2b0df890a17163e82fc65d8b23c72061e37"
+    },
+    {
+      "path": "netlists/behemoth/task-145-circuit-2320.json",
+      "bytes": 9816,
+      "sha256": "be031609a40a2aa7566836d4433b6cf4edcf888adb078ff8d689551066adfcbe"
+    },
+    {
+      "path": "netlists/behemoth/task-146-circuit-2083.json",
+      "bytes": 8002,
+      "sha256": "9e7e833ed9010b913cabfdd3ca58997d2a3181c46004a611df4fc18a6dac94a6"
+    },
+    {
+      "path": "netlists/behemoth/task-147-circuit-1100.json",
+      "bytes": 4322,
+      "sha256": "ba38e4eafd523a0e2de20c40bd0e2274febfadae839cacd430a719d2aa683c4c"
+    },
+    {
+      "path": "netlists/behemoth/task-148-circuit-521.json",
+      "bytes": 4624,
+      "sha256": "bf6283db451f1361dd3e675e0161c36cc426a1dc02bb34479332145974236f81"
+    },
+    {
+      "path": "netlists/behemoth/task-149-circuit-2512.json",
+      "bytes": 10165,
+      "sha256": "aeaae27ca9e055e95b2a5a26eacaf7120e48976a1dc3c2e53173b4c174e8525b"
+    },
+    {
+      "path": "netlists/behemoth/task-150-circuit-2421.json",
+      "bytes": 10014,
+      "sha256": "0113b853bfcf57e5c95e4efb39ce7e3d678b1065337e3d5a8cd73374efee9d2c"
+    },
+    {
+      "path": "netlists/behemoth/task-151-circuit-2332.json",
+      "bytes": 10483,
+      "sha256": "cdbc621b38b8ef5f83cf1450a02579d990e7e2d94745bd66ef8d2ed8e4dd4747"
+    },
+    {
+      "path": "netlists/behemoth/task-152-circuit-2503.json",
+      "bytes": 10941,
+      "sha256": "5da369d2e03b677adc718993767e2960196a0a39d29f6fb1197b77e4f1cca5d6"
+    },
+    {
+      "path": "netlists/behemoth/task-153-circuit-2237.json",
+      "bytes": 12037,
+      "sha256": "52250b558b79f04caf7e906337da9daa48de9b78fdd957b3d3d11693f4eca2a9"
+    },
+    {
+      "path": "netlists/behemoth/task-154-circuit-2496.json",
+      "bytes": 11885,
+      "sha256": "a6ee88dcd91fb7ce232c286db789af1f5d38cbb3c963d08851a38b92a5484821"
+    },
+    {
+      "path": "netlists/behemoth/task-155-circuit-943.json",
+      "bytes": 3406,
+      "sha256": "6641a7c4040943091c081c5d0d6dc96ed2febdaca0218d86f55219ebc3e994ca"
+    },
+    {
+      "path": "netlists/behemoth/task-156-circuit-2305.json",
+      "bytes": 7086,
+      "sha256": "8d2fa621dd6966a1781b42a19aa0786a2ede4473b33819d023331b95eddd6895"
+    },
+    {
+      "path": "netlists/behemoth/task-157-circuit-2430.json",
+      "bytes": 10602,
+      "sha256": "a6f409d858a82e6abbeadd086bdfca006749e564e4de735442e8b5f92a8b9091"
+    },
+    {
+      "path": "netlists/behemoth/task-158-circuit-2499.json",
+      "bytes": 25531,
+      "sha256": "85026432bb3888a3c5534ea1cb914a7986e6dd4eac2c5ccc612eae8c63d49075"
+    },
+    {
+      "path": "netlists/behemoth/task-159-circuit-670.json",
+      "bytes": 7250,
+      "sha256": "271d30c9a68e752a4665761de9c0e1b8d280cb34eed163949c112954fbbc693d"
+    },
+    {
+      "path": "netlists/behemoth/task-160-circuit-933.json",
+      "bytes": 4032,
+      "sha256": "1b57572a19fc93420f7515520ca3eae4a78fbae55c251f39798b5a0eee8bab4f"
+    },
+    {
+      "path": "netlists/behemoth/task-161-circuit-2096.json",
+      "bytes": 7263,
+      "sha256": "24d83e2cce479f7950f3c50b1c810d4c50e1bb0450a64fe250e64b1ae142cf90"
+    },
+    {
+      "path": "netlists/behemoth/task-162-circuit-517.json",
+      "bytes": 2961,
+      "sha256": "9f798d492cfa60c83c2976b6eb7ddbd87b63380931f4084a0760ee576b9acdab"
+    },
+    {
+      "path": "netlists/behemoth/task-163-circuit-553.json",
+      "bytes": 3577,
+      "sha256": "8e0e6eedb3e0ff41cc3b4c331752b13ee2686f04e231ee47d2cfa29c1902ec8c"
+    },
+    {
+      "path": "netlists/behemoth/task-164-circuit-663.json",
+      "bytes": 4203,
+      "sha256": "4fa2f4374ae0ee8a3b09931ba9dde0467b3a033360cf4dbfec20e711682e18a9"
+    },
+    {
+      "path": "netlists/behemoth/task-165-circuit-2319.json",
+      "bytes": 6193,
+      "sha256": "de861cd059058fbccfbd05fe7be5e3cc455b76101cf6091e3ffe21d47bf82a67"
+    },
+    {
+      "path": "netlists/behemoth/task-166-circuit-664.json",
+      "bytes": 4822,
+      "sha256": "e0c9bc6faf28d2be9d0d4c6b67715b07929e52982117e85dc1095f654fd16898"
+    },
+    {
+      "path": "netlists/behemoth/task-167-circuit-2131.json",
+      "bytes": 7738,
+      "sha256": "05594dddfb624faade5a8716b5131600ab5bec36f56152efd54d6b79b264af8b"
+    },
+    {
+      "path": "netlists/behemoth/task-168-circuit-391.json",
+      "bytes": 6061,
+      "sha256": "2569e5001a535a7daa00451641947d695fcacf54448a666d05f63c221f94b8a0"
+    },
+    {
+      "path": "netlists/behemoth/task-169-circuit-1163.json",
+      "bytes": 12036,
+      "sha256": "33734a6fc5140691b0b420468af9351a344e4a35a900f3a119cb80669e0d25b4"
+    },
+    {
+      "path": "netlists/behemoth/task-170-circuit-1159.json",
+      "bytes": 12030,
+      "sha256": "9e60b9de6b0a4c91382458e5070e288c1b53ddacada526874a07c0e083ff3c95"
+    },
+    {
+      "path": "netlists/behemoth/task-171-circuit-2407.json",
+      "bytes": 12958,
+      "sha256": "2179ea5e60913c4e559b0706ce9a5eca9b59d0660d68a60c5c2150a67b8ccd44"
+    },
+    {
+      "path": "netlists/behemoth/task-172-circuit-1157.json",
+      "bytes": 13100,
+      "sha256": "cc002e249ca17b3c420058120f1208e6fb8bc68708628917df2d2a65cafdddf1"
+    },
+    {
+      "path": "netlists/behemoth/task-173-circuit-2506.json",
+      "bytes": 34157,
+      "sha256": "b68a0416e01d1f330c9fe6e10c5a550005ae376370ef3b2097b16497c2440430"
+    },
+    {
+      "path": "netlists/behemoth/task-174-circuit-2472.json",
+      "bytes": 55146,
+      "sha256": "f669ae4ad59599147ebc9b1caaeb6aa0518310056c35b4538f8d0a1392a0e870"
+    },
+    {
+      "path": "netlists/behemoth/task-175-circuit-1925.json",
+      "bytes": 9112,
+      "sha256": "aa766a9501e2c47ac40a5feb4706ddc27bfecc174f20f13d5c91095f1262162d"
+    },
+    {
+      "path": "netlists/behemoth/task-176-circuit-2414.json",
+      "bytes": 14629,
+      "sha256": "f034c93a6b079042f4455d569ee863c7bef4486471fe6b8353178226368050c0"
+    },
+    {
+      "path": "netlists/behemoth/task-177-circuit-931.json",
+      "bytes": 4671,
+      "sha256": "6874d8f8f0cfe2e5a928e3e96a0f75297907caf4a35ca6e51dd30b939ae6cdea"
+    },
+    {
+      "path": "netlists/behemoth/task-178-circuit-768.json",
+      "bytes": 5096,
+      "sha256": "37e986774b74a63b816202552a727b5310fefff5576f405316a430c84b5e275f"
+    },
+    {
+      "path": "netlists/behemoth/task-179-circuit-1741.json",
+      "bytes": 6041,
+      "sha256": "6de3f98e1939c04dc780c94f55dae79b34671ce023cfe08034f6e8f36f8d5081"
+    },
+    {
+      "path": "netlists/behemoth/task-180-circuit-669.json",
+      "bytes": 5261,
+      "sha256": "77759b8a5de42354dcefc3de4e0d3940b332f5726940c9199f844cc402ee12b5"
+    },
+    {
+      "path": "netlists/behemoth/task-181-circuit-1570.json",
+      "bytes": 6037,
+      "sha256": "c3d76cbc48f3ab42eeb9ce8efeb27f145f938b4969686b4e9bb35db8d6ad112e"
+    },
+    {
+      "path": "netlists/behemoth/task-182-circuit-651.json",
+      "bytes": 4964,
+      "sha256": "145d4ed276f2e3ec2328380d60527452ee008e1a64224e27f33c82292ccacc5d"
+    },
+    {
+      "path": "netlists/behemoth/task-183-circuit-1173.json",
+      "bytes": 6203,
+      "sha256": "f8051b1aa7c4f851e41c0c28eecce23f221b9d15c6edfc405c4121d0f00309af"
+    },
+    {
+      "path": "netlists/behemoth/task-184-circuit-639.json",
+      "bytes": 3586,
+      "sha256": "75240d5a434eed721a69327320473f26fcc4fadadf98b3d2349efd84244483c8"
+    },
+    {
+      "path": "netlists/behemoth/task-185-circuit-511.json",
+      "bytes": 2972,
+      "sha256": "9afc9da9f96d02351aa93c7cb837717c2348a5ea82366f4e9bded951f6839f5f"
+    },
+    {
+      "path": "netlists/behemoth/task-186-circuit-640.json",
+      "bytes": 3434,
+      "sha256": "54e3f4f6fce75fc2a5dbd21efa80ae2cc74c92f46fcc33db65a25d43d5aca76c"
+    },
+    {
+      "path": "netlists/behemoth/task-187-circuit-2221.json",
+      "bytes": 5692,
+      "sha256": "4dfdb85046e895ff95ea1f1f0f45ad3b5d80d02eca9808f57b201951a31d22fe"
+    },
+    {
+      "path": "netlists/behemoth/task-188-circuit-478.json",
+      "bytes": 4001,
+      "sha256": "ff9b5df097a98ce65d8c171416b84ae8aeb3d4aa733f23154fab09ec879152ad"
+    },
+    {
+      "path": "netlists/behemoth/task-189-circuit-644.json",
+      "bytes": 4764,
+      "sha256": "db71e3922d80106d83f3129467f367295347a435a429dabfe5d9ebdf153bc4bf"
+    },
+    {
+      "path": "netlists/behemoth/task-190-circuit-2024.json",
+      "bytes": 4924,
+      "sha256": "1d869f01a295f03bf338f9ee17c40a35c055c1bc779adb403202db0fb1fe1702"
+    },
+    {
+      "path": "netlists/behemoth/task-191-circuit-2338.json",
+      "bytes": 6145,
+      "sha256": "9dae556b4ed030a48cff548c2fec77add5ade7563b13823750fd0bf90ae5e444"
+    },
+    {
+      "path": "netlists/behemoth/task-192-circuit-965.json",
+      "bytes": 7666,
+      "sha256": "1d17b07c201388a976482118bf215f534873c7e995d949ab59db42250fcdf17f"
+    },
+    {
+      "path": "netlists/behemoth/task-193-circuit-1155.json",
+      "bytes": 10742,
+      "sha256": "e2752ca63c4cfd13c157485de31041b1fced70c04eae2aad97126dd31075790e"
+    },
+    {
+      "path": "netlists/behemoth/task-194-circuit-600.json",
+      "bytes": 9642,
+      "sha256": "b9bdd86d62a4b63fded4b5c484fd87ce1b75656bd778bcabbec649f841a2c325"
+    },
+    {
+      "path": "netlists/behemoth/task-195-circuit-2182.json",
+      "bytes": 11403,
+      "sha256": "b89a55c983223b63a8dc9e9f7fdf2c5e019e3185cef7b876afde399661c3a261"
+    },
+    {
+      "path": "netlists/behemoth/task-196-circuit-2468.json",
+      "bytes": 9973,
+      "sha256": "fd8f6bbd0ed05995818fe7d75ccacea55f00c8f7943bc60ecb28618675ec5f5a"
+    },
+    {
+      "path": "netlists/behemoth/task-197-circuit-794.json",
+      "bytes": 3598,
+      "sha256": "498ffeb7b08cd9d77f3b88d8711d0f1d883e0dfb1d3c82eb2118bcf9b6b0be53"
+    },
+    {
+      "path": "netlists/behemoth/task-198-circuit-818.json",
+      "bytes": 5472,
+      "sha256": "89ede1583fb0bd6de11d14b2cd57d3bbca6d78e5cdda0e1f6592ce501515dde7"
+    },
+    {
+      "path": "netlists/behemoth/task-199-circuit-394.json",
+      "bytes": 7426,
+      "sha256": "d04db8fd88ab9b11a7fba2c035532ff87ffbb05dee7b0468b8d0aaf6796a0cea"
+    },
+    {
+      "path": "netlists/behemoth/task-200-circuit-989.json",
+      "bytes": 11096,
+      "sha256": "876a4575bbe8fcea6ca74fd2ab11cd4930535ba1f57d3e5af1075ec0afb7bf05"
+    },
+    {
+      "path": "netlists/behemoth/task-201-circuit-2420.json",
+      "bytes": 7689,
+      "sha256": "63c57cc265ec63be76dd140dec5977b8d8f52521100cf8b63747bb36ebb84a49"
+    },
+    {
+      "path": "netlists/behemoth/task-202-circuit-630.json",
+      "bytes": 4000,
+      "sha256": "3da0b25a6ca4c95a160904483651d456587c9edbc0381e8a41a130b9e85cfce3"
+    },
+    {
+      "path": "netlists/behemoth/task-203-circuit-798.json",
+      "bytes": 3403,
+      "sha256": "7bcd8ecab8ee99cbf1811fad772baeff730e1c9833ad6039e048a5803d57d3f6"
+    },
+    {
+      "path": "netlists/behemoth/task-204-circuit-2465.json",
+      "bytes": 6462,
+      "sha256": "122ecd71f8601b2d06875368118df93fbbeb1ce5abde2654017f2de701028ddc"
+    },
+    {
+      "path": "netlists/behemoth/task-205-circuit-2495.json",
+      "bytes": 8603,
+      "sha256": "f00b97e3b7018cc8293f055ca7a676a8410b25893e93b16452914d12a699ec33"
+    },
+    {
+      "path": "netlists/behemoth/task-206-circuit-935.json",
+      "bytes": 2486,
+      "sha256": "cd0ce3226226d83b052107075be0c05744640b810e99ba5bb312bee025ec004c"
+    },
+    {
+      "path": "netlists/behemoth/task-207-circuit-1933.json",
+      "bytes": 6018,
+      "sha256": "2af2bcfedf8c17ece1d508180cfefadca54b5b8dd449c4944653ba53fed6c4bb"
+    },
+    {
+      "path": "netlists/behemoth/task-208-circuit-1479.json",
+      "bytes": 6228,
+      "sha256": "fc97c934437d6e5628f515e929b9b17e6f852f3bdfb16a5f5762c4fd2633cbb8"
+    },
+    {
+      "path": "netlists/behemoth/task-209-circuit-2522.json",
+      "bytes": 17742,
+      "sha256": "59e7612d6959643c5325fb62fc59928e726ad5d60265471963b4b7bc67b02d8a"
+    },
+    {
+      "path": "netlists/behemoth/task-210-circuit-2524.json",
+      "bytes": 18222,
+      "sha256": "7f7c91c6606e7a6233d0af5d419fd523125d38cd04d04ea88298a95e4cabe071"
+    },
+    {
+      "path": "netlists/behemoth/task-211-circuit-1015.json",
+      "bytes": 2796,
+      "sha256": "60ead9876e8a3216a64f1bff5dac43eeb67b86be13d27f4c15d98e5264a25e85"
+    },
+    {
+      "path": "netlists/behemoth/task-212-circuit-1072.json",
+      "bytes": 3810,
+      "sha256": "5d966ae5ad7dd380102145cebbc0a166ee773327c37baeea87322f8dc8f12f55"
+    },
+    {
+      "path": "netlists/behemoth/task-213-circuit-901.json",
+      "bytes": 4528,
+      "sha256": "8e5a850e3413285c1497b8f3a2dc7b34678dcbd80ac4c51bbab4352069330c50"
+    },
+    {
+      "path": "netlists/behemoth/task-214-circuit-1042.json",
+      "bytes": 4838,
+      "sha256": "4d0b8bebad8ae8841846582707bae289b7cb89b7fa419398edf976c5d1b0c03a"
+    },
+    {
+      "path": "netlists/behemoth/task-215-circuit-1080.json",
+      "bytes": 4836,
+      "sha256": "486420fdaac1b949578f908fa0a58afdb0a73e3d9c6443cbb11afcd4c6049fac"
+    },
+    {
+      "path": "netlists/behemoth/task-216-circuit-1063.json",
+      "bytes": 4990,
+      "sha256": "5a89f767228ed1b6dd0a3a3331d7fc75c3a81f2084bc312df26b51423f72b0fc"
+    },
+    {
+      "path": "netlists/behemoth/task-217-circuit-1078.json",
+      "bytes": 4377,
+      "sha256": "b2d3115db37a20ef60eafaf2e59a2c2d1c1d16097e8328e8e0540f1884c9ebba"
+    },
+    {
+      "path": "netlists/behemoth/task-218-circuit-157.json",
+      "bytes": 8808,
+      "sha256": "0afcf196d84d78390767296bf3b13a19bdf27aa9ff759d373354149907856790"
+    },
+    {
+      "path": "netlists/behemoth/task-219-circuit-1109.json",
+      "bytes": 5236,
+      "sha256": "ce2d437d82ae9a29c0843e756839fdbf74dc780953ce80b082c0e7406d30d8d1"
+    },
+    {
+      "path": "netlists/behemoth/task-220-circuit-444.json",
+      "bytes": 2855,
+      "sha256": "be5e6cfd1e61fdd67cb78887cca50008438a8bce540b25c98c3af77b1785551c"
+    },
+    {
+      "path": "netlists/behemoth/task-221-circuit-715.json",
+      "bytes": 2342,
+      "sha256": "a0a0184dba3492df2bee8627a26f1ced8353af3b715a56e76a2346e2d4fae9ec"
+    },
+    {
+      "path": "netlists/behemoth/task-222-circuit-898.json",
+      "bytes": 2794,
+      "sha256": "1c607493a864141490c90287c7e350fb156f2c7defa80d80241e1a4fd6cb5388"
+    },
+    {
+      "path": "netlists/behemoth/task-223-circuit-911.json",
+      "bytes": 2623,
+      "sha256": "455f7e7c5bf06cf931dd6a98b85c4e4a7daca5165ed4e2ac7dc19288a50478ac"
+    },
+    {
+      "path": "netlists/behemoth/task-224-circuit-1030.json",
+      "bytes": 3082,
+      "sha256": "7657116e21cff96a6a358b5ac842014e53d3a290f117e45a7750edf1616589af"
+    },
+    {
+      "path": "netlists/behemoth/task-225-circuit-969.json",
+      "bytes": 3060,
+      "sha256": "4e657d3ac21618e6ad9256595ccdb3250d6df3d0b3a0e2f8592283a8a4e0f9f8"
+    },
+    {
+      "path": "netlists/behemoth/task-226-circuit-775.json",
+      "bytes": 2969,
+      "sha256": "732f339e7e23311307c5c1d014a8a6fbb80d0b87ef277d7a51864d890ca690c7"
+    },
+    {
+      "path": "netlists/behemoth/task-227-circuit-1062.json",
+      "bytes": 2384,
+      "sha256": "b0eaffdeb19d1c831569721c642c89a4b87808e368f88c1b2e3246acba5bb552"
+    },
+    {
+      "path": "netlists/behemoth/task-228-circuit-1504.json",
+      "bytes": 2816,
+      "sha256": "6fc5a23c0e8b70957e206c675e7812f83f0ae09ea412acf06dbd026a63ef1ef0"
+    },
+    {
+      "path": "netlists/behemoth/task-229-circuit-1508.json",
+      "bytes": 3277,
+      "sha256": "7d190935155e9068bad95bac7c4cea72a6ccf866878cfc01d46fa176fcaf695c"
+    },
+    {
+      "path": "netlists/behemoth/task-230-circuit-1058.json",
+      "bytes": 2972,
+      "sha256": "c62d41ad3fb3fee32fffefe424cc72da8d16b29f92bf184e4e9be2b90305f18a"
+    },
+    {
+      "path": "netlists/behemoth/task-231-circuit-1507.json",
+      "bytes": 3504,
+      "sha256": "3c0ec4729ccb91ab0d8983bf97866344ba8e861ec9c2c14eec2b68aa2255e25f"
+    },
+    {
+      "path": "netlists/behemoth/task-232-circuit-699.json",
+      "bytes": 2111,
+      "sha256": "e9845c3f9a8dd862f618d09e04228892d01206d7b33cc5ce32ce5936b1fa7129"
+    },
+    {
+      "path": "netlists/behemoth/task-233-circuit-914.json",
+      "bytes": 2250,
+      "sha256": "2a9e24e9b67d4c287194a494a877eeb96383373fb66c17087711d316abe468da"
+    },
+    {
+      "path": "netlists/behemoth/task-234-circuit-1032.json",
+      "bytes": 3678,
+      "sha256": "66014cae7be2fdf023b88d70814175e7029357bae9199b587d4fb664a9fc6694"
+    },
+    {
+      "path": "netlists/behemoth/task-235-circuit-708.json",
+      "bytes": 2360,
+      "sha256": "0cee70b45b3e5aa9897393160b097e421400d8fe777ff6a019f0b19f001495fb"
+    },
+    {
+      "path": "netlists/behemoth/task-236-circuit-1027.json",
+      "bytes": 2948,
+      "sha256": "828f4a70146b24868b77883517e0112e07496c362fd0dc45c11e25e798c5ce6d"
+    },
+    {
+      "path": "netlists/behemoth/task-237-circuit-1070.json",
+      "bytes": 3231,
+      "sha256": "a538f7d4825e130fe2d116cea227be2ed35cf3e9889ce241c801d5c109ac10be"
+    },
+    {
+      "path": "netlists/behemoth/task-238-circuit-353.json",
+      "bytes": 2212,
+      "sha256": "b4f812b32bba378314fefc374b23b417f9ddd0e8f682afc56adf3a6778687320"
+    },
+    {
+      "path": "netlists/behemoth/task-239-circuit-680.json",
+      "bytes": 4038,
+      "sha256": "3b2c62535452f589b50f802bea8cc71aa8a8da0f2782d8e2666c2e4ad1471b4c"
+    },
+    {
+      "path": "netlists/behemoth/task-240-circuit-480.json",
+      "bytes": 2859,
+      "sha256": "04bb521df6b15691d86bcbd1e42131247920b90f3b3587443bc685655be9d236"
+    },
+    {
+      "path": "netlists/behemoth/task-241-circuit-395.json",
+      "bytes": 6525,
+      "sha256": "e5571bfcb70cdc7949316f8e3de00125c2c46c393934def065fcd0f58647fbcd"
+    },
+    {
+      "path": "netlists/behemoth/task-242-circuit-641.json",
+      "bytes": 4344,
+      "sha256": "f8b2d67afbbb68325db584a8734aa2184d65957143659eba689d77f5309a3f94"
+    },
+    {
+      "path": "netlists/behemoth/task-243-circuit-489.json",
+      "bytes": 3886,
+      "sha256": "c947426664b762ea3e3fb8a6e6377ca0a1cbbdc6821b96c06e2266b5b5e15179"
+    },
+    {
+      "path": "netlists/behemoth/task-244-circuit-939.json",
+      "bytes": 4640,
+      "sha256": "881a05f6999614db2a5e40391b7128dc4fd0b4d119f32bcd8a8c1024c49f1ca0"
+    },
+    {
+      "path": "netlists/behemoth/task-245-circuit-505.json",
+      "bytes": 2025,
+      "sha256": "2846c30532146709c1819515e84c19214d4d86e1078b7c267705b6daad84d8b5"
+    },
+    {
+      "path": "netlists/behemoth/task-246-circuit-506.json",
+      "bytes": 2178,
+      "sha256": "5d453080f4c29792d8a083d361180c09968f64b14170e80210dacb4042f5617a"
+    },
+    {
+      "path": "netlists/behemoth/task-247-circuit-748.json",
+      "bytes": 2983,
+      "sha256": "44e9be9017f23afec6c4d60b73d124b10746f9ebe69e73370d56d4f9d3ce5dff"
+    },
+    {
+      "path": "netlists/behemoth/task-248-circuit-507.json",
+      "bytes": 2359,
+      "sha256": "9084bab1775f4b245141710638e3b92e95e5261aa94c13dd9d00a2e4a95a71bb"
+    },
+    {
+      "path": "netlists/behemoth/task-249-circuit-1625.json",
+      "bytes": 4821,
+      "sha256": "f9cb636aa16e58c67d47047a01b3663a7b219388ec336c15dde39fdd09167a23"
+    },
+    {
+      "path": "netlists/behemoth/task-250-circuit-1172.json",
+      "bytes": 3862,
+      "sha256": "6b6abbb29472ea21659791e5a24c3f8519fb952808c039d50f74e67ff5635d2a"
+    },
+    {
+      "path": "netlists/behemoth/task-251-circuit-1571.json",
+      "bytes": 5999,
+      "sha256": "c7f732ef0c8e6f61c36d9d2abe931338255b77fec324b14c73c416659c712bff"
+    },
+    {
+      "path": "netlists/behemoth/task-252-circuit-418.json",
+      "bytes": 5398,
+      "sha256": "1309e3caa1e74434ec8d1d1144e5b376c8e2684266dd52072a335dc34285612f"
+    },
+    {
+      "path": "netlists/behemoth/task-253-circuit-928.json",
+      "bytes": 7268,
+      "sha256": "2c42d9c13d2b9ac7297cea21d8afc134a4db867467b85deea430cf8a8ee4b783"
+    },
+    {
+      "path": "netlists/behemoth/task-254-circuit-2461.json",
+      "bytes": 16352,
+      "sha256": "8369bb01f49145070fdb9a0c6196ac8cf4f3052b23e145a60c5e0f38f5c56d3d"
+    },
+    {
+      "path": "netlists/behemoth/task-255-circuit-1001.json",
+      "bytes": 12651,
+      "sha256": "af039468448411a4bfbb6448a8b89af5c05c97359e954612482a260daede707d"
+    },
+    {
+      "path": "netlists/behemoth/task-256-circuit-2445.json",
+      "bytes": 12783,
+      "sha256": "4a5c01838d16dbf1adbfa301cf20ab4bfeed77d42307326fd764e7b8aca816c9"
+    },
+    {
+      "path": "netlists/behemoth/task-257-circuit-796.json",
+      "bytes": 4225,
+      "sha256": "e85af161452baab17a82b31a43c0afc875b54efc35530055c53a5c800fb8c45c"
+    },
+    {
+      "path": "netlists/behemoth/task-258-circuit-2234.json",
+      "bytes": 5275,
+      "sha256": "d200db24f7d419f6aeb6808121e1a8ad04a44f7677a09e3fcc557d2a9ff7d03d"
+    },
+    {
+      "path": "netlists/behemoth/task-259-circuit-2443.json",
+      "bytes": 5552,
+      "sha256": "dc23e1ae96242008b8a8daac11cd599e449fd8d846698fe43c5b99c40397aa5c"
+    },
+    {
+      "path": "netlists/behemoth/task-260-circuit-2075.json",
+      "bytes": 12525,
+      "sha256": "69c642a30efeb534104dae3081c5e633e1be6daf1a3f95190f29708b032568c2"
+    },
+    {
+      "path": "netlists/behemoth/task-261-circuit-976.json",
+      "bytes": 3060,
+      "sha256": "fefe391b82159405a0b9c06c86d7d74426d392bdef721fc0f26bfd8dcff80e6e"
+    },
+    {
+      "path": "netlists/behemoth/task-262-circuit-1976.json",
+      "bytes": 3364,
+      "sha256": "aa19840f28d86d7e9d8f5eb7032c2cbaffb5095a71c039957b24b637a36e1afe"
+    },
+    {
+      "path": "netlists/behemoth/task-263-circuit-580.json",
+      "bytes": 2532,
+      "sha256": "389240333f8c86e7598a5f0af17fd5fcf750bf2f4ee22990056c8455084c004f"
+    },
+    {
+      "path": "netlists/behemoth/task-264-circuit-761.json",
+      "bytes": 2979,
+      "sha256": "de35f935825411e763d2e914bfb3b671c4580c3df71f7255dd3cde9d6753afcf"
+    },
+    {
+      "path": "netlists/behemoth/task-265-circuit-779.json",
+      "bytes": 2392,
+      "sha256": "1a65e3467f56eb92e8d3f50ab4a46d6cd9dc6988e733748c0945d0e9e7dc7500"
+    },
+    {
+      "path": "netlists/behemoth/task-266-circuit-1073.json",
+      "bytes": 2801,
+      "sha256": "92971d572d7119820029c2aaabb76514679effb0e1d115b3be80098785ca2ebf"
+    },
+    {
+      "path": "netlists/behemoth/task-267-circuit-1077.json",
+      "bytes": 3218,
+      "sha256": "39c8ed10281add06495318a1a98a10c5da485b3a6f5ac32385c8eea592d92729"
+    },
+    {
+      "path": "netlists/tapeout/task-001-circuit-904.json",
+      "bytes": 1850,
+      "sha256": "a7cc90187fd7ed41c6ef09f0cf5f123700549711730c9b81b0448ddd0a2bc0d7"
+    },
+    {
+      "path": "netlists/tapeout/task-002-circuit-905.json",
+      "bytes": 1997,
+      "sha256": "cf05494eede52f7d7a18de535d9751fcad1b08f8b12f51a536e735482081f05a"
+    },
+    {
+      "path": "netlists/tapeout/task-003-circuit-906.json",
+      "bytes": 2155,
+      "sha256": "91acf7337eb0179323b6d2b2c3045c1008093279798118fb9f5819a689aa682f"
+    },
+    {
+      "path": "netlists/tapeout/task-004-circuit-907.json",
+      "bytes": 1708,
+      "sha256": "f4ac78a9e7d793e860ff67fb9f50a0e3398f278ce31716046191627e99284d3d"
+    },
+    {
+      "path": "netlists/tapeout/task-005-circuit-908.json",
+      "bytes": 1854,
+      "sha256": "c11441539d64b032aec7d43f2c834d212a50843a86cadcf8d8cec4eb60813fb3"
+    },
+    {
+      "path": "netlists/tapeout/task-006-circuit-1048.json",
+      "bytes": 2011,
+      "sha256": "9dd81fd9312335b265b7fc0f7dc9dc25faa617cedd35453db23c3750626b3960"
+    },
+    {
+      "path": "netlists/tapeout/task-007-circuit-910.json",
+      "bytes": 2155,
+      "sha256": "2da5148a5909c323c7647509eed5ff73a5d97225466f0158f054842369cf4a0b"
+    },
+    {
+      "path": "netlists/tapeout/task-008-circuit-1050.json",
+      "bytes": 2309,
+      "sha256": "f08df4b5f10701b114c3292677bd1cf6a146850f4d68894f2128ffbb3c481210"
+    },
+    {
+      "path": "netlists/tapeout/task-009-circuit-912.json",
+      "bytes": 2165,
+      "sha256": "b93132f90f5d41e36d3dd34e62f3c9b65a4e0dad1425f70806af1eb75eab5df3"
+    },
+    {
+      "path": "netlists/tapeout/task-010-circuit-1052.json",
+      "bytes": 3245,
+      "sha256": "1b67d6b16f685a7201d16343e3f15137f201b61bcfeeabd37f80dba0d1721506"
+    },
+    {
+      "path": "netlists/tapeout/task-011-circuit-16.json",
+      "bytes": 2465,
+      "sha256": "209d4b705263711eb37b08f5011e53a59348b8e5ee4f8860977fa16fa29d7fe5"
+    },
+    {
+      "path": "netlists/tapeout/task-012-circuit-1704.json",
+      "bytes": 2163,
+      "sha256": "cb607ad4a3697e295e351c0ce4414ceafea2a0c4d578d8f755bd00fbfc3ad036"
+    },
+    {
+      "path": "netlists/tapeout/task-013-circuit-1194.json",
+      "bytes": 4450,
+      "sha256": "3acbe6b967ddb468fe103d8a6cdf92a651860c5fee7c572e69d16317604db4bf"
+    },
+    {
+      "path": "netlists/tapeout/task-014-circuit-2232.json",
+      "bytes": 4008,
+      "sha256": "b8c302f880219ac8cd581ea52475a31b09c55e7b3f3cf8adb09da7d628124ecf"
+    },
+    {
+      "path": "netlists/tapeout/task-015-circuit-2779.json",
+      "bytes": 8742,
+      "sha256": "f098429caf186ccb0bcebd680c2ab61072e2a8b94a1a47524e40ea4ea7d84389"
+    },
+    {
+      "path": "netlists/tapeout/task-016-circuit-1784.json",
+      "bytes": 4921,
+      "sha256": "042d784d1eff8474b9e6a54c934cc8e1e4e8a8248d2b51d8cdf1f2eacdf13dc9"
+    },
+    {
+      "path": "netlists/tapeout/task-017-circuit-917.json",
+      "bytes": 2309,
+      "sha256": "a6ebad8c594b41898feec25a6b0a689be9053e76960c39ee717d9a174832172a"
+    },
+    {
+      "path": "netlists/tapeout/task-018-circuit-1056.json",
+      "bytes": 3377,
+      "sha256": "4b297a46d623d1f3b472e340b06acbb0f9b7585502f0dca2fa52f6aa70af66d5"
+    },
+    {
+      "path": "netlists/tapeout/task-019-circuit-1057.json",
+      "bytes": 3378,
+      "sha256": "39516507073dc24ca0cc164e69bff6fb77100f10d89bd39c7cf76bae80abe1b0"
+    },
+    {
+      "path": "netlists/tapeout/task-020-circuit-919.json",
+      "bytes": 3093,
+      "sha256": "2b064cccd8b5117dce7f6b961915a4db483282d80f356809b636a338518787b4"
+    },
+    {
+      "path": "netlists/tapeout/task-021-circuit-1880.json",
+      "bytes": 5431,
+      "sha256": "1296d3c86d4368e500af6e49bcf9f2075a3aa5249aa567646f2742efcfa65380"
+    },
+    {
+      "path": "netlists/tapeout/task-022-circuit-1059.json",
+      "bytes": 3256,
+      "sha256": "25118168ad135acdd2a7998ac31c40559b08366920f4c99b44340a1dee712aee"
+    },
+    {
+      "path": "netlists/tapeout/task-023-circuit-3422.json",
+      "bytes": 4793,
+      "sha256": "0b3159c9542569c42b9ff88dca6cc48c5da316d0776d1b398cd8a1f7f6db07a9"
+    },
+    {
+      "path": "netlists/tapeout/task-024-circuit-1706.json",
+      "bytes": 3233,
+      "sha256": "fd5e29e0064ed28242712ec5a895531124783afd7a364d48fa7916101540b8a9"
+    },
+    {
+      "path": "netlists/tapeout/task-025-circuit-11405.json",
+      "bytes": 5678,
+      "sha256": "e55e8eb03dcb64ce9fa3170cd1a6197ef360810485813b581727fce61f4af7cd"
+    },
+    {
+      "path": "netlists/tapeout/task-026-circuit-1061.json",
+      "bytes": 2953,
+      "sha256": "a89a868f59f31c2fecc4877e4751442b2d2dcda50d288c1926166bccd6064493"
+    },
+    {
+      "path": "netlists/tapeout/task-027-circuit-1656.json",
+      "bytes": 4943,
+      "sha256": "5d0d2d01e8fe899ca3acd2bdc42932fe730c0f4e0808b3b34894cfc3eda27f30"
+    },
+    {
+      "path": "netlists/tapeout/task-028-circuit-10266.json",
+      "bytes": 5885,
+      "sha256": "0cadc256fa12ca4213f2a86d76d1571d77932f06b74c5e55ce131aaef2a371e4"
+    },
+    {
+      "path": "netlists/tapeout/task-029-circuit-12781.json",
+      "bytes": 5525,
+      "sha256": "14034ad18ef6ef8f9252de7827731216e773a52de42b67c85073e13399a029fc"
+    },
+    {
+      "path": "netlists/tapeout/task-030-circuit-3430.json",
+      "bytes": 4310,
+      "sha256": "c4a7484b4c75d86505d091a7f3d5819145347ba32af0f9ec816e65493e54cbc2"
+    },
+    {
+      "path": "netlists/tapeout/task-031-circuit-1062.json",
+      "bytes": 3413,
+      "sha256": "d9b2f6ea9e883e40ace0de6d0b2b22864c4371b480f7ac92b06876514c08f58d"
+    },
+    {
+      "path": "netlists/tapeout/task-032-circuit-12094.json",
+      "bytes": 4966,
+      "sha256": "b318ef604b677d2795f7ef2d2fdf9367e0d4da74a68c4e88868b654ca87735e1"
+    },
+    {
+      "path": "netlists/tapeout/task-033-circuit-13234.json",
+      "bytes": 9728,
+      "sha256": "e80e6f29464c9c81a2df4ba1cc328e9a87b013d647bc8e4e6bae1e958256ce05"
+    },
+    {
+      "path": "netlists/tapeout/task-034-circuit-15532.json",
+      "bytes": 19478,
+      "sha256": "172d344cfb3b9ed8f9a6ce8ed9579c322e1aede76238e49e71b9bd93e02f5ade"
+    },
+    {
+      "path": "netlists/tapeout/task-035-circuit-13809.json",
+      "bytes": 35828,
+      "sha256": "fceefc2f67346d4e64769b31104bc78d515d07056105dc0d915269ba2fe03784"
+    },
+    {
+      "path": "netlists/tapeout/task-036-circuit-1063.json",
+      "bytes": 4031,
+      "sha256": "22144a066029d3d0538c380821484c447a2113073d2ecae9fd3d6ee28a7a69c6"
+    },
+    {
+      "path": "netlists/tapeout/task-037-circuit-8871.json",
+      "bytes": 7733,
+      "sha256": "b4d5834bb5db21caed5ad62128b8d0427a22344cb291a1f48bc60d860fedaad3"
+    },
+    {
+      "path": "netlists/tapeout/task-038-circuit-12033.json",
+      "bytes": 16819,
+      "sha256": "472c716a4cfac1f67e442a8ef9b8f5d3d4e082f1f589fe53f62276874ac2a2d4"
+    },
+    {
+      "path": "netlists/tapeout/task-039-circuit-13808.json",
+      "bytes": 34258,
+      "sha256": "36450456374ac1582fc67d6061acd177adeca5689818494d7107745a8efe93c2"
+    },
+    {
+      "path": "netlists/tapeout/task-040-circuit-12054.json",
+      "bytes": 10340,
+      "sha256": "97abb7f00f0cceb462197c8c084d60889bff766a2d378eed9c1d638b7c50da47"
+    },
+    {
+      "path": "netlists/tapeout/task-041-circuit-14642.json",
+      "bytes": 19934,
+      "sha256": "63c08c1f57899932da0258f921abb6fb4ea371bf7a854f18cfdf861a88b77664"
+    },
+    {
+      "path": "netlists/tapeout/task-042-circuit-12733.json",
+      "bytes": 15079,
+      "sha256": "ab3856d6f5c28df53371fa7688f994644be96daf131b1e02427c874d053df422"
+    },
+    {
+      "path": "netlists/tapeout/task-043-circuit-2712.json",
+      "bytes": 4495,
+      "sha256": "c73d088529c9a96cb43b17a4f6402522284accb6689fead74984bd3052442ae3"
+    },
+    {
+      "path": "netlists/tapeout/task-044-circuit-1644.json",
+      "bytes": 4199,
+      "sha256": "98d0cec30be169420b10d184d8238efa0a8e51d0683f4469275960c42333d52c"
+    },
+    {
+      "path": "netlists/tapeout/task-045-circuit-2004.json",
+      "bytes": 4512,
+      "sha256": "ab6b9e036f2607576d243e153b9d0086933f8b63d781aacec6cecf3647fb2f94"
+    },
+    {
+      "path": "netlists/tapeout/task-046-circuit-11490.json",
+      "bytes": 8990,
+      "sha256": "ae0f6f4190e3fd9d8806e3fa7bb1a117230f417a935c78e3710160bea98238a2"
+    },
+    {
+      "path": "netlists/tapeout/task-047-circuit-3341.json",
+      "bytes": 5692,
+      "sha256": "f23aa9d3c0cc1812142a1aaa03e1ff64dc279671ab46a0ebe0c765ed0e053bcd"
+    },
+    {
+      "path": "netlists/tapeout/task-048-circuit-14947.json",
+      "bytes": 15042,
+      "sha256": "3fb2b381a491603c6dc5f7cf6a7ce8175635381fb951a30e3d663b432fa092ca"
+    },
+    {
+      "path": "netlists/tapeout/task-049-circuit-1064.json",
+      "bytes": 4018,
+      "sha256": "d656aa6776f267aa3a7c4ff19638da8be98099121284b17480d99b102affaaf1"
+    },
+    {
+      "path": "netlists/tapeout/task-050-circuit-1786.json",
+      "bytes": 5091,
+      "sha256": "6b392e22fe1d7779fa196f326f80518755e185802f0fcfeeeb14bf5bd9602ac0"
+    },
+    {
+      "path": "netlists/tapeout/task-051-circuit-1788.json",
+      "bytes": 5092,
+      "sha256": "6228bc6092fdeb0d8a3eed4e3e4d242f1b7001b68e14ecf0d2a44555e61e1f96"
+    },
+    {
+      "path": "netlists/tapeout/task-052-circuit-3464.json",
+      "bytes": 5397,
+      "sha256": "3b7356b1dc5c38f8b0d2c4474be158f2f3d21ce31dd2f55b6942c7c9773093e8"
+    },
+    {
+      "path": "netlists/tapeout/task-053-circuit-13432.json",
+      "bytes": 14932,
+      "sha256": "5e82d49192982599554224fbd0d7f314b83f605ea52ddf728a3e8ac0fa2a4f35"
+    },
+    {
+      "path": "netlists/tapeout/task-054-circuit-1065.json",
+      "bytes": 3579,
+      "sha256": "157b88b5c55caeb991ca6e6af2bdb20586596b133036789804c03da164e2e096"
+    },
+    {
+      "path": "netlists/tapeout/task-055-circuit-3206.json",
+      "bytes": 5269,
+      "sha256": "e16673ac69b229e377bbcc03c702612de4aa03c073afb777395a38d18cd9b8d2"
+    },
+    {
+      "path": "netlists/tapeout/task-056-circuit-2031.json",
+      "bytes": 5085,
+      "sha256": "612ac64b78ca8b2f0c43d0b16efd4b9e16578c3daf6d6d542f5bd74b744ec152"
+    },
+    {
+      "path": "netlists/tapeout/task-057-circuit-13147.json",
+      "bytes": 7275,
+      "sha256": "5eba096a718414f05667c4588411ae95d60bc83c21faf407b09d6500a34639f7"
+    },
+    {
+      "path": "netlists/tapeout/task-058-circuit-1066.json",
+      "bytes": 3862,
+      "sha256": "0ef10a192ad83fb2359242417e1471b3dc35444ef69caff2248cc323ed8f4fb6"
+    },
+    {
+      "path": "netlists/tapeout/task-059-circuit-14079.json",
+      "bytes": 8476,
+      "sha256": "d7f8bd3da49ab6a75760c9f4e8fa7cf5841db949fa74331ba9feba9d8d322da4"
+    },
+    {
+      "path": "netlists/tapeout/task-060-circuit-13130.json",
+      "bytes": 19716,
+      "sha256": "b26520f533db4314fcc1a8f3609a2ce5a4b0db11d6453d69ea6f98821e90c2d2"
+    },
+    {
+      "path": "netlists/tapeout/task-061-circuit-14335.json",
+      "bytes": 108637,
+      "sha256": "52f65aa07314d8210607afffda9b730250b28c5b137c1e358a2aef543b5d2d99"
+    },
+    {
+      "path": "netlists/tapeout/task-062-circuit-2217.json",
+      "bytes": 5413,
+      "sha256": "25df30768f7114627462faed8ea79c7c050340df9240f2c4147bcf3ce7945928"
+    },
+    {
+      "path": "netlists/tapeout/task-063-circuit-15255.json",
+      "bytes": 41113,
+      "sha256": "dd4e246698fb9f3dd25d03971edd13d8368811e2adfab2b390b8f3620f6310d3"
+    },
+    {
+      "path": "netlists/tapeout/task-064-circuit-2527.json",
+      "bytes": 4181,
+      "sha256": "e80a15309a68590244b22e7a066924b22da726f421b78da9542a351737e17920"
+    },
+    {
+      "path": "netlists/tapeout/task-065-circuit-4889.json",
+      "bytes": 4461,
+      "sha256": "5b7a4e8e70cd8f3fa46a235e07d9900606a136e0fea710804954da4484c58da3"
+    },
+    {
+      "path": "netlists/tapeout/task-066-circuit-6030.json",
+      "bytes": 7077,
+      "sha256": "663bb4cfa828f0bf6455d278d8518f1f24aed47eeb5b996e2259dd715facca7b"
+    },
+    {
+      "path": "netlists/tapeout/task-067-circuit-4465.json",
+      "bytes": 5876,
+      "sha256": "940d2ab12333e60e4d064acfacd501cfe9f8fa25a697423bc39438cc964e430d"
+    },
+    {
+      "path": "netlists/tapeout/task-068-circuit-2739.json",
+      "bytes": 10067,
+      "sha256": "26604b98b53d4ec63074e401bc4dff5cc423453118df46dde70fda6b4b08c463"
+    },
+    {
+      "path": "netlists/tapeout/task-069-circuit-2082.json",
+      "bytes": 10598,
+      "sha256": "1ed2658fbc6eef439f61b01cc6086e7356fc9a04acd74e5ef2241865499a7724"
+    },
+    {
+      "path": "netlists/tapeout/task-070-circuit-15752.json",
+      "bytes": 15853,
+      "sha256": "a72f1e2de453ba48f4095e8bc59088f2b70c96c71c51ea427ae9406e6e90b4fe"
+    },
+    {
+      "path": "netlists/tapeout/task-071-circuit-2573.json",
+      "bytes": 4000,
+      "sha256": "024ab53435a68332809ab80612b4736c1c9884d347b696da51f1a0f45aa83525"
+    },
+    {
+      "path": "netlists/tapeout/task-072-circuit-12714.json",
+      "bytes": 8316,
+      "sha256": "e3aef1eaa1cb2f9f78e7848e2163fe300019805581094b4a1badfb5be53ec6cd"
+    },
+    {
+      "path": "netlists/tapeout/task-073-circuit-2279.json",
+      "bytes": 2274,
+      "sha256": "0e46855c00644499c5b89c60456597af2fc27315d59b27747b48743727d1cfc1"
+    },
+    {
+      "path": "netlists/tapeout/task-074-circuit-1307.json",
+      "bytes": 1785,
+      "sha256": "e9a00181ddf1dc392e95d2b8c8e666a31bc2fbb4d99d4654406351a3cb5be671"
+    },
+    {
+      "path": "netlists/tapeout/task-075-circuit-1620.json",
+      "bytes": 2109,
+      "sha256": "c3ade1eda6765f5adbc0dd6a6449decfcdae54478c68c8c0f3fa13a09cd69cc2"
+    },
+    {
+      "path": "netlists/tapeout/task-076-circuit-10940.json",
+      "bytes": 3616,
+      "sha256": "74ebb9693cdf2cb6f4b84fc5a47e6b07041a2e407424113a73c21d81c991ef62"
+    },
+    {
+      "path": "netlists/tapeout/task-077-circuit-3187.json",
+      "bytes": 5559,
+      "sha256": "18c41aeba5344fb09e88c346513c3f35dd57f7dffb5a967af77ba2d72eed84cc"
+    },
+    {
+      "path": "netlists/tapeout/task-078-circuit-1755.json",
+      "bytes": 5231,
+      "sha256": "b5f07c0d9b08428c55f51712a10840b474beb7b2a7776647312e7392ae9fc187"
+    },
+    {
+      "path": "netlists/tapeout/task-079-circuit-2027.json",
+      "bytes": 2967,
+      "sha256": "64b180fa5b6c8ae90a99c1416f14ae9d27143bb10d761b178c166823d3dc1c74"
+    },
+    {
+      "path": "netlists/tapeout/task-080-circuit-9894.json",
+      "bytes": 8606,
+      "sha256": "366d0f9489dc62bccfe6c583bbb1a4060a31484bbe6efa568711b25006e40b96"
+    },
+    {
+      "path": "netlists/tapeout/task-081-circuit-3145.json",
+      "bytes": 3489,
+      "sha256": "866c7a8571b3cb537f1860d907f671213d7458e99dc9770132e853dca415275c"
+    },
+    {
+      "path": "netlists/tapeout/task-082-circuit-630.json",
+      "bytes": 1795,
+      "sha256": "fcd01a94f634c3cd3a0413769faeb52cc1f4849addc784978d650122ac8c8956"
+    },
+    {
+      "path": "netlists/tapeout/task-083-circuit-2339.json",
+      "bytes": 2066,
+      "sha256": "2001a52dbb5f137b654e313993dcd68a621d28cd410104143fe01c5b3917f0d2"
+    },
+    {
+      "path": "netlists/tapeout/task-084-circuit-3213.json",
+      "bytes": 2802,
+      "sha256": "65c5c6f6dc63dd44c32c7664675353c8ad925607e28a142e4ec5f65ca7f19259"
+    },
+    {
+      "path": "netlists/tapeout/task-085-circuit-2503.json",
+      "bytes": 4394,
+      "sha256": "568ca95003c897cf31ae1bb5e25eabc929314f5d8ea8e8a2e0a96794f80ed08b"
+    },
+    {
+      "path": "netlists/tapeout/task-086-circuit-2034.json",
+      "bytes": 2330,
+      "sha256": "534e9b92fc0a83636e7ae406dfcc22a507860c57bb48f696014c5bce05438d3f"
+    },
+    {
+      "path": "netlists/tapeout/task-087-circuit-2901.json",
+      "bytes": 2472,
+      "sha256": "88336bbe19a1c42015de155af4700a47c0c1a75c33c6c58e00702b74f89b5522"
+    },
+    {
+      "path": "netlists/tapeout/task-088-circuit-3233.json",
+      "bytes": 3233,
+      "sha256": "253e159b2f8ee78ccb26d44105637ee2889a91d86d2996b929ae8f3323e8f790"
+    },
+    {
+      "path": "netlists/tapeout/task-089-circuit-2605.json",
+      "bytes": 4411,
+      "sha256": "88347928eac0573cbf920b82a4a88f380ba43d3bb7850dd5d0370a5e7efa85dc"
+    },
+    {
+      "path": "netlists/tapeout/task-090-circuit-3848.json",
+      "bytes": 7904,
+      "sha256": "3b07f7b899eb93cdeb757aaa9daa4ffa594cecf04a099e04e837843208508dc5"
+    },
+    {
+      "path": "netlists/tapeout/task-091-circuit-13236.json",
+      "bytes": 9681,
+      "sha256": "34ae357398498fd01bc010facb0aaef32eaf5a3237d4c303ef61ee65552d8416"
+    },
+    {
+      "path": "netlists/tapeout/task-092-circuit-1067.json",
+      "bytes": 3107,
+      "sha256": "a1401d7090bd15f6edbfd76d2e2f00478f97879e06de1fd975788959969608e2"
+    },
+    {
+      "path": "netlists/tapeout/task-093-circuit-13883.json",
+      "bytes": 19402,
+      "sha256": "6335ae32b37cc176469254ee48f82cefb8a7dc55ecc61fe4ea8f727f93c3a595"
+    },
+    {
+      "path": "netlists/tapeout/task-094-circuit-14917.json",
+      "bytes": 27068,
+      "sha256": "86b5aa70e961dc77310d1b6c766e7c73c95f90b7c9ae161d030cac2fea55da00"
+    },
+    {
+      "path": "netlists/tapeout/task-095-circuit-2656.json",
+      "bytes": 2383,
+      "sha256": "2b459dfb4bf52157d786cc00607440ee38d5925828975cdae8f24a4576e209f3"
+    },
+    {
+      "path": "netlists/tapeout/task-096-circuit-2495.json",
+      "bytes": 3512,
+      "sha256": "f40a55ec2ce40f7ffd0cf1126d889b47ed7061e1b84de431dcaf985aa960cbca"
+    },
+    {
+      "path": "netlists/tapeout/task-097-circuit-2498.json",
+      "bytes": 3513,
+      "sha256": "306e7c3d3977a424ecca21f8efe71f346324d2faa664d16cff2d459121b71248"
+    },
+    {
+      "path": "netlists/tapeout/task-098-circuit-2499.json",
+      "bytes": 3816,
+      "sha256": "2fff0cd2dfc4771e3dfe51bb32073cfd0e34a1c4583db7dfa0ef0557c126abcc"
+    },
+    {
+      "path": "netlists/tapeout/task-099-circuit-2533.json",
+      "bytes": 4891,
+      "sha256": "2f601932599ce0439c2ae3e93976c9b665ba98b2eedb10cfeb51115180d5d1ea"
+    },
+    {
+      "path": "netlists/tapeout/task-100-circuit-2622.json",
+      "bytes": 3047,
+      "sha256": "ba353afd342c69e55976cabc27420c449c021a919c7e09fc40727650e4916b8e"
+    },
+    {
+      "path": "netlists/tapeout/task-101-circuit-2904.json",
+      "bytes": 2829,
+      "sha256": "4b6e4343d5545173e7eb995f5a93e866e826aaab03b767bc5bd02c31c5e471ce"
+    },
+    {
+      "path": "netlists/tapeout/task-102-circuit-929.json",
+      "bytes": 2812,
+      "sha256": "b1685eb529c59fa538576e71a1f56a82823a095895101a62f21842f955879765"
+    },
+    {
+      "path": "netlists/tapeout/task-103-circuit-930.json",
+      "bytes": 3418,
+      "sha256": "cef35b03e880694439c0a0b01d9722f239e48c401edb1e261fd92578297f9f63"
+    },
+    {
+      "path": "netlists/tapeout/task-104-circuit-931.json",
+      "bytes": 4037,
+      "sha256": "2d9598726995e7aa35aef022112315fa6f0d0e0f2962a25da651f7d3436c2618"
+    },
+    {
+      "path": "netlists/tapeout/task-105-circuit-1670.json",
+      "bytes": 4656,
+      "sha256": "88cc564c04c744c5570380eea27d3c6456bc670b23b5420a9754495634c02d03"
+    },
+    {
+      "path": "netlists/tapeout/task-106-circuit-933.json",
+      "bytes": 4078,
+      "sha256": "85da8f47d5ffadb7dba8aa75b61f18ac49661e3cf9902465f5e74ad19391fc77"
+    },
+    {
+      "path": "netlists/tapeout/task-107-circuit-934.json",
+      "bytes": 5292,
+      "sha256": "ee5bed574cf9272467d34a720f9ccae733ef98183099ac1583a769ea8ccb2aba"
+    },
+    {
+      "path": "netlists/tapeout/task-108-circuit-935.json",
+      "bytes": 6524,
+      "sha256": "561300d635cf678261e474ce3e9c3c875a909111053a14af2a74f52c534d81bb"
+    },
+    {
+      "path": "netlists/tapeout/task-109-circuit-1233.json",
+      "bytes": 7745,
+      "sha256": "05754c71b5c575726a11f89920cc093d275570b30feb40ea058ec98d5988a92b"
+    },
+    {
+      "path": "netlists/tapeout/task-110-circuit-9147.json",
+      "bytes": 5575,
+      "sha256": "402933c24783ca22ba00fb4811928e566cfb6d5c1219fc1d07c9cf37b1d21240"
+    },
+    {
+      "path": "netlists/tapeout/task-111-circuit-13803.json",
+      "bytes": 6801,
+      "sha256": "eaf324e3b9f190c2e8f6ea021ec6bd09d816074a2883887299dcf9ac43c6d986"
+    },
+    {
+      "path": "netlists/tapeout/task-112-circuit-15930.json",
+      "bytes": 11114,
+      "sha256": "bd5484415ecf2f66d8f1343dc7bf67a874a839e3cb45185d1cce1e33d394619d"
+    },
+    {
+      "path": "netlists/tapeout/task-113-circuit-11384.json",
+      "bytes": 10965,
+      "sha256": "87b568d3e636c0bf5be66c659d4434a62443d0e99a0e1980be37aa6937b62aef"
+    },
+    {
+      "path": "netlists/tapeout/task-114-circuit-13740.json",
+      "bytes": 11590,
+      "sha256": "4fd041b158d16e6103a8e6a9b9cde2e23823f055e08ff596cb756cf04e123bdf"
+    },
+    {
+      "path": "netlists/tapeout/task-115-circuit-13529.json",
+      "bytes": 12967,
+      "sha256": "3135ae537958b145f435975b506f33e14836999d277397387a91393aebb34bbb"
+    },
+    {
+      "path": "netlists/tapeout/task-116-circuit-12281.json",
+      "bytes": 13577,
+      "sha256": "2a410aed6a82694c124d2d11110b13f4b76e8929157ec5bdcb255d7a77460bd0"
+    },
+    {
+      "path": "netlists/tapeout/task-117-circuit-13305.json",
+      "bytes": 16187,
+      "sha256": "7d2fce67e67795e11c57834f9c5d3f00107b65b44abc74fb4f36c9980bd27d35"
+    },
+    {
+      "path": "netlists/tapeout/task-118-circuit-7920.json",
+      "bytes": 4665,
+      "sha256": "d5f47f27b969f675155f512f1e9d7c0992658310b8dab272a2defa80a443024a"
+    },
+    {
+      "path": "netlists/tapeout/task-119-circuit-12989.json",
+      "bytes": 6820,
+      "sha256": "9bb78d6f10e176d1bf40a5fe2133285fe15a7f26bfa7073cb1d3832aa5091079"
+    },
+    {
+      "path": "netlists/tapeout/task-120-circuit-13427.json",
+      "bytes": 11283,
+      "sha256": "c623b6e42eaf1cf83709bcc815d6dedb75aaa1bb282bdfa0412132bb3a333b02"
+    },
+    {
+      "path": "netlists/tapeout/task-121-circuit-15685.json",
+      "bytes": 12516,
+      "sha256": "916ed2845f74d6cceff7806b0dd5518f12320c062fe912ae50dbeeb9bd312853"
+    },
+    {
+      "path": "netlists/tapeout/task-122-circuit-939.json",
+      "bytes": 2519,
+      "sha256": "67db7cd191f823c2af65218d85e8dd06346889c3b6057301e9f45431b3284deb"
+    },
+    {
+      "path": "netlists/tapeout/task-123-circuit-1074.json",
+      "bytes": 3441,
+      "sha256": "b3a1b5602281bd501122eb192d79fd6591b805c250c4756f562ec983570fb14a"
+    },
+    {
+      "path": "netlists/tapeout/task-124-circuit-2252.json",
+      "bytes": 5305,
+      "sha256": "7a12bb21b2b18ab987e527e32a31b1a6df5ea7d8f850bc5f38d8309099fd892a"
+    },
+    {
+      "path": "netlists/tapeout/task-125-circuit-7832.json",
+      "bytes": 6373,
+      "sha256": "af64e255ecd609dae1b9665c1e404f44fd51e1b59a4c88be7b341e45c5168b60"
+    },
+    {
+      "path": "netlists/tapeout/task-126-circuit-13059.json",
+      "bytes": 7775,
+      "sha256": "59c69bab24f1fab5fde33207443af916fada39f8d01aed80227bf623c10db328"
+    },
+    {
+      "path": "netlists/tapeout/task-127-circuit-1075.json",
+      "bytes": 3260,
+      "sha256": "ee1b5f39aefe79d4e3234caed02b69f3486e98c3914cfa8be3e1070be9ec0f09"
+    },
+    {
+      "path": "netlists/tapeout/task-128-circuit-5960.json",
+      "bytes": 5272,
+      "sha256": "7a0b452c96b7de482f61562b2ded459d9a2b2a2f2851ac56fbb7f259605d08c8"
+    },
+    {
+      "path": "netlists/tapeout/task-129-circuit-11469.json",
+      "bytes": 6493,
+      "sha256": "12f4bb9c8868167c44303f265532adcc47249a8e127f7e8306b773d332862dcc"
+    },
+    {
+      "path": "netlists/tapeout/task-130-circuit-9022.json",
+      "bytes": 9420,
+      "sha256": "2cda8478df4b5d945e335b684a4c7a640830bb510f0451b192d4cd8b9d449f8a"
+    },
+    {
+      "path": "netlists/tapeout/task-131-circuit-3408.json",
+      "bytes": 5127,
+      "sha256": "256bd0db4854218d0c20a860877c4b39a10914406a1eafd476a3df2fc88aceda"
+    },
+    {
+      "path": "netlists/tapeout/task-132-circuit-6060.json",
+      "bytes": 6218,
+      "sha256": "248173bce498d2af2ce8666d5af3204ae0f3e0b3a88efa7976dc358c9aeace2a"
+    },
+    {
+      "path": "netlists/tapeout/task-133-circuit-8692.json",
+      "bytes": 9144,
+      "sha256": "f0712d4d776da1cdf7ef0bd7073c1db94b530809badb5798a067bd866e7443b9"
+    },
+    {
+      "path": "netlists/tapeout/task-134-circuit-10265.json",
+      "bytes": 6024,
+      "sha256": "3736137820266843b9dab50376253102fc41779ea8a5ff6c68c3c7578bfabcd8"
+    },
+    {
+      "path": "netlists/tapeout/task-135-circuit-13644.json",
+      "bytes": 8182,
+      "sha256": "9e75aaa9839dfa394337430b81fd93aade00f953f75c24add3e6104767be888c"
+    },
+    {
+      "path": "netlists/tapeout/task-136-circuit-14078.json",
+      "bytes": 10168,
+      "sha256": "bd0848467a151756c1f321a650e81b9c9c364492fd2f69404d12f5c63780433d"
+    },
+    {
+      "path": "netlists/tapeout/task-137-circuit-1076.json",
+      "bytes": 3391,
+      "sha256": "b4f25bd8d88089749dc562ca47fb5806cbed4318081ec81b4947543c42658339"
+    },
+    {
+      "path": "netlists/tapeout/task-138-circuit-1077.json",
+      "bytes": 2780,
+      "sha256": "f447abf7893858eed1c24578a0edad8f72b67ad09aef5b625448b5011180ce67"
+    },
+    {
+      "path": "netlists/tapeout/task-139-circuit-1848.json",
+      "bytes": 4458,
+      "sha256": "97c2d610e913cd3b971f4b1113773406f98bcf67d7fe1726fa4702649d700faa"
+    },
+    {
+      "path": "netlists/tapeout/task-140-circuit-2649.json",
+      "bytes": 4155,
+      "sha256": "f881d40a3870afc3573b7c62a2d20826a6f93234037850afabb9604948ef395e"
+    },
+    {
+      "path": "netlists/tapeout/task-141-circuit-13445.json",
+      "bytes": 6466,
+      "sha256": "26c15c5c9654c4fb06877457489372c32881e085493f7f69d5c565e316349c26"
+    },
+    {
+      "path": "netlists/tapeout/task-142-circuit-12806.json",
+      "bytes": 5857,
+      "sha256": "7e41e0c4f1d75029e3dc9b55a28a9909781c5c573cd582e98e53d1a7061489b4"
+    },
+    {
+      "path": "netlists/tapeout/task-143-circuit-15650.json",
+      "bytes": 7536,
+      "sha256": "c4369ee194f01eafaf14c4028b975a11221fbea5e2c503b4d3423102d43d2762"
+    },
+    {
+      "path": "netlists/tapeout/task-144-circuit-12836.json",
+      "bytes": 7539,
+      "sha256": "8a7c40d89822c35a269698845c93a1285acd9288710e785d5d2a0223ab06fa70"
+    },
+    {
+      "path": "netlists/tapeout/task-145-circuit-13319.json",
+      "bytes": 9814,
+      "sha256": "6d5ee1ad96b7fcecaba3a65666e8401e57087323063d86f871bc89283473f3ca"
+    },
+    {
+      "path": "netlists/tapeout/task-146-circuit-12763.json",
+      "bytes": 8004,
+      "sha256": "32d637c646d40b7dc84b6eae466e1a26401b0703d1b14ea5aea4f78b10cfe3ac"
+    },
+    {
+      "path": "netlists/tapeout/task-147-circuit-3389.json",
+      "bytes": 4321,
+      "sha256": "e2ff65b0ce2ba06acee9573e80a5a93199b5fcf3cd2b514b8f90bab3e0811e2c"
+    },
+    {
+      "path": "netlists/tapeout/task-148-circuit-2032.json",
+      "bytes": 4625,
+      "sha256": "7fd2ab57594c5f6e8f8a4a30fe710d98576126a631db88e7cf8c1469d6e1c2cf"
+    },
+    {
+      "path": "netlists/tapeout/task-149-circuit-15677.json",
+      "bytes": 10013,
+      "sha256": "db0ea677af6001adb25c8a49aca9a4dadd04de0b701f7b69cfb23a7ebf3b90c4"
+    },
+    {
+      "path": "netlists/tapeout/task-150-circuit-13056.json",
+      "bytes": 10016,
+      "sha256": "89ed8d8a02645f7cf5ddd546769a45303f5f8845e30bbe617d41b4bf3799463b"
+    },
+    {
+      "path": "netlists/tapeout/task-151-circuit-12903.json",
+      "bytes": 10485,
+      "sha256": "646af4689af12a7a29fbec0f0e8fdcca033e8716889ac0edf9c1bf9a06d2e49f"
+    },
+    {
+      "path": "netlists/tapeout/task-152-circuit-15208.json",
+      "bytes": 10943,
+      "sha256": "da02a141cb3c904e64337ae9c8d086709b32a953a224c77f7e3c82825a87dfe6"
+    },
+    {
+      "path": "netlists/tapeout/task-153-circuit-7667.json",
+      "bytes": 12025,
+      "sha256": "6f22199b9307da4aec80993ac2560d4bb9cef6b68ec19c19a908eeec88eeb56c"
+    },
+    {
+      "path": "netlists/tapeout/task-154-circuit-15250.json",
+      "bytes": 11887,
+      "sha256": "58659b7d6954493c4a7a12682545e4fe7b077f12f38e94a99917e43fc92a497a"
+    },
+    {
+      "path": "netlists/tapeout/task-155-circuit-1078.json",
+      "bytes": 3397,
+      "sha256": "76b65d0f2c9238cdaee7152d675d9f7694280f04dcb8272ab35ad2ed6ec61e70"
+    },
+    {
+      "path": "netlists/tapeout/task-156-circuit-12046.json",
+      "bytes": 7076,
+      "sha256": "03752d6c4c22e1260bf070863dde9832eacc41d08c95644da3257f4a089a18b4"
+    },
+    {
+      "path": "netlists/tapeout/task-157-circuit-15253.json",
+      "bytes": 10605,
+      "sha256": "e480824ed949732ea33faa2918f5cdd7cf29ae914a05f259ddfaa4df1a95dbdd"
+    },
+    {
+      "path": "netlists/tapeout/task-158-circuit-13224.json",
+      "bytes": 25533,
+      "sha256": "0b2cd44ffd0504fe7c3dd49049beefa4cb62c881e70a0f34f973babcfb56572f"
+    },
+    {
+      "path": "netlists/tapeout/task-159-circuit-1655.json",
+      "bytes": 7251,
+      "sha256": "ec267e512c53c3c42f126402744a7e68f1d2baccef2c5872a56b5959c401b120"
+    },
+    {
+      "path": "netlists/tapeout/task-160-circuit-1079.json",
+      "bytes": 4023,
+      "sha256": "0f62b3f3bf6143b6c219c18f5be727af27f662c13a61374c9feab74cc3b76d77"
+    },
+    {
+      "path": "netlists/tapeout/task-161-circuit-12689.json",
+      "bytes": 7265,
+      "sha256": "04b6e9c231401e960c657fb3191f17bf463ba132a96ec1559d7a1028ef36a5aa"
+    },
+    {
+      "path": "netlists/tapeout/task-162-circuit-1080.json",
+      "bytes": 2962,
+      "sha256": "26213d14e5743865dbe7977caaad6964fe2444fe6321d6a5f0a900b4dd1e7973"
+    },
+    {
+      "path": "netlists/tapeout/task-163-circuit-1081.json",
+      "bytes": 3578,
+      "sha256": "35aaf03de405e1dea8d961fc850c7f3606140c8747c61b2f0ad78f09439dd2de"
+    },
+    {
+      "path": "netlists/tapeout/task-164-circuit-1082.json",
+      "bytes": 4204,
+      "sha256": "2b680562e96f8c20880c3ad9fd7a7d022b98074d1e6ab7d9ca6d22066fd2bf15"
+    },
+    {
+      "path": "netlists/tapeout/task-165-circuit-13744.json",
+      "bytes": 6194,
+      "sha256": "c41c15b7501628f12a73969ec7d540ede867dccf03e835751524acfa8b276d29"
+    },
+    {
+      "path": "netlists/tapeout/task-166-circuit-1764.json",
+      "bytes": 4823,
+      "sha256": "6784c5edd51c7ff9d6fdbb264ba3726ceb4ac4d9def4ee1ee78ef61c3878d640"
+    },
+    {
+      "path": "netlists/tapeout/task-167-circuit-4232.json",
+      "bytes": 7737,
+      "sha256": "dd20c0b1aee4127e9c6ba667a09749f4eb42fa2b670ed3390365bf69ecdcf2e9"
+    },
+    {
+      "path": "netlists/tapeout/task-168-circuit-1312.json",
+      "bytes": 6062,
+      "sha256": "8ec34821a93d8a24be6c64848a991f0319c21b427ccfba9e4911fb4960c965f2"
+    },
+    {
+      "path": "netlists/tapeout/task-169-circuit-1508.json",
+      "bytes": 12023,
+      "sha256": "7da207bd92d144dae58d0d6b4b31a0550f43cb11ba1189ee6cb4b6f2a0076822"
+    },
+    {
+      "path": "netlists/tapeout/task-170-circuit-13806.json",
+      "bytes": 14924,
+      "sha256": "9f0302fb39df31fafe9e2f0039446d543d559326718d8f7e0371de42c5ad3b39"
+    },
+    {
+      "path": "netlists/tapeout/task-171-circuit-4390.json",
+      "bytes": 12957,
+      "sha256": "783f81542ef408b9a5f05667d7a276efe01d3fc79a0e68e01825d64a2351972f"
+    },
+    {
+      "path": "netlists/tapeout/task-172-circuit-4417.json",
+      "bytes": 12957,
+      "sha256": "b793d1081c415365111bca23f02fccb8ceb1f5b2b0b54f956db8d23f94d9223b"
+    },
+    {
+      "path": "netlists/tapeout/task-173-circuit-15577.json",
+      "bytes": 33970,
+      "sha256": "88b9a3d631ad3ee043ce4516e43cf77fda60c8ec6d2bf14c18d963f803e84966"
+    },
+    {
+      "path": "netlists/tapeout/task-174-circuit-15900.json",
+      "bytes": 53286,
+      "sha256": "401ef08ced487130ff48f9eb8e5b6ddf40c67e4bde44bcc8cbb03f5e9fdd77f1"
+    },
+    {
+      "path": "netlists/tapeout/task-175-circuit-10843.json",
+      "bytes": 9114,
+      "sha256": "dfa64b7255b4ec029f7df80575eaa30597ab23be0783506065c2cd187f566ba6"
+    },
+    {
+      "path": "netlists/tapeout/task-176-circuit-15720.json",
+      "bytes": 14482,
+      "sha256": "cc9905e55c6ff891910e316093d30f101ef984edf05e94c1a0e90774e6248aa9"
+    },
+    {
+      "path": "netlists/tapeout/task-177-circuit-1083.json",
+      "bytes": 4662,
+      "sha256": "85e3bbe83bb29a1a0f9409c4dfcadbb9f32d4cdd915a2d442e0b4877e974e02c"
+    },
+    {
+      "path": "netlists/tapeout/task-178-circuit-2618.json",
+      "bytes": 5097,
+      "sha256": "14833f39d83bb857665f5392b8b612e2eafa547b9fc8742c791531fefe07d252"
+    },
+    {
+      "path": "netlists/tapeout/task-179-circuit-3171.json",
+      "bytes": 6040,
+      "sha256": "3123cd9d06a719310670f7af818722166edd65d1d020e5be852454c93c455967"
+    },
+    {
+      "path": "netlists/tapeout/task-180-circuit-1993.json",
+      "bytes": 5273,
+      "sha256": "8bdaaa7a456acc037580341400cfa7249fcc488eb361db2c4bee2408a62c6c17"
+    },
+    {
+      "path": "netlists/tapeout/task-181-circuit-4456.json",
+      "bytes": 6036,
+      "sha256": "2fa5c4c84299e7ebb5fec728597b025973a17c566ea52692c62774954bea1f0e"
+    },
+    {
+      "path": "netlists/tapeout/task-182-circuit-2025.json",
+      "bytes": 4965,
+      "sha256": "06fa6fc8a256ebed465a55b784222d8a52538fae109f03364f3f759371ee89f3"
+    },
+    {
+      "path": "netlists/tapeout/task-183-circuit-3505.json",
+      "bytes": 6187,
+      "sha256": "bd503ec421f8fccf71fa7cd1a158a409afa8e7812133cfd7c2dd38f4c614954f"
+    },
+    {
+      "path": "netlists/tapeout/task-184-circuit-1084.json",
+      "bytes": 3577,
+      "sha256": "9fba4eeab0ac8305cf7d82f72c4f7e37d84718187683fab0db0a59747e83ff0c"
+    },
+    {
+      "path": "netlists/tapeout/task-185-circuit-1085.json",
+      "bytes": 2963,
+      "sha256": "42ca9a49a752c3781183745cc752cce2ee00cff904c008dd84a277d870a32200"
+    },
+    {
+      "path": "netlists/tapeout/task-186-circuit-1086.json",
+      "bytes": 3425,
+      "sha256": "0095f26bda157e885bd46f4f78e1c90a7d79ba04df014c632048e67c0d4b013f"
+    },
+    {
+      "path": "netlists/tapeout/task-187-circuit-10917.json",
+      "bytes": 5682,
+      "sha256": "0b150dc9cf8765adc9bc62c8e1529e80ebcf716673aff27c1ad392275c091e15"
+    },
+    {
+      "path": "netlists/tapeout/task-188-circuit-1653.json",
+      "bytes": 4002,
+      "sha256": "3ed1ec7982538feb9694434550266b700b3aa1803c265242532fb723de0a4bb5"
+    },
+    {
+      "path": "netlists/tapeout/task-189-circuit-1992.json",
+      "bytes": 4765,
+      "sha256": "ae8628a79ecc7eda3d8f7d9d523cedddd5500f3610229683cd17345b53af35a4"
+    },
+    {
+      "path": "netlists/tapeout/task-190-circuit-11401.json",
+      "bytes": 4926,
+      "sha256": "1ea60ce44b5f8b5b6e36642c54907a913c042aa18e65ec5c1371174c410e1ced"
+    },
+    {
+      "path": "netlists/tapeout/task-191-circuit-7644.json",
+      "bytes": 6144,
+      "sha256": "1bc248912e6d4476b38e940b7000b4407db752fa89155a321d3e0b7e2d5d82de"
+    },
+    {
+      "path": "netlists/tapeout/task-192-circuit-2808.json",
+      "bytes": 7668,
+      "sha256": "45740099b5ab85bc01020c10b2bb69a53d6d1c2671fb880e574fd9c09f40236d"
+    },
+    {
+      "path": "netlists/tapeout/task-193-circuit-2913.json",
+      "bytes": 17351,
+      "sha256": "7933f4eb4cc8bd55f1e4614f7711744abf3cd9c43be58b481c7ebb86a7920dab"
+    },
+    {
+      "path": "netlists/tapeout/task-194-circuit-1977.json",
+      "bytes": 9644,
+      "sha256": "05a47b514d678d9f4c5c7432f7967e3893ddc616a97a1161a3f07745c8479899"
+    },
+    {
+      "path": "netlists/tapeout/task-195-circuit-12883.json",
+      "bytes": 11405,
+      "sha256": "a3ea8bf2ba871b1aeabf8f15b6ea11d52a4fc2a2ca82ec5c85f933b3a5c8b774"
+    },
+    {
+      "path": "netlists/tapeout/task-196-circuit-12999.json",
+      "bytes": 9975,
+      "sha256": "6ad2885f3ccafb1e83dbd74a9ed0fea9cfe1c47870d82e594aca6e4bc29d2a90"
+    },
+    {
+      "path": "netlists/tapeout/task-197-circuit-952.json",
+      "bytes": 3597,
+      "sha256": "16613df85d09bc022a128acb78cba4b23b0c55fc8e2d9cb615247d84fdd0c6ff"
+    },
+    {
+      "path": "netlists/tapeout/task-198-circuit-953.json",
+      "bytes": 5471,
+      "sha256": "08ebfcac7d13f73973155fa07643c4a95864b8808bb474be4d85f0f0655028fa"
+    },
+    {
+      "path": "netlists/tapeout/task-199-circuit-954.json",
+      "bytes": 7425,
+      "sha256": "368dcbd91b78d89a06cb628b63b19f2841a56fc8ea2540d7f203ab3aef530a4e"
+    },
+    {
+      "path": "netlists/tapeout/task-200-circuit-2214.json",
+      "bytes": 11087,
+      "sha256": "0c5207d86cfd9bc985074cb35ab7755bf38609ab4eeafe77c233b77698b8e2d0"
+    },
+    {
+      "path": "netlists/tapeout/task-201-circuit-15163.json",
+      "bytes": 7687,
+      "sha256": "05fe56c2164e4f962eaf625ab49f9f7e99020ad61ee781bd7462ba2a858e2655"
+    },
+    {
+      "path": "netlists/tapeout/task-202-circuit-1889.json",
+      "bytes": 4013,
+      "sha256": "70a785a615e56f0e30eba2311c417ad57c7db602cdee88e88fe6d755b11bdfe7"
+    },
+    {
+      "path": "netlists/tapeout/task-203-circuit-1088.json",
+      "bytes": 3394,
+      "sha256": "0e5d5c28b17727702e9306462f85f56535e2ff3aad896a2a017362481495a2ed"
+    },
+    {
+      "path": "netlists/tapeout/task-204-circuit-10320.json",
+      "bytes": 6463,
+      "sha256": "0ba8d756333545da86422009818c398fdae9bb344bec95b4dbdbbc9ebb570971"
+    },
+    {
+      "path": "netlists/tapeout/task-205-circuit-14652.json",
+      "bytes": 8605,
+      "sha256": "abd8c39ceff8e1f66ed46736cf2dc89a19b74a99c069bf6e158978d4f6db0993"
+    },
+    {
+      "path": "netlists/tapeout/task-206-circuit-1089.json",
+      "bytes": 2477,
+      "sha256": "915a10e26f23e2672a63d2979bc19b87f8614aca7db9a32e4ad19ab496af04b1"
+    },
+    {
+      "path": "netlists/tapeout/task-207-circuit-11880.json",
+      "bytes": 6020,
+      "sha256": "2cad51bdcfbb9a14d96058f52b2a5f132515ea92191f36b6b6ff26d539bcb3ac"
+    },
+    {
+      "path": "netlists/tapeout/task-208-circuit-3490.json",
+      "bytes": 6216,
+      "sha256": "ca489584d6809a09d7e69c57863eeb8c503d7ed1cf8e011cfe76d09d03239288"
+    },
+    {
+      "path": "netlists/tapeout/task-209-circuit-15742.json",
+      "bytes": 17744,
+      "sha256": "485e381a33d42b63d58f880d96f580677da9cf43f2f893443e532d0de2ce90cf"
+    },
+    {
+      "path": "netlists/tapeout/task-210-circuit-13308.json",
+      "bytes": 18224,
+      "sha256": "dbac0ed9e3dca49ca9b5955229e064268726f2012a1e16b16a03a86bbdec1586"
+    },
+    {
+      "path": "netlists/tapeout/task-211-circuit-2678.json",
+      "bytes": 2796,
+      "sha256": "99c9172ff42109e9fa098b71a78cee51b55ee625082ad422729613000562aad6"
+    },
+    {
+      "path": "netlists/tapeout/task-212-circuit-2442.json",
+      "bytes": 3820,
+      "sha256": "d801ee7f003cc675cae1ad10092e8bdadc384705852207bfd1e4d8d4936c5269"
+    },
+    {
+      "path": "netlists/tapeout/task-213-circuit-2291.json",
+      "bytes": 4540,
+      "sha256": "4fd10b477f41b56af5897d1763b0bfe0a356d809f0eff66035e3a350ce5520db"
+    },
+    {
+      "path": "netlists/tapeout/task-214-circuit-2444.json",
+      "bytes": 4848,
+      "sha256": "604ea148d1d1ae2d4a32e910119efcd071bd9b0a7ca96a9f812e11692c0eea09"
+    },
+    {
+      "path": "netlists/tapeout/task-215-circuit-2553.json",
+      "bytes": 4846,
+      "sha256": "ebac10bce45ad9585c418f9794619c1b3a9feeeb29a6cd229b0c330063195ea4"
+    },
+    {
+      "path": "netlists/tapeout/task-216-circuit-2837.json",
+      "bytes": 5000,
+      "sha256": "370d49e5767f44d31841bc42f43cee6ccd05346bff0dd6fbe9320d3a88730ce3"
+    },
+    {
+      "path": "netlists/tapeout/task-217-circuit-2505.json",
+      "bytes": 4390,
+      "sha256": "58924303093c58fbddb6dfe223e347c4f771b5e55d9dd4783be0049a710738ea"
+    },
+    {
+      "path": "netlists/tapeout/task-218-circuit-1762.json",
+      "bytes": 8809,
+      "sha256": "e64a769288eb894c13e41f8ee1860b41f05de04c3b66e2eb38c9e6f2ad519686"
+    },
+    {
+      "path": "netlists/tapeout/task-219-circuit-1757.json",
+      "bytes": 5235,
+      "sha256": "9e1ca1375e1f993a4ab590c5c62afc11d321d53246f1fc7909413bc816fa9bde"
+    },
+    {
+      "path": "netlists/tapeout/task-220-circuit-2033.json",
+      "bytes": 2856,
+      "sha256": "cb29f43b2037379b323209769ffe3687e0e8408bde2acd49d6072d025452967b"
+    },
+    {
+      "path": "netlists/tapeout/task-221-circuit-2317.json",
+      "bytes": 2343,
+      "sha256": "61bfde53d91cab3310bde742395b3160add47bfc51b94c39166483e1bdb66c46"
+    },
+    {
+      "path": "netlists/tapeout/task-222-circuit-2900.json",
+      "bytes": 2806,
+      "sha256": "8864fa44ccf6406967d5a69a18f2359476afa077afe6a74f8037a1dd54c5c77b"
+    },
+    {
+      "path": "netlists/tapeout/task-223-circuit-2314.json",
+      "bytes": 2624,
+      "sha256": "0679e2011b0397076e69cb2f9c004493890407c6056506752a8e40fc231c9f7b"
+    },
+    {
+      "path": "netlists/tapeout/task-224-circuit-2332.json",
+      "bytes": 3081,
+      "sha256": "b771db73f8828a76d75d42356f8584bda694251fd2eeeda0628dd77475038deb"
+    },
+    {
+      "path": "netlists/tapeout/task-225-circuit-2996.json",
+      "bytes": 3072,
+      "sha256": "3fa98658509a38172c9b6f12978231290f5c00a59b46a87a153e06b7d4b9e09b"
+    },
+    {
+      "path": "netlists/tapeout/task-226-circuit-2727.json",
+      "bytes": 2970,
+      "sha256": "a048f2da9f4c3f8aa003644fdac1738d029ddeb003e333a600611ff73c073ef9"
+    },
+    {
+      "path": "netlists/tapeout/task-227-circuit-2110.json",
+      "bytes": 2394,
+      "sha256": "7f99b9cc0d2b7902d89163e217a1b51f9a000083e70ad4740d2d7295208f1356"
+    },
+    {
+      "path": "netlists/tapeout/task-228-circuit-6468.json",
+      "bytes": 2815,
+      "sha256": "fcb339c0ab8839fd2f2016d405c36914d10411ebb2570ea72cccf6cee994631b"
+    },
+    {
+      "path": "netlists/tapeout/task-229-circuit-4528.json",
+      "bytes": 3287,
+      "sha256": "6f063c2deb1e1f5b2b55176cd496d77e8c66f32bb5860a78b28c80a9181ebf1b"
+    },
+    {
+      "path": "netlists/tapeout/task-230-circuit-2280.json",
+      "bytes": 2982,
+      "sha256": "d0ad176447c7664e1be2e71e38e9a65fded53eeb87a0fe0f3e0121e1eae9a732"
+    },
+    {
+      "path": "netlists/tapeout/task-231-circuit-1830.json",
+      "bytes": 3503,
+      "sha256": "3855aed6c575a2b4a0b669852b83db4258d6eaf9f378f1f203cd33f8d8038952"
+    },
+    {
+      "path": "netlists/tapeout/task-232-circuit-2318.json",
+      "bytes": 2113,
+      "sha256": "836b35643c862cc85767dab5a08c4e2f26af76efcb30e604a438998068a0eb47"
+    },
+    {
+      "path": "netlists/tapeout/task-233-circuit-2206.json",
+      "bytes": 2262,
+      "sha256": "f52b1be22dc5045cf49ca9e272a9ed7799c263ea81c93999a41be073e2b56124"
+    },
+    {
+      "path": "netlists/tapeout/task-234-circuit-2994.json",
+      "bytes": 3688,
+      "sha256": "59ec371be5f06af515738bc508a5b4815b90a2896fc074c12c6d1562cafb7aa7"
+    },
+    {
+      "path": "netlists/tapeout/task-235-circuit-2275.json",
+      "bytes": 2361,
+      "sha256": "afce89c47b07abfd7385cd13a687c8576045987dc86174ab33e58447a6c9c45d"
+    },
+    {
+      "path": "netlists/tapeout/task-236-circuit-2907.json",
+      "bytes": 2958,
+      "sha256": "637789b7bf2a007f7c04455d9cd2da7af07db4031c507452a906cab01d644c47"
+    },
+    {
+      "path": "netlists/tapeout/task-237-circuit-3317.json",
+      "bytes": 3230,
+      "sha256": "f2ca27c11067e09f37459801486cea6b3caa7aed492d0b0374d6d82fde26f079"
+    },
+    {
+      "path": "netlists/tapeout/task-238-circuit-955.json",
+      "bytes": 2211,
+      "sha256": "8a9abf1cdbe7e4e6b5cbe3b2582faa47367d5240ce550f66515bae4781b05f50"
+    },
+    {
+      "path": "netlists/tapeout/task-239-circuit-956.json",
+      "bytes": 4037,
+      "sha256": "f109c429301fa8db86b9ce49a4c1901fd48548c6079263ea5ea28edad9993f39"
+    },
+    {
+      "path": "netlists/tapeout/task-240-circuit-957.json",
+      "bytes": 2858,
+      "sha256": "4371ffdb9a0de1a058aa3ce30d3ef7a757258c8ee7429acd49a7527a1fcdff2e"
+    },
+    {
+      "path": "netlists/tapeout/task-241-circuit-958.json",
+      "bytes": 6524,
+      "sha256": "32f7a0f718e00180e0459348a4e51c7141d4552963de8f82764c522d29c6ee33"
+    },
+    {
+      "path": "netlists/tapeout/task-242-circuit-1092.json",
+      "bytes": 4335,
+      "sha256": "fd74b468ee9b2b69643094e75fb0cc001eb36dc7886c7e762bba338e861fe377"
+    },
+    {
+      "path": "netlists/tapeout/task-243-circuit-1093.json",
+      "bytes": 3877,
+      "sha256": "b3fb3381a2fa3b5946a388f614af677136c27f75d702920681317fa44442dd79"
+    },
+    {
+      "path": "netlists/tapeout/task-244-circuit-2487.json",
+      "bytes": 4641,
+      "sha256": "b5782281f5be9bf41be496db078fb8e40e6b28ac49ef58e8a1682f864bba4c59"
+    },
+    {
+      "path": "netlists/tapeout/task-245-circuit-1094.json",
+      "bytes": 2016,
+      "sha256": "0c363b67e2412a0300e3d9654fd1baa41eefebed27b35d23d4a799290a129239"
+    },
+    {
+      "path": "netlists/tapeout/task-246-circuit-1095.json",
+      "bytes": 2169,
+      "sha256": "3bf23f67fc85c1c5062cfa7deec9809d5df53a8630f2242ce41f6f978ed27694"
+    },
+    {
+      "path": "netlists/tapeout/task-247-circuit-1096.json",
+      "bytes": 2974,
+      "sha256": "1471229b44591011a578bfe73694846b2fcdbf2319ab935851d4d59ad722541f"
+    },
+    {
+      "path": "netlists/tapeout/task-248-circuit-1097.json",
+      "bytes": 2350,
+      "sha256": "aefd92f06d3c99c57e7ee6b8b8036b272f6c0d4d0b31a195083565fb8366f57a"
+    },
+    {
+      "path": "netlists/tapeout/task-249-circuit-3424.json",
+      "bytes": 4809,
+      "sha256": "10dd9aa6af0001fd5de4ff550543485602413d46fc68cb6f3f876ea43cc0d141"
+    },
+    {
+      "path": "netlists/tapeout/task-250-circuit-3372.json",
+      "bytes": 3861,
+      "sha256": "595da19a930a3401c2b3167b3b18e3efe2ce0c71a05be67600103d7a50db7c0f"
+    },
+    {
+      "path": "netlists/tapeout/task-251-circuit-5044.json",
+      "bytes": 5987,
+      "sha256": "b522da78af8820fab37856dccbc4b05cba19f335b83c2db34cc1d3a27aaa080e"
+    },
+    {
+      "path": "netlists/tapeout/task-252-circuit-1750.json",
+      "bytes": 5412,
+      "sha256": "e360a6039e29cec0c35690957645b6bba0fa75d7c96db814b699ebf55b1814bc"
+    },
+    {
+      "path": "netlists/tapeout/task-253-circuit-2951.json",
+      "bytes": 7259,
+      "sha256": "cf3382369fe18f151f6bbf5cdd536d65185668adeeb7a6971da2e32b04e6bd63"
+    },
+    {
+      "path": "netlists/tapeout/task-254-circuit-12221.json",
+      "bytes": 16354,
+      "sha256": "55d5913541e6c5d7fd4fd1dc3a91641460dd541e2df7d3b76d9c32b2d11ec47d"
+    },
+    {
+      "path": "netlists/tapeout/task-255-circuit-3194.json",
+      "bytes": 12651,
+      "sha256": "504effbd08e9116dbe297ed0613d97e433553a6685b88e7f1d39cc75d9e5614b"
+    },
+    {
+      "path": "netlists/tapeout/task-256-circuit-14923.json",
+      "bytes": 12785,
+      "sha256": "f4e5a999dc38d6715d2d7098d138cb17fe792a872191af28cece8355e7e662cf"
+    },
+    {
+      "path": "netlists/tapeout/task-257-circuit-1098.json",
+      "bytes": 4216,
+      "sha256": "28109dcf0372edaf4acf78ec7570b3570558a6edbdc611c9ba8b411edcbec301"
+    },
+    {
+      "path": "netlists/tapeout/task-258-circuit-7097.json",
+      "bytes": 5263,
+      "sha256": "0e7d9f9d81e5a3b2fc94c613445796c03f1a68c6b462c37228a1f836dbf99c26"
+    },
+    {
+      "path": "netlists/tapeout/task-259-circuit-12688.json",
+      "bytes": 5554,
+      "sha256": "d64056cfac1e49862869785d07ba6024d455e37382a22bfd9d4d8a9c14515200"
+    },
+    {
+      "path": "netlists/tapeout/task-260-circuit-12723.json",
+      "bytes": 12527,
+      "sha256": "eddf6b58efcf0dce812762e1b696ce33045206df899d6b87d1c859e03779bbe8"
+    },
+    {
+      "path": "netlists/tapeout/task-261-circuit-2980.json",
+      "bytes": 3072,
+      "sha256": "4ef44172698eeb62d25627b4bbc437859a575571eaf76a1156c5bacc4e35f4f0"
+    },
+    {
+      "path": "netlists/tapeout/task-262-circuit-12133.json",
+      "bytes": 3377,
+      "sha256": "883a8ae8ced04ae10cd79cfc1ab47fce4223af1e22c6fc00dab2f4a45d0bfcd9"
+    },
+    {
+      "path": "netlists/tapeout/task-263-circuit-2233.json",
+      "bytes": 2533,
+      "sha256": "9dc547ac3c076781d553d848514f72288594a264b33f6a1c2e07f0fd0be41b6c"
+    },
+    {
+      "path": "netlists/tapeout/task-264-circuit-2256.json",
+      "bytes": 2981,
+      "sha256": "2e29082e73b8261f859a5ca314beeeca5ec8830a34c144063dfbc81be8be316e"
+    },
+    {
+      "path": "netlists/tapeout/task-265-circuit-2713.json",
+      "bytes": 2394,
+      "sha256": "aab4cc98254a545c10a0e421c79e1406f46c5291f575877ab232825df08f000e"
+    },
+    {
+      "path": "netlists/tapeout/task-266-circuit-3312.json",
+      "bytes": 2811,
+      "sha256": "7d0643a294d15e713a8705fd8bb171ea50028cf43a5a76d747107563cfde9fc9"
+    },
+    {
+      "path": "netlists/tapeout/task-267-circuit-3362.json",
+      "bytes": 3217,
+      "sha256": "bce60590c8b2263152d931aca798c7f136a8f608d6dcb360976550d4366c7c4e"
+    },
+    {
+      "path": "protocol/config.json",
+      "bytes": 70339,
+      "sha256": "2d7e227a6acea73ad80f9964d5ad19471bdb94bdfa456f48153e9fff7a6049f0"
+    },
+    {
+      "path": "protocol/contracts.json",
+      "bytes": 1243,
+      "sha256": "16352b7a9b51b547fe84f9ab1046e8954ff806cea4975ff204db3f54e2b95017"
+    },
+    {
+      "path": "protocol/processors-official.json",
+      "bytes": 2859,
+      "sha256": "ff79bb648a39ba4556ac5addf5723f79cb7f10ad99b84039530acec8dd0f980d"
+    },
+    {
+      "path": "protocol/processors-registered.json",
+      "bytes": 225606,
+      "sha256": "f6d4b0af5dffcab85b7505f330b7e0ea3b0258cb4835403e0b7afa43f4746b60"
+    },
+    {
+      "path": "protocol/tasks.json",
+      "bytes": 67958,
+      "sha256": "9ef8f38741d71733dda05aba689da7cf8b1c36e216bbc979bc79303f8b8e0484"
+    }
+  ]
+}

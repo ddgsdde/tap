@@ -1,0 +1,1908 @@
+{
+  "snapshotBlock": 123400993,
+  "blockTimeUTC": "2026-09-22T15:57:27.000Z",
+  "processor": {
+    "configName": "RefBench",
+    "address": "0xF4412C52ec3DDf7CAf5f518B6662F77B02Bde28E",
+    "name": "RefBench",
+    "symbol": "RefBench",
+    "multiplier": 1,
+    "fromBlock": 117234441,
+    "factory": "0x68224F668083c29e9800Be2a646d42d18cedF7e2",
+    "nextCircuitId": "267",
+    "transistors": {
+      "address": "0xB645572D56E81ca2844fA833ad14f146a10e8330",
+      "cpuName": "RefBench",
+      "cpuSymbol": "RefBench",
+      "story": "TapeOut PoD",
+      "creator": "0x571d447f4f24688eC35Ccf07f1D6993655F6aF15",
+      "mintPrice": {
+        "wei": "1000000000000000",
+        "bnb": "0.001"
+      },
+      "minted": "14000",
+      "supplyCap": "14000",
+      "remaining": "0",
+      "protocolFee": "100000000000000",
+      "protocolWallet": "0x571d447f4f24688eC35Ccf07f1D6993655F6aF15",
+      "tokenIds": {
+        "NAND": "0",
+        "LATCH": "1"
+      }
+    }
+  },
+  "taskCount": 267,
+  "occupiedCount": 0,
+  "emptyCount": 267,
+  "rows": [
+    {
+      "taskId": 1,
+      "srcId": 1,
+      "name": "与门 AND",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 2,
+      "srcId": 2,
+      "name": "或门 OR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 3,
+      "srcId": 3,
+      "name": "异或门 XOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 4,
+      "srcId": 4,
+      "name": "与非门 NAND",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 5,
+      "srcId": 5,
+      "name": "蕴含 A→B",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 6,
+      "srcId": 6,
+      "name": "差集 A且非B",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 7,
+      "srcId": 7,
+      "name": "或非门 NOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 8,
+      "srcId": 8,
+      "name": "同或门 XNOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 9,
+      "srcId": 10,
+      "name": "三输入与 AND3",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 10,
+      "srcId": 11,
+      "name": "三输入奇校验 XOR3",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 11,
+      "srcId": 12,
+      "name": "多数表决 MAJ3",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 12,
+      "srcId": 13,
+      "name": "二选一 MUX2",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 13,
+      "srcId": 14,
+      "name": "四输入偶校验",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 14,
+      "srcId": 15,
+      "name": "恰好两个 1（4 位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 15,
+      "srcId": 16,
+      "name": "八输入奇校验",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 16,
+      "srcId": 17,
+      "name": "八位全零检测",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 17,
+      "srcId": 18,
+      "name": "半加器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 18,
+      "srcId": 19,
+      "name": "全加器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 19,
+      "srcId": 20,
+      "name": "全减器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 20,
+      "srcId": 21,
+      "name": "2-4 译码器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 21,
+      "srcId": 22,
+      "name": "3-8 译码器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 22,
+      "srcId": 23,
+      "name": "4-3 优先编码器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 23,
+      "srcId": 24,
+      "name": "8-3 优先编码器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 24,
+      "srcId": 25,
+      "name": "四选一 MUX4",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 25,
+      "srcId": 26,
+      "name": "八选一 MUX8",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 26,
+      "srcId": 27,
+      "name": "1 位比较器（<,=,>）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 27,
+      "srcId": 28,
+      "name": "2 位比较器（<,=,>）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 28,
+      "srcId": 29,
+      "name": "4 位比较器（<,=,>）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 29,
+      "srcId": 30,
+      "name": "4 位相等判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 30,
+      "srcId": 31,
+      "name": "4 位大于判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 31,
+      "srcId": 32,
+      "name": "1 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 32,
+      "srcId": 33,
+      "name": "2 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 33,
+      "srcId": 34,
+      "name": "4 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 34,
+      "srcId": 35,
+      "name": "8 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 35,
+      "srcId": 36,
+      "name": "16 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 36,
+      "srcId": 37,
+      "name": "2 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 37,
+      "srcId": 38,
+      "name": "4 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 38,
+      "srcId": 39,
+      "name": "8 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 39,
+      "srcId": 40,
+      "name": "16 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 40,
+      "srcId": 41,
+      "name": "4 位减法器（带借位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 41,
+      "srcId": 42,
+      "name": "8 位减法器（带借位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 42,
+      "srcId": 43,
+      "name": "4 位加减法器（op 选择）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 43,
+      "srcId": 44,
+      "name": "4 位二进制补码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 44,
+      "srcId": 45,
+      "name": "4 位绝对值（有符号）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 45,
+      "srcId": 46,
+      "name": "4 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 46,
+      "srcId": 47,
+      "name": "8 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 47,
+      "srcId": 48,
+      "name": "4 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 48,
+      "srcId": 49,
+      "name": "8 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 49,
+      "srcId": 50,
+      "name": "4 位前导零计数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 50,
+      "srcId": 51,
+      "name": "4 位桶形左移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 51,
+      "srcId": 52,
+      "name": "4 位桶形右移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 52,
+      "srcId": 53,
+      "name": "4 位循环右移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 53,
+      "srcId": 54,
+      "name": "8 位桶形左移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 54,
+      "srcId": 55,
+      "name": "4 位二进制转格雷码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 55,
+      "srcId": 56,
+      "name": "4 位格雷码转二进制",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 56,
+      "srcId": 57,
+      "name": "BCD 加一",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 57,
+      "srcId": 58,
+      "name": "七段数码管译码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 58,
+      "srcId": 59,
+      "name": "2×2 乘法器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 59,
+      "srcId": 60,
+      "name": "3×3 乘法器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 60,
+      "srcId": 61,
+      "name": "4×4 乘法器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 61,
+      "srcId": 62,
+      "name": "8×8 乘法器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 62,
+      "srcId": 63,
+      "name": "4 位平方",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 63,
+      "srcId": 64,
+      "name": "8 位平方",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 64,
+      "srcId": 65,
+      "name": "4 位除以 3（商）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 65,
+      "srcId": 66,
+      "name": "4 位模 3",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 66,
+      "srcId": 67,
+      "name": "4 位取大 MAX",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 67,
+      "srcId": 68,
+      "name": "汉明 (7,4) 编码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 68,
+      "srcId": 69,
+      "name": "8 位奇偶生成（附加校验位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 69,
+      "srcId": 70,
+      "name": "CRC-4 (x⁴+x+1)",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 70,
+      "srcId": 71,
+      "name": "4 位 ALU（加/减/与/或）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 71,
+      "srcId": 72,
+      "name": "4 位是否 2 的幂",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 72,
+      "srcId": 73,
+      "name": "4 位饱和加法",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 73,
+      "srcId": 74,
+      "name": "T 触发器（翻转）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 74,
+      "srcId": 75,
+      "name": "二分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 75,
+      "srcId": 76,
+      "name": "上升沿检测",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 76,
+      "srcId": 77,
+      "name": "2 位计数器（带使能）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 77,
+      "srcId": 78,
+      "name": "4 位计数器（带使能）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 78,
+      "srcId": 81,
+      "name": "4 位移位寄存器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 79,
+      "srcId": 83,
+      "name": "序列检测 1011",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 80,
+      "srcId": 84,
+      "name": "4 位累加器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 81,
+      "srcId": 85,
+      "name": "串行加法器（逐位）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 82,
+      "srcId": 86,
+      "name": "二分频方波",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 83,
+      "srcId": 87,
+      "name": "三分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 84,
+      "srcId": 88,
+      "name": "2 位自由计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 85,
+      "srcId": 89,
+      "name": "4 位自由计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 86,
+      "srcId": 91,
+      "name": "4 位约翰逊计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 87,
+      "srcId": 92,
+      "name": "4 位环形计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 88,
+      "srcId": 93,
+      "name": "4 位 LFSR 序列发生器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 89,
+      "srcId": 95,
+      "name": "4 位格雷码序列发生器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 90,
+      "srcId": 96,
+      "name": "4 位立方",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 91,
+      "srcId": 97,
+      "name": "6 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 92,
+      "srcId": 98,
+      "name": "3 位加一（模 8）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 93,
+      "srcId": 99,
+      "name": "16 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 94,
+      "srcId": 100,
+      "name": "16 位 + 8 位加法",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 95,
+      "srcId": 101,
+      "name": "模 3 计数器（0,1,2 循环）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 96,
+      "srcId": 102,
+      "name": "模 5 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 97,
+      "srcId": 103,
+      "name": "模 6 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 98,
+      "srcId": 104,
+      "name": "模 7 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 99,
+      "srcId": 105,
+      "name": "模 10 计数器（十进制/BCD 秒）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 100,
+      "srcId": 109,
+      "name": "8 位环形计数器（独热循环）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 101,
+      "srcId": 110,
+      "name": "固定序列发生器 10110011",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 102,
+      "srcId": 111,
+      "name": "4 位按位与 AND",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 103,
+      "srcId": 112,
+      "name": "4 位按位或 OR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 104,
+      "srcId": 113,
+      "name": "4 位按位异或 XOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 105,
+      "srcId": 114,
+      "name": "4 位按位同或 XNOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 106,
+      "srcId": 115,
+      "name": "8 位按位与 AND",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 107,
+      "srcId": 116,
+      "name": "8 位按位或 OR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 108,
+      "srcId": 117,
+      "name": "8 位按位异或 XOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 109,
+      "srcId": 118,
+      "name": "8 位按位同或 XNOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 110,
+      "srcId": 119,
+      "name": "3 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 111,
+      "srcId": 120,
+      "name": "3 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 112,
+      "srcId": 121,
+      "name": "5 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 113,
+      "srcId": 122,
+      "name": "5 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 114,
+      "srcId": 123,
+      "name": "6 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 115,
+      "srcId": 124,
+      "name": "6 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 116,
+      "srcId": 125,
+      "name": "7 位加法器（无 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 117,
+      "srcId": 126,
+      "name": "7 位加法器（带 cin）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 118,
+      "srcId": 127,
+      "name": "2 位减法器（带借位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 119,
+      "srcId": 128,
+      "name": "3 位减法器（带借位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 120,
+      "srcId": 129,
+      "name": "5 位减法器（带借位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 121,
+      "srcId": 130,
+      "name": "6 位减法器（带借位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 122,
+      "srcId": 131,
+      "name": "2 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 123,
+      "srcId": 132,
+      "name": "3 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 124,
+      "srcId": 133,
+      "name": "5 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 125,
+      "srcId": 134,
+      "name": "6 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 126,
+      "srcId": 135,
+      "name": "7 位加一（带进位输出）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 127,
+      "srcId": 136,
+      "name": "3 位二进制补码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 128,
+      "srcId": 137,
+      "name": "5 位二进制补码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 129,
+      "srcId": 138,
+      "name": "6 位二进制补码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 130,
+      "srcId": 139,
+      "name": "8 位二进制补码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 131,
+      "srcId": 140,
+      "name": "5 位绝对值（有符号）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 132,
+      "srcId": 141,
+      "name": "6 位绝对值（有符号）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 133,
+      "srcId": 142,
+      "name": "8 位绝对值（有符号）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 134,
+      "srcId": 143,
+      "name": "3 位比较器（<,=,>）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 135,
+      "srcId": 144,
+      "name": "5 位比较器（<,=,>）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 136,
+      "srcId": 145,
+      "name": "6 位比较器（<,=,>）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 137,
+      "srcId": 146,
+      "name": "2 位相等判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 138,
+      "srcId": 147,
+      "name": "2 位大于判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 139,
+      "srcId": 148,
+      "name": "3 位相等判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 140,
+      "srcId": 149,
+      "name": "3 位大于判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 141,
+      "srcId": 150,
+      "name": "5 位相等判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 142,
+      "srcId": 151,
+      "name": "5 位大于判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 143,
+      "srcId": 152,
+      "name": "6 位相等判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 144,
+      "srcId": 153,
+      "name": "6 位大于判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 145,
+      "srcId": 154,
+      "name": "8 位相等判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 146,
+      "srcId": 155,
+      "name": "8 位大于判定",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 147,
+      "srcId": 156,
+      "name": "3 位取大 MAX",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 148,
+      "srcId": 157,
+      "name": "3 位取小 MIN",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 149,
+      "srcId": 158,
+      "name": "5 位取大 MAX",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 150,
+      "srcId": 159,
+      "name": "5 位取小 MIN",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 151,
+      "srcId": 160,
+      "name": "6 位取大 MAX",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 152,
+      "srcId": 161,
+      "name": "6 位取小 MIN",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 153,
+      "srcId": 162,
+      "name": "8 位取大 MAX",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 154,
+      "srcId": 163,
+      "name": "8 位取小 MIN",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 155,
+      "srcId": 164,
+      "name": "3 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 156,
+      "srcId": 165,
+      "name": "5 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 157,
+      "srcId": 166,
+      "name": "7 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 158,
+      "srcId": 167,
+      "name": "16 位 1 的个数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 159,
+      "srcId": 168,
+      "name": "8 位前导零计数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 160,
+      "srcId": 169,
+      "name": "4 位尾随零计数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 161,
+      "srcId": 170,
+      "name": "8 位尾随零计数",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 162,
+      "srcId": 176,
+      "name": "3 位二进制转格雷码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 163,
+      "srcId": 177,
+      "name": "3 位格雷码转二进制",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 164,
+      "srcId": 178,
+      "name": "5 位二进制转格雷码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 165,
+      "srcId": 179,
+      "name": "5 位格雷码转二进制",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 166,
+      "srcId": 180,
+      "name": "6 位二进制转格雷码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 167,
+      "srcId": 181,
+      "name": "6 位格雷码转二进制",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 168,
+      "srcId": 182,
+      "name": "8 位二进制转格雷码",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 169,
+      "srcId": 183,
+      "name": "8 位格雷码转二进制",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 170,
+      "srcId": 184,
+      "name": "8 位桶形右移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 171,
+      "srcId": 185,
+      "name": "8 位循环左移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 172,
+      "srcId": 186,
+      "name": "8 位循环右移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 173,
+      "srcId": 187,
+      "name": "5×5 乘法器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 174,
+      "srcId": 188,
+      "name": "6×6 乘法器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 175,
+      "srcId": 189,
+      "name": "5 位平方",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 176,
+      "srcId": 190,
+      "name": "6 位平方",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 177,
+      "srcId": 191,
+      "name": "3 位立方",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 178,
+      "srcId": 192,
+      "name": "4 位乘以 3",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 179,
+      "srcId": 193,
+      "name": "4 位乘以 5",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 180,
+      "srcId": 194,
+      "name": "4 位乘以 6",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 181,
+      "srcId": 195,
+      "name": "4 位乘以 7",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 182,
+      "srcId": 196,
+      "name": "4 位乘以 9",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 183,
+      "srcId": 197,
+      "name": "4 位乘以 10",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 184,
+      "srcId": 198,
+      "name": "4 位除以 5（商）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 185,
+      "srcId": 199,
+      "name": "4 位除以 6（商）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 186,
+      "srcId": 200,
+      "name": "4 位除以 7（商）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 187,
+      "srcId": 201,
+      "name": "4 位模 5",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 188,
+      "srcId": 202,
+      "name": "4 位模 6",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 189,
+      "srcId": 203,
+      "name": "4 位模 7",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 190,
+      "srcId": 204,
+      "name": "5 位奇校验",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 191,
+      "srcId": 205,
+      "name": "6 位奇校验",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 192,
+      "srcId": 206,
+      "name": "7 位奇校验",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 193,
+      "srcId": 207,
+      "name": "16 位奇校验",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 194,
+      "srcId": 208,
+      "name": "4-16 译码器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 195,
+      "srcId": 209,
+      "name": "16-4 优先编码器",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 196,
+      "srcId": 210,
+      "name": "十六选一 MUX16",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 197,
+      "srcId": 211,
+      "name": "4 位二选一（整字）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 198,
+      "srcId": 212,
+      "name": "8 位二选一（整字）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 199,
+      "srcId": 213,
+      "name": "4 位四选一（整字）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 200,
+      "srcId": 214,
+      "name": "CRC-8 (x⁸+x²+x+1)",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 201,
+      "srcId": 217,
+      "name": "8 位是否 2 的幂",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 202,
+      "srcId": 218,
+      "name": "4 位恰好 1 个 1",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 203,
+      "srcId": 219,
+      "name": "4 位恰好 3 个 1",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 204,
+      "srcId": 220,
+      "name": "6 位恰好 3 个 1",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 205,
+      "srcId": 221,
+      "name": "8 位恰好 2 个 1",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 206,
+      "srcId": 222,
+      "name": "4 位全 1 检测",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 207,
+      "srcId": 224,
+      "name": "3 个 2 位数取中位",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 208,
+      "srcId": 225,
+      "name": "两个 3 位数排序（小,大）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 209,
+      "srcId": 226,
+      "name": "8 位饱和加法",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 210,
+      "srcId": 227,
+      "name": "8 位饱和减法",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 211,
+      "srcId": 228,
+      "name": "模 4 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 212,
+      "srcId": 229,
+      "name": "模 8 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 213,
+      "srcId": 230,
+      "name": "模 9 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 214,
+      "srcId": 231,
+      "name": "模 11 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 215,
+      "srcId": 232,
+      "name": "模 13 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 216,
+      "srcId": 233,
+      "name": "模 15 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 217,
+      "srcId": 234,
+      "name": "模 16 计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 218,
+      "srcId": 245,
+      "name": "8 位移位寄存器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 219,
+      "srcId": 246,
+      "name": "4 位右移寄存器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 220,
+      "srcId": 247,
+      "name": "8 位约翰逊计数器",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 221,
+      "srcId": 249,
+      "name": "4 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 222,
+      "srcId": 250,
+      "name": "5 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 223,
+      "srcId": 251,
+      "name": "6 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 224,
+      "srcId": 252,
+      "name": "8 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 225,
+      "srcId": 253,
+      "name": "10 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 226,
+      "srcId": 254,
+      "name": "序列检测 1010",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 227,
+      "srcId": 255,
+      "name": "序列检测 110",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 228,
+      "srcId": 256,
+      "name": "序列检测 0110",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 229,
+      "srcId": 257,
+      "name": "序列检测 11011",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 230,
+      "srcId": 258,
+      "name": "序列检测 1001",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 231,
+      "srcId": 260,
+      "name": "串行减法器（逐位）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 232,
+      "srcId": 261,
+      "name": "下降沿检测",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 233,
+      "srcId": 262,
+      "name": "双边沿检测",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 234,
+      "srcId": 263,
+      "name": "交通灯状态机（红4黄1绿3）",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 235,
+      "srcId": 264,
+      "name": "PWM 占空比 1/4",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 236,
+      "srcId": 265,
+      "name": "PWM 占空比 3/8",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 237,
+      "srcId": 266,
+      "name": "PWM 占空比 6/16",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 238,
+      "srcId": 267,
+      "name": "4 位按位与非 NAND",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 239,
+      "srcId": 268,
+      "name": "4 位按位或非 NOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 240,
+      "srcId": 269,
+      "name": "8 位按位与非 NAND",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 241,
+      "srcId": 270,
+      "name": "8 位按位或非 NOR",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 242,
+      "srcId": 271,
+      "name": "4 位加常数 3",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 243,
+      "srcId": 272,
+      "name": "4 位加常数 5",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 244,
+      "srcId": 273,
+      "name": "4 位加常数 7",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 245,
+      "srcId": 274,
+      "name": "4 位大于 5",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 246,
+      "srcId": 275,
+      "name": "4 位小于 10",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 247,
+      "srcId": 278,
+      "name": "4 位整数平方根（下取整）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 248,
+      "srcId": 279,
+      "name": "4 位 log2（下取整）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 249,
+      "srcId": 280,
+      "name": "8 位 log2（下取整）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 250,
+      "srcId": 281,
+      "name": "5 位多数表决",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 251,
+      "srcId": 282,
+      "name": "7 位多数表决",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 252,
+      "srcId": 283,
+      "name": "4 位循环左移",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 253,
+      "srcId": 284,
+      "name": "4 位平均（下取整）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 254,
+      "srcId": 285,
+      "name": "8 位平均（下取整）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 255,
+      "srcId": 286,
+      "name": "4 位条件交换（大在前）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 256,
+      "srcId": 287,
+      "name": "两位 BCD 转二进制",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 257,
+      "srcId": 288,
+      "name": "4 位二进制转 BCD",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 258,
+      "srcId": 289,
+      "name": "格雷码加一（4 位）",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 259,
+      "srcId": 292,
+      "name": "8 位高低字节相等",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 260,
+      "srcId": 293,
+      "name": "4 位与 8 位拼接进位加",
+      "kind": "comb",
+      "empty": true
+    },
+    {
+      "taskId": 261,
+      "srcId": 299,
+      "name": "12 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 262,
+      "srcId": 300,
+      "name": "16 分频",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 263,
+      "srcId": 301,
+      "name": "序列检测 101",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 264,
+      "srcId": 302,
+      "name": "序列检测 0101",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 265,
+      "srcId": 303,
+      "name": "序列检测 111",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 266,
+      "srcId": 305,
+      "name": "计数到 5 出脉冲",
+      "kind": "seq",
+      "empty": true
+    },
+    {
+      "taskId": 267,
+      "srcId": 306,
+      "name": "计数到 10 出脉冲",
+      "kind": "seq",
+      "empty": true
+    }
+  ]
+}

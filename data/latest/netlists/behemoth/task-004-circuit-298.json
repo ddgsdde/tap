@@ -1,0 +1,83 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 4,
+    "srcId": 4,
+    "name": "与非门 NAND",
+    "kind": "comb",
+    "nIn": 2,
+    "nOut": 1,
+    "cycles": 1
+  },
+  "circuit": {
+    "circuitId": "298",
+    "owner": "0x753E928B36a7D713417b5FfCE16F77789b049656",
+    "info": {
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 1
+    },
+    "mining": {
+      "taskId": 4,
+      "srcId": 4,
+      "name": "与非门 NAND",
+      "kind": "comb",
+      "nIn": 2,
+      "nOut": 1,
+      "cycles": 1,
+      "circuitId": "298",
+      "cost": "1",
+      "depth": 1,
+      "gateCount": 1,
+      "stateCount": 0,
+      "nand": 1,
+      "latch": 0,
+      "area": "1",
+      "multiplier": 6,
+      "since": "1787331736",
+      "status": 1,
+      "registrant": "0x525d480FEfd456179f7Ec5199f1873b234239a32",
+      "bstar": "1",
+      "bonus": "1",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x00000002000003",
+  "decoded": {
+    "byteLength": 7,
+    "sha256": "8c4e1575e55c1449c6f270b830daad25afacfdde9f27ad7b434bd28fb049346c",
+    "keccak256": "0x9bd41f32891fd718692b9769803db8caffabc217f66a6f682f34c6215db9c172",
+    "signalCount": 5,
+    "counts": {
+      "nand": 1,
+      "latch": 0,
+      "ref": 0,
+      "topLevelElements": 1
+    },
+    "elements": [
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 3,
+        "out": 4,
+        "byteOffset": 0
+      }
+    ]
+  },
+  "pureNandDepth": {
+    "outputs": [
+      1
+    ],
+    "max": 1
+  },
+  "blifAvailable": true
+}

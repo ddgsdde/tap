@@ -1,0 +1,100 @@
+{
+  "snapshotBlock": 123400993,
+  "processor": {
+    "name": "Behemoth",
+    "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C"
+  },
+  "task": {
+    "taskId": 83,
+    "srcId": 87,
+    "name": "三分频",
+    "kind": "seq",
+    "nIn": 0,
+    "nOut": 1,
+    "cycles": 12
+  },
+  "circuit": {
+    "circuitId": "871",
+    "owner": "0x8Eaac69b4c1EA54b584542DC25fE70a6946735f3",
+    "info": {
+      "nIn": 0,
+      "nOut": 1,
+      "nState": 2,
+      "gateCount": 4
+    },
+    "mining": {
+      "taskId": 83,
+      "srcId": 87,
+      "name": "三分频",
+      "kind": "seq",
+      "nIn": 0,
+      "nOut": 1,
+      "cycles": 12,
+      "circuitId": "871",
+      "cost": "16",
+      "depth": 1,
+      "gateCount": 4,
+      "stateCount": 2,
+      "nand": 2,
+      "latch": 2,
+      "area": "16",
+      "multiplier": 6,
+      "since": "1787391066",
+      "status": 1,
+      "registrant": "0x8Eaac69b4c1EA54b584542DC25fE70a6946735f3",
+      "bstar": "4",
+      "bonus": "72",
+      "optimal": true,
+      "verifiedWeight": "0",
+      "unverifiedWeight": "0",
+      "debt": "0"
+    }
+  },
+  "rawNetlist": "0x01000004010000020000000200000300000001000002",
+  "decoded": {
+    "byteLength": 22,
+    "sha256": "0b79baabb9c867b864d9c6c3e609ac38dcd6a9cc7327e6a5c535f76a26b3143f",
+    "keccak256": "0x189136a793f41930f612d437e9212c9bfd3ae591a15b1f2d747a6903998226da",
+    "signalCount": 6,
+    "counts": {
+      "nand": 2,
+      "latch": 2,
+      "ref": 0,
+      "topLevelElements": 4
+    },
+    "elements": [
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 4,
+        "out": 2,
+        "byteOffset": 0
+      },
+      {
+        "op": "LATCH",
+        "opcode": 1,
+        "d": 2,
+        "out": 3,
+        "byteOffset": 4
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 2,
+        "b": 3,
+        "out": 4,
+        "byteOffset": 8
+      },
+      {
+        "op": "NAND",
+        "opcode": 0,
+        "a": 1,
+        "b": 2,
+        "out": 5,
+        "byteOffset": 15
+      }
+    ]
+  },
+  "pureNandDepth": null,
+  "blifAvailable": false
+}
