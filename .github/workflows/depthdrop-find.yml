@@ -1,0 +1,44 @@
+name: Fast depth-drop attacks
+
+on:
+  push:
+    paths:
+      - ".github/workflows/depthdrop-find.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        include:
+          - { name: "t090-d4-g80", task: "090", gates: 80, depth: 4 }
+          - { name: "t175-d4-g95", task: "175", gates: 95, depth: 4 }
+          - { name: "t176-d5-g145", task: "176", gates: 145, depth: 5 }
+          - { name: "t059-d5-g77", task: "059", gates: 77, depth: 5 }
+          - { name: "t208-d5-g51b", task: "208", gates: 51, depth: 5 }
+          - { name: "t156-d6-g57b", task: "156", gates: 57, depth: 6 }
+    steps:
+      - uses: actions/checkout@v5
+      - run: sh tools/offline/build.sh
+      - name: Depth-drop SAT search
+        shell: bash
+        run: |
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/find_nand.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --timeout 1200 --seed 2 --out-dir "$OUT" || true
+          cat "$OUT/result.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}/result.json"
+          retention-days: 14
