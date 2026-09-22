@@ -6,7 +6,9 @@
   "description": "Reproducible TapeOut Protocol on-chain leaderboards, netlists and market snapshots",
   "scripts": {
     "scan": "node scripts/scan.mjs",
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "sat:build": "sh tools/offline/build.sh",
+    "sat:selftest": "sh tools/offline/selftest.sh"
   },
   "dependencies": {
     "ethers": "6.17.0"

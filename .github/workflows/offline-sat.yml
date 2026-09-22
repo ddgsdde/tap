@@ -1,0 +1,30 @@
+name: Test offline SAT toolkit
+
+on:
+  push:
+    paths:
+      - "tools/offline/**"
+      - "third_party/kissat/**"
+      - "third_party/drat-trim/**"
+      - ".github/workflows/offline-sat.yml"
+  pull_request:
+    paths:
+      - "tools/offline/**"
+      - "third_party/kissat/**"
+      - "third_party/drat-trim/**"
+      - ".github/workflows/offline-sat.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build vendored solvers without downloads
+        run: sh tools/offline/build.sh
+      - name: Prove and verify the XOR2 optimum offline
+        run: sh tools/offline/selftest.sh

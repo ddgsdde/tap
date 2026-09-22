@@ -27,7 +27,7 @@ TapeOut Protocol 的可复现链上数据镜像。仓库定时读取 BNB Smart C
 
 ## 自动更新
 
-[`update-data.yml`](.github/workflows/update-data.yml) 每 6 小时运行一次，也支持手动触发。工作流会：
+[`update-data.yml`](.github/workflows/update-data.yml) 每小时运行一次，也支持手动触发。工作流会：
 
 1. 固定一个 BSC 区块；
 2. 在该区块读取全部官方处理器榜首和对应网表；
@@ -37,6 +37,21 @@ TapeOut Protocol 的可复现链上数据镜像。仓库定时读取 BNB Smart C
 6. 仅在数据发生变化时提交到 `main`。
 
 工作流只进行只读 RPC 调用，不需要钱包、私钥或链上交易。
+
+## 离线 SAT 最优推理
+
+仓库内置固定版本的 Kissat 4.0.4 与 drat-trim 源码，以及不依赖第三方
+Python 包的精确 NAND 综合器。获得仓库后，即使沙盒完全断网，也可以从源码构建
+求解器、搜索更低成本电路、解码 SAT 模型、全输入验证候选，并独立核验 UNSAT
+证明证书。
+
+```bash
+npm run sat:build
+npm run sat:selftest
+```
+
+完整用法和证明边界见
+[`docs/OFFLINE_OPTIMALITY.md`](docs/OFFLINE_OPTIMALITY.md)。
 
 ## 本地运行
 
