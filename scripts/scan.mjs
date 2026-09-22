@@ -40,6 +40,7 @@ const URLS = {
 };
 
 const RPC_URLS = (process.env.TAPEOUT_RPC_URLS || [
+  "https://tapeout.net/rpc",
   "https://bsc-rpc.publicnode.com",
   "https://bsc-dataseed.binance.org",
   "https://rpc-bsc.48.club",

@@ -65,7 +65,7 @@ npm run validate
 
 ```bash
 # 逗号分隔的 BSC RPC，按顺序故障转移
-TAPEOUT_RPC_URLS="https://bsc-rpc.publicnode.com,https://bsc-dataseed.binance.org" npm run scan
+TAPEOUT_RPC_URLS="https://tapeout.net/rpc,https://bsc-rpc.publicnode.com" npm run scan
 
 # 只扫描指定官方处理器；名称来自 pod-mainnet.json
 TAPEOUT_CPUS="TapeOut,Behemoth" npm run scan

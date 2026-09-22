@@ -31,7 +31,7 @@ jobs:
 
       - name: Scan chain and markets
         env:
-          TAPEOUT_RPC_URLS: https://bsc-rpc.publicnode.com,https://bsc-dataseed.binance.org,https://rpc-bsc.48.club
+          TAPEOUT_RPC_URLS: https://tapeout.net/rpc,https://bsc-rpc.publicnode.com,https://bsc-dataseed.binance.org,https://rpc-bsc.48.club
         run: npm run scan
 
       - name: Validate generated data
