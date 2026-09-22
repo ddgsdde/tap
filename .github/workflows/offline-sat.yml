@@ -28,3 +28,132 @@ jobs:
         run: sh tools/offline/build.sh
       - name: Prove and verify the XOR2 optimum offline
         run: sh tools/offline/selftest.sh
+
+  xor3-optimality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build vendored solvers without downloads
+        run: sh tools/offline/build.sh
+      - name: Search and prove the XOR3 cost optimum
+        shell: bash
+        run: |
+          set -euo pipefail
+          REF="data/latest/netlists/tapeout/task-010-circuit-1052.json"
+          ROOT="offline-results/xor3-global"
+          mkdir -p "$ROOT"
+
+          run_query() {
+            local gates="$1"
+            local depth="$2"
+            local name="$3"
+            python3 tools/offline/exact_nand.py prove \
+              --reference "$REF" \
+              --gates "$gates" \
+              --depth "$depth" \
+              --timeout 1800 \
+              --out-dir "$ROOT/$name"
+          }
+
+          # Key region first: can the current 11-gate/depth-5 leader be beaten
+          # with at most 10 gates at the same minimum depth?
+          run_query 10 5 d05-g10
+          STATUS10="$(python3 -c 'import json; print(json.load(open("offline-results/xor3-global/d05-g10/result.json"))["status"])')"
+
+          if [ "$STATUS10" = "SAT" ]; then
+            run_query 9 5 d05-g09
+            STATUS9="$(python3 -c 'import json; print(json.load(open("offline-results/xor3-global/d05-g09/result.json"))["status"])')"
+            if [ "$STATUS9" = "SAT" ]; then
+              run_query 8 5 d05-g08
+            fi
+          else
+            # If <=10 gates at depth 5 is impossible, a 6-gate depth-6 chain
+            # is the only deeper cone that can still beat cost 1375.
+            run_query 6 6 d06-g06
+          fi
+
+          # XOR3 has one output. Any depth <=4 fan-in cone contains at most
+          # 2^4-1 = 15 relevant NAND gates; extra gates would be unused.
+          run_query 15 4 d04-g15
+
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("offline-results/xor3-global")
+          rows = []
+          for result_path in sorted(root.glob("*/result.json")):
+              result = json.loads(result_path.read_text())
+              rows.append({
+                  "query": result_path.parent.name,
+                  "status": result["status"],
+                  "proofVerified": result.get("proofVerified", False),
+                  "candidateVerified": result.get("candidateVerified", False),
+                  "candidate": result.get("candidate"),
+              })
+
+          sats = [r for r in rows if r["status"] == "SAT" and r.get("candidate")]
+          best = min(sats, key=lambda r: r["candidate"]["cost"]) if sats else None
+
+          status = {r["query"]: r for r in rows}
+          global_proved = False
+          optimum = None
+
+          # If d5-g10 is UNSAT, current cost 1375 is optimal iff d4-g15 and
+          # d6-g06 are also independently proved UNSAT.
+          if status.get("d05-g10", {}).get("status") == "UNSAT":
+              needed = ["d05-g10", "d06-g06", "d04-g15"]
+              global_proved = all(
+                  status.get(name, {}).get("status") == "UNSAT"
+                  and status.get(name, {}).get("proofVerified")
+                  for name in needed
+              )
+              if global_proved:
+                  optimum = {"cost": 1375, "gates": 11, "depth": 5, "source": "incumbent"}
+          else:
+              # If a cheaper depth-5 circuit exists, the first UNSAT query
+              # immediately below the best SAT gate count proves the gate
+              # minimum at depth 5. d4-g15 rules out all shallower circuits.
+              if best:
+                  g = best["candidate"]["gates"]
+                  lower = f"d05-g{g-1:02d}"
+                  lower_ok = (
+                      g == 8
+                      or (
+                          status.get(lower, {}).get("status") == "UNSAT"
+                          and status.get(lower, {}).get("proofVerified")
+                      )
+                  )
+                  shallow_ok = (
+                      status.get("d04-g15", {}).get("status") == "UNSAT"
+                      and status.get("d04-g15", {}).get("proofVerified")
+                  )
+                  global_proved = lower_ok and shallow_ok
+                  if global_proved:
+                      optimum = {
+                          "cost": best["candidate"]["cost"],
+                          "gates": g,
+                          "depth": best["candidate"]["depth"],
+                          "source": best["query"],
+                      }
+
+          summary = {
+              "taskId": 10,
+              "name": "三输入奇校验 XOR3",
+              "incumbent": {"gates": 11, "depth": 5, "cost": 1375},
+              "queries": rows,
+              "bestSat": best,
+              "globalCostOptimalityProved": global_proved,
+              "optimum": optimum,
+          }
+          (root / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+          print(json.dumps(summary, indent=2))
+          PY
+      - name: Upload XOR3 proof bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xor3-optimality
+          path: offline-results/xor3-global
+          if-no-files-found: warn
