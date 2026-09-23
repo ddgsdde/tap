@@ -1,0 +1,48 @@
+name: ABC custom depth rewrites
+
+on:
+  push:
+    paths:
+      - ".github/workflows/abc-custom.yml"
+      - "tools/offline/yosys_nand_stats.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  abc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: "t059-resyn2", task: "059", script: "+strash;balance;rewrite;refactor;balance;rewrite;rewrite,-z;balance;&get,-n;&dch,-f;&nf;&put" }
+          - { name: "t059-bal", task: "059", script: "+strash;balance;rewrite;balance;rewrite,-z;balance;refactor,-z;balance;&get,-n;&dch,-f;&nf;&put" }
+          - { name: "t208-resyn2", task: "208", script: "+strash;balance;rewrite;refactor;balance;rewrite;rewrite,-z;balance;&get,-n;&dch,-f;&nf;&put" }
+          - { name: "t208-bal", task: "208", script: "+strash;balance;rewrite;balance;rewrite,-z;balance;refactor,-z;balance;&get,-n;&dch,-f;&nf;&put" }
+          - { name: "t191-resyn2", task: "191", script: "+strash;balance;rewrite;refactor;balance;rewrite;rewrite,-z;balance;&get,-n;&dch,-f;&nf;&put" }
+          - { name: "t156-resyn2", task: "156", script: "+strash;balance;rewrite;refactor;balance;rewrite;rewrite,-z;balance;&get,-n;&dch,-f;&nf;&put" }
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Yosys
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y yosys
+      - name: Custom ABC mapping
+        shell: bash
+        run: |
+          set -euxo pipefail
+          BLIF="$(ls data/latest/blif/tapeout/task-${{ matrix.task }}-circuit-*.blif | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          mkdir -p "$OUT"
+          yosys -p "read_blif $BLIF; hierarchy -auto-top; proc; flatten; opt; lut2mux; simplemap; opt; abc -g NAND -script '${{ matrix.script }}'; opt_clean; stat; write_json $OUT/mapped.json" | tee "$OUT/yosys.log"
+          python3 tools/offline/yosys_nand_stats.py "$OUT/mapped.json" --out "$OUT/stats.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
