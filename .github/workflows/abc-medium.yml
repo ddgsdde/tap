@@ -1,0 +1,41 @@
+name: ABC medium synthesis probe
+
+on:
+  push:
+    paths:
+      - ".github/workflows/abc-medium.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  abc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        task: ["183", "057", "090"]
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Yosys
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y yosys
+          yosys -V
+          command -v yosys-abc || true
+      - name: Optimize through ABC NAND mapping
+        shell: bash
+        run: |
+          set -euxo pipefail
+          BLIF="$(ls data/latest/blif/tapeout/task-${{ matrix.task }}-circuit-*.blif | head -n1)"
+          mkdir -p "offline-results/abc-${{ matrix.task }}"
+          yosys -p "read_blif $BLIF; hierarchy -auto-top; proc; flatten; opt; abc -g NAND; opt_clean; stat; write_json offline-results/abc-${{ matrix.task }}/mapped.json" \
+            | tee "offline-results/abc-${{ matrix.task }}/yosys.log"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "abc-${{ matrix.task }}"
+          path: "offline-results/abc-${{ matrix.task }}"
+          if-no-files-found: warn
