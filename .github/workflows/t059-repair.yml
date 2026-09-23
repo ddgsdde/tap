@@ -1,0 +1,51 @@
+name: Task 59 depth-5 repair
+
+on:
+  push:
+    paths:
+      - ".github/workflows/t059-repair.yml"
+      - "experiments/medium-repair/t059-pad*.json"
+      - "tools/offline/bitvec_nand_smt.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: "g49-s3", gates: 49, seedfile: "experiments/medium-repair/t059-pad49.json", free: "39,40,41,42,45,46,47,48", seed: 3 }
+          - { name: "g49-s17", gates: 49, seedfile: "experiments/medium-repair/t059-pad49.json", free: "39,40,41,42,45,46,47,48", seed: 17 }
+          - { name: "g55-s5", gates: 55, seedfile: "experiments/medium-repair/t059-pad55.json", free: "39,40,41,42,43,44,45,46,47,48,51,52,53,54", seed: 5 }
+          - { name: "g55-s29", gates: 55, seedfile: "experiments/medium-repair/t059-pad55.json", free: "39,40,41,42,43,44,45,46,47,48,51,52,53,54", seed: 29 }
+          - { name: "g61-s11", gates: 61, seedfile: "experiments/medium-repair/t059-pad61.json", free: "39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,57,58,59,60", seed: 11 }
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Z3
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y z3
+      - name: Resynthesize critical product outputs
+        shell: bash
+        run: |
+          set +e
+          REF="$(ls data/latest/netlists/tapeout/task-059-circuit-*.json | head -n1)"
+          OUT="offline-results/t059-${{ matrix.name }}"
+          python3 tools/offline/bitvec_nand_smt.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth 5 \
+            --seed-candidate "${{ matrix.seedfile }}" --free-gates "${{ matrix.free }}" \
+            --timeout 1500 --seed ${{ matrix.seed }} --out-dir "$OUT"
+          [ -f "$OUT/result.json" ] && cat "$OUT/result.json"
+          exit 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "t059-${{ matrix.name }}"
+          path: "offline-results/t059-${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
