@@ -1,0 +1,70 @@
+name: BitVec local near-miss repairs
+
+on:
+  push:
+    paths:
+      - "tools/offline/bitvec_nand_smt.py"
+      - ".github/workflows/bitvec-local.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - name: t183-free18
+            task: "183"
+            gates: 29
+            depth: 5
+            seedfile: experiments/medium-repair/t183-near29.json
+            free: "0,2,3,4,6,7,8,9,10,11,12,13,14,16,23,25,27,28"
+          - name: t183-free23
+            task: "183"
+            gates: 29
+            depth: 5
+            seedfile: experiments/medium-repair/t183-near29.json
+            free: "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,23,25,27,28"
+          - name: t057-free26
+            task: "057"
+            gates: 36
+            depth: 5
+            seedfile: experiments/medium-repair/t057-near36.json
+            free: "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20,21,22,23,24,28,32"
+          - name: t090-free24
+            task: "090"
+            gates: 40
+            depth: 5
+            seedfile: experiments/medium-repair/t090-near40.json
+            free: "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,32"
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Z3
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y z3
+      - name: Repair
+        shell: bash
+        run: |
+          set +e
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/bitvec_nand_smt.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --seed-candidate "${{ matrix.seedfile }}" --free-gates "${{ matrix.free }}" \
+            --timeout 1500 --seed 11 --out-dir "$OUT"
+          [ -f "$OUT/result.json" ] && cat "$OUT/result.json"
+          exit 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
