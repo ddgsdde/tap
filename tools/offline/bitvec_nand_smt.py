@@ -45,7 +45,7 @@ def main():
     patterns=1<<inputs
     vw=patterns
     sw=max(1,(base+gates-1).bit_length())
-    dw=max(2,(args.depth+2).bit_length())
+    dw=max(2,(gates+2).bit_length())
     mask=(1<<patterns)-1
 
     vals=[bv(0,vw), bv(mask,vw)]
