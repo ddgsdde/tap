@@ -1,6 +1,6 @@
 {
-  "snapshotBlock": 123612387,
-  "blockTimeUTC": "2026-09-23T18:23:24.000Z",
+  "snapshotBlock": 123643459,
+  "blockTimeUTC": "2026-09-23T22:16:33.000Z",
   "processor": {
     "configName": "Behemoth",
     "address": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C",
@@ -9,7 +9,7 @@
     "multiplier": 6,
     "fromBlock": 116079229,
     "factory": "0x68224F668083c29e9800Be2a646d42d18cedF7e2",
-    "nextCircuitId": "2539",
+    "nextCircuitId": "2541",
     "transistors": {
       "address": "0xE2DfD802081C7a05341E20b6582b04b908e8550c",
       "cpuName": "Blonskr_No1",
@@ -32,8 +32,8 @@
     }
   },
   "taskCount": 267,
-  "occupiedCount": 266,
-  "emptyCount": 1,
+  "occupiedCount": 267,
+  "emptyCount": 0,
   "rows": [
     {
       "taskId": 1,
@@ -3574,7 +3574,38 @@
       "srcId": 100,
       "name": "16 位 + 8 位加法",
       "kind": "comb",
-      "empty": true
+      "nIn": 24,
+      "nOut": 17,
+      "cycles": 1,
+      "circuitId": "2541",
+      "cost": "164000",
+      "depth": 10,
+      "gateCount": 164,
+      "stateCount": 0,
+      "nand": 164,
+      "latch": 0,
+      "area": "164",
+      "multiplier": 6,
+      "since": "1790199828",
+      "status": 1,
+      "registrant": "0x8bAf8c4F3aE2fa5294a3CB124BB88E1A5dfe4D67",
+      "bstar": "164",
+      "bonus": "432",
+      "optimal": true,
+      "verifiedWeight": "122730938",
+      "unverifiedWeight": "2503",
+      "debt": "0",
+      "owner": "0x8bAf8c4F3aE2fa5294a3CB124BB88E1A5dfe4D67",
+      "netlist": "netlists/behemoth/task-094-circuit-2541.json",
+      "blif": "blif/behemoth/task-094-circuit-2541.blif",
+      "rawNetlistBytes": 1148,
+      "rawNetlistSha256": "910edbd7a64997c96d6ab016c2fc3126995a846b83be1bf1c6d5d6459bfd3600",
+      "topLevel": {
+        "nand": 164,
+        "latch": 0,
+        "ref": 0,
+        "topLevelElements": 164
+      }
     },
     {
       "taskId": 95,
