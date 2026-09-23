@@ -1,0 +1,49 @@
+name: BitVec depth-drop attacks
+
+on:
+  push:
+    paths:
+      - ".github/workflows/bitvec-depthdrop.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - { name: "t191-parity6-g47-d6", task: "191", gates: 47, depth: 6 }
+          - { name: "t192-parity7-g63-d6", task: "192", gates: 63, depth: 6 }
+          - { name: "t015-parity8-g74-d6", task: "015", gates: 74, depth: 6 }
+          - { name: "t201-pow2-g63-d6", task: "201", gates: 63, depth: 6 }
+          - { name: "t205-exact2-g68-d7", task: "205", gates: 68, depth: 7 }
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Z3
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y z3
+      - name: Search
+        shell: bash
+        run: |
+          set +e
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/bitvec_nand_smt.py \
+            --reference "$REF" --gates ${{ matrix.gates }} --depth ${{ matrix.depth }} \
+            --timeout 1500 --seed 19 --out-dir "$OUT"
+          [ -f "$OUT/result.json" ] && cat "$OUT/result.json"
+          exit 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
