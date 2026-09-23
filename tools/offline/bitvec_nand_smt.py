@@ -72,12 +72,16 @@ def main():
             sa,sb=seed_pairs[gi]
             lines.append(f"(assert (= a{gi} {bv(sa,sw)}))")
             lines.append(f"(assert (= b{gi} {bv(sb,sw)}))")
-        av=mux(f"a{gi}", vals, sw)
-        bb=mux(f"b{gi}", vals, sw)
-        ad=mux(f"a{gi}", deps, sw)
-        bd=mux(f"b{gi}", deps, sw)
+            av,bb=vals[sa],vals[sb]
+            ad,bd=deps[sa],deps[sb]
+        else:
+            av=mux(f"a{gi}", vals, sw)
+            bb=mux(f"b{gi}", vals, sw)
+            ad=mux(f"a{gi}", deps, sw)
+            bd=mux(f"b{gi}", deps, sw)
         lines.append(f"(assert (= g{gi} (bvnot (bvand {av} {bb}))))")
         lines.append(f"(assert (= d{gi} (bvadd {bv(1,dw)} (ite (bvuge {ad} {bd}) {ad} {bd}))))")
+        lines.append(f"(assert (bvule d{gi} {bv(args.depth,dw)}))")
         vals.append(f"g{gi}")
         deps.append(f"d{gi}")
 
