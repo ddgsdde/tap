@@ -23,6 +23,8 @@ def main():
     ap.add_argument("--depth", type=int, required=True)
     ap.add_argument("--timeout", type=int, default=1200)
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--seed-candidate")
+    ap.add_argument("--free-gates", help="comma-separated gate indexes; all other gates are fixed to the seed")
     ap.add_argument("--out-dir", required=True)
     args=ap.parse_args()
 
@@ -30,6 +32,15 @@ def main():
     if inputs > 8:
         raise SystemExit("bitvec prototype is for small-input tasks")
     gates=args.gates
+    seed_pairs=None
+    free=None
+    if args.seed_candidate:
+        seed_doc=json.loads(Path(args.seed_candidate).read_text())
+        seed_pairs=[tuple(sorted(map(int,p))) for p in seed_doc["pairs"]]
+        if len(seed_pairs)!=gates:
+            raise SystemExit("seed candidate gate count disagrees with --gates")
+        free=set(int(x) for x in (args.free_gates or "").split(",") if x.strip())
+
     base=inputs+2
     patterns=1<<inputs
     vw=patterns
@@ -57,11 +68,15 @@ def main():
             f"(assert (bvule a{gi} b{gi}))",
             f"(assert (bvult b{gi} {bv(out,sw)}))",
         ]
+        if seed_pairs is not None and gi not in free:
+            sa,sb=seed_pairs[gi]
+            lines.append(f"(assert (= a{gi} {bv(sa,sw)}))")
+            lines.append(f"(assert (= b{gi} {bv(sb,sw)}))")
         av=mux(f"a{gi}", vals, sw)
-        bvx=mux(f"b{gi}", vals, sw)
+        bb=mux(f"b{gi}", vals, sw)
         ad=mux(f"a{gi}", deps, sw)
         bd=mux(f"b{gi}", deps, sw)
-        lines.append(f"(assert (= g{gi} (bvnot (bvand {av} {bvx}))))")
+        lines.append(f"(assert (= g{gi} (bvnot (bvand {av} {bb}))))")
         lines.append(f"(assert (= d{gi} (bvadd {bv(1,dw)} (ite (bvuge {ad} {bd}) {ad} {bd}))))")
         vals.append(f"g{gi}")
         deps.append(f"d{gi}")
@@ -84,7 +99,8 @@ def main():
     (out/"z3.log").write_text(proc.stdout+proc.stderr)
     status=proc.stdout.splitlines()[0].strip() if proc.stdout.strip() else "unknown"
     result={"status":status.upper(),"seconds":round(elapsed,3),"gates":gates,"depthBound":args.depth,
-            "inputs":inputs,"outputs":outputs,"truthHex":[hex(x) for x in truths]}
+            "inputs":inputs,"outputs":outputs,"truthHex":[hex(x) for x in truths],
+            "freeGates":sorted(free) if free is not None else None}
     if status=="sat":
         found={}
         for name,val in re.findall(r"\((a\d+|b\d+|d\d+)\s+(#x[0-9a-fA-F]+|#b[01]+|\(_ bv\d+ \d+\))\)",proc.stdout):
