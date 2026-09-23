@@ -1,0 +1,70 @@
+{
+  "taskId": 60,
+  "scope": "4x4 unsigned multiplication; all 256 inputs; NAND2 only; ordered final eight physical outputs",
+  "baseline": {
+    "snapshotBlock": 123477186,
+    "circuitId": "15974",
+    "gateCount": 117,
+    "depth": 8,
+    "cost": 59904,
+    "rawNetlistSha256": "8d75f2e031c08548ccf3df16fe104775e729b5743c76907333231c668e64018a"
+  },
+  "bestValid": {
+    "file": "best_known_117.json",
+    "valid": true,
+    "gateCount": 117,
+    "depth": 8,
+    "cost": 59904,
+    "passedInputs": 256,
+    "testedInputs": 256,
+    "improvesBaselineCost": false
+  },
+  "nearMiss": {
+    "file": "near_miss_116_NOT_VALID.json",
+    "valid": false,
+    "gateCount": 116,
+    "depth": 8,
+    "arithmeticCostOnly": 59392,
+    "passedInputs": 255,
+    "testedInputs": 256,
+    "wrongOutputBitCount": 1,
+    "counterexample": {"a": 7, "b": 7, "expected": 49, "actual": 33, "wrongOutputBits": [4]}
+  },
+  "randomRepair": {
+    "seed": 603,
+    "seconds": 240,
+    "candidateEvaluations": 398033989,
+    "restarts": 3981,
+    "distinctCandidatesKnown": false,
+    "firstOneBitErrorAtEvaluation": 28379925,
+    "validImprovementFound": false
+  },
+  "localSatRuns": {
+    "z3local.log": {"queries": 30, "sat": 0, "unsat": 27, "unknown": 3},
+    "z3wide.log": {"queries": 31, "sat": 0, "unsat": 27, "unknown": 4},
+    "window.log": {"queries": 189, "sat": 0, "unsat": 122, "unknown": 67},
+    "focused.log": {"queries": 3, "sat": 0, "unsat": 2, "unknown": 1},
+    "delete.log": {"queries": 39, "sat": 0, "unsat": 38, "unknown": 1},
+    "delay_sat.log": {"queries": 33, "sat": 0, "unsat": 15, "unknown": 18}
+  },
+  "localSatTotals": {"queries": 325, "sat": 0, "unsat": 231, "unknown": 94},
+  "caveats": [
+    "Candidate evaluations can repeat; this is not exhaustive enumeration of all circuits.",
+    "Listed SAT searches are restricted local models, not a full 116-gate search.",
+    "UNSAT outputs were not independently checked with DRAT certificates.",
+    "Unknown and timeout are not UNSAT.",
+    "A single failing input does not guarantee that a valid 116-gate repair exists."
+  ],
+  "globalOptimalityProved": false,
+  "full116GateUnsatProved": false,
+  "onChainSubmitted": false,
+  "toolchain": {"python": "3.13", "SAT": "system libz3 4.13.3.0 via ctypes", "randomSearch": "g++ -O3 -std=c++17"},
+  "selfTests": {
+    "validBaselineScalar256": "passed",
+    "invalidNearMissScalar256": "correctly rejected at 7x7",
+    "SATDecodeOnKnownValidTwoGateWindow": "passed",
+    "FrozenIncorrectNetworkUnsat": "passed"
+  },
+  "nextCheckpoint": "near_miss_116_NOT_VALID.json",
+  "continuationTool": "window_repair.py"
+}
