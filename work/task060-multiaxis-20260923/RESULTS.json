@@ -1,0 +1,56 @@
+{
+  "taskId": 60,
+  "status": "COMPLETED_NO_VALID_COST_IMPROVEMENT",
+  "baseline": {
+    "snapshotBlock": 123477186,
+    "blockTimeUTC": "2026-09-23T01:29:03Z",
+    "circuitId": "15974",
+    "gateCount": 117,
+    "depth": 8,
+    "cost": 59904,
+    "source": "data/latest/netlists/tapeout/task-060-circuit-15974.json",
+    "freshLiveRpcRead": false
+  },
+  "bestValid": {"gateCount": 117, "depth": 8, "cost": 59904, "passedInputs": 256, "testedInputs": 256},
+  "depthExperiment": {
+    "file": "depth123_VERIFIED_NOT_IMPROVED.json",
+    "valid": true,
+    "gateCount": 123,
+    "depth": 8,
+    "cost": 62976,
+    "outputDepths": [2, 5, 6, 8, 8, 8, 8, 6],
+    "internalDepth7Count": 6,
+    "testedInputs": 256,
+    "passedInputs": 256,
+    "counterexamples": [],
+    "rawNetlistSha256": "1ab63d05611ec4f0933e03e2e4b52bcfa81bfff9f91e18b979fd4a1133a0b649",
+    "truthTableSha256": "7810ff9ffe72c69b26a7f3c81909bb7238e84eaa0217cdb55b52f1129ac05507",
+    "expectedTruthTableSha256": "7810ff9ffe72c69b26a7f3c81909bb7238e84eaa0217cdb55b52f1129ac05507"
+  },
+  "depthRewriteStages": [
+    {"gateCount": 117, "depth": 8, "internalDepth7Count": 8, "cost": 59904},
+    {"gateCount": 118, "depth": 8, "internalDepth7Count": 7, "cost": 60416},
+    {"gateCount": 123, "depth": 8, "internalDepth7Count": 6, "cost": 62976}
+  ],
+  "strictlyWinningGateBudgets": {"8": 116, "7": 174, "6": 277},
+  "completedSearches": {
+    "spareSlotGenotypes": [150, 174],
+    "stochasticCandidateEvaluations": [503939072, 440442880],
+    "stochasticAcceptedMoves": [44041559, 54773059],
+    "neutralWindowQueries": 519,
+    "neutralAcceptedWindows": 310,
+    "localSatTasks": 6,
+    "localSatCheckRounds": 14,
+    "localSatTaskResults": {"unsat": 1, "unknown": 5, "validSat": 0},
+    "truthLibraryFunctions": [44296, 48906]
+  },
+  "globallyOptimalProved": false,
+  "onChainSubmitted": false,
+  "limitations": [
+    "The depth experiment is correct but has higher cost, 62976 versus 59904.",
+    "Internal depth-7 counts are only an optimization heuristic. Four output bits still require eight layers.",
+    "The comparison is to repository snapshot block 123477186, not a fresh live-RPC leaderboard.",
+    "Counts can include repeated candidates; bounded templates and local UNSAT are not global optimality proofs.",
+    "Full search source and raw logs are included in the conversation experiment archive. No search remains running."
+  ]
+}
