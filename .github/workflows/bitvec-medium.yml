@@ -1,0 +1,55 @@
+name: BitVec medium NAND search
+
+on:
+  push:
+    paths:
+      - "tools/offline/bitvec_nand_smt.py"
+      - ".github/workflows/bitvec-medium.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: "t183-g29-d5", task: "183", gates: 29, depth: 5 }
+          - { name: "t057-g36-d5", task: "057", gates: 36, depth: 5 }
+          - { name: "t090-g40-d5", task: "090", gates: 40, depth: 5 }
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Z3
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y z3
+          z3 -version
+      - name: Run BitVec synthesis
+        shell: bash
+        run: |
+          set +e
+          REF="$(ls data/latest/netlists/tapeout/task-${{ matrix.task }}-circuit-*.json | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          python3 tools/offline/bitvec_nand_smt.py \
+            --reference "$REF" \
+            --gates ${{ matrix.gates }} \
+            --depth ${{ matrix.depth }} \
+            --timeout 1800 \
+            --seed 7 \
+            --out-dir "$OUT"
+          CODE=$?
+          echo "exit=$CODE"
+          [ -f "$OUT/result.json" ] && cat "$OUT/result.json"
+          exit 0
+      - name: Upload result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
