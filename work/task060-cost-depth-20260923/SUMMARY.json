@@ -1,0 +1,76 @@
+{
+  "taskId": 60,
+  "runStatus": "completed",
+  "baseline": {
+    "processor": "TapeOut",
+    "snapshotBlock": 123477186,
+    "snapshotTimeUTC": "2026-09-23T01:29:03Z",
+    "circuitId": "15974",
+    "gateCount": 117,
+    "depth": 8,
+    "cost": 59904,
+    "liveChainQueried": false
+  },
+  "strictImprovementBudgets": [
+    {"depth": 8, "maximumGates": 116, "costAtMaximumGates": 59392},
+    {"depth": 7, "maximumGates": 174, "costAtMaximumGates": 59682},
+    {"depth": 6, "maximumGates": 277, "costAtMaximumGates": 59832}
+  ],
+  "bestValid": {
+    "file": "best_valid_117.json",
+    "gates": 117,
+    "depth": 8,
+    "cost": 59904,
+    "passedInputs": 256,
+    "testedInputs": 256,
+    "beatsSnapshot": false
+  },
+  "localTimingExperiment": {
+    "file": "timing_118_NOT_COST_IMPROVEMENT.json",
+    "gates": 118,
+    "depth": 8,
+    "cost": 60416,
+    "outputDepths": [2, 4, 6, 8, 8, 8, 8, 6],
+    "passedInputs": 256,
+    "testedInputs": 256,
+    "beatsSnapshot": false,
+    "costIncrease": 512
+  },
+  "correctnessPreservingRuns": 7,
+  "searchTotals": {
+    "roots": 1363296,
+    "expressions": 4376484573,
+    "candidates": 6300873,
+    "verified": 5302208,
+    "accepted": 540102,
+    "restarts": 3890
+  },
+  "distinctCandidateCountKnown": false,
+  "localSynthesisJobs": 57,
+  "localSynthesisStatuses": {"sat": 1, "unsat": 43, "unknown": 13},
+  "fullCareSatResult": {"gates": 119, "depth": 8, "cost": 60928},
+  "depthFrontierJobs": 23,
+  "depthFrontierJobsIncomplete": 23,
+  "externalDonor": {
+    "source": "data/latest/netlists/behemoth/task-060-circuit-1998.json",
+    "gateCount": 116,
+    "depth": 12,
+    "cost": 200448,
+    "independentlyVerifiedInputs": 256,
+    "newAchievement": false
+  },
+  "reproductionSelfTest": "PASS: raw SHA-256 match and 256/256 scalar verification",
+  "globallyOptimalProved": false,
+  "globalDepthLowerBoundProved": false,
+  "onChainSubmitted": false,
+  "searchContinuesAfterResponse": false,
+  "caveats": [
+    "No valid cost improvement found.",
+    "A shorter noncritical output does not reduce maximum circuit depth.",
+    "This is not exhaustive circuit-space enumeration.",
+    "Local UNSAT is restricted to the offered divisors, gate budget, topology symmetry constraints and timing bound.",
+    "Unknown or a capped frontier is not UNSAT and provides no global lower-bound proof.",
+    "Intermediate CEGIS models can be incorrect; they are not counted as valid candidates.",
+    "Comparison uses the fetched repository snapshot, not a fresh live chain leaderboard."
+  ]
+}
