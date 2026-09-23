@@ -31,7 +31,7 @@ jobs:
           set -euxo pipefail
           BLIF="$(ls data/latest/blif/tapeout/task-${{ matrix.task }}-circuit-*.blif | head -n1)"
           mkdir -p "offline-results/abc-${{ matrix.task }}"
-          yosys -p "read_blif $BLIF; hierarchy -auto-top; proc; flatten; opt; abc -g NAND; opt_clean; stat; write_json offline-results/abc-${{ matrix.task }}/mapped.json" \
+          yosys -p "read_blif $BLIF; hierarchy -auto-top; proc; flatten; opt; lut2mux; simplemap; opt; abc -g NAND; opt_clean; stat; write_json offline-results/abc-${{ matrix.task }}/mapped.json" \
             | tee "offline-results/abc-${{ matrix.task }}/yosys.log"
       - uses: actions/upload-artifact@v4
         if: always()
