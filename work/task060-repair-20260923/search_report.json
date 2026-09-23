@@ -1,0 +1,48 @@
+{
+  "taskId": 60,
+  "baselineSnapshotBlock": 123477186,
+  "functionalRepairSucceeded": true,
+  "fixed116GateRepairSucceeded": false,
+  "runStatus": "completed",
+  "validResult": {"file": "repaired117.json", "gates": 117, "depth": 8, "cost": 59904, "passedInputs": 256, "testedInputs": 256, "beatsSnapshot": false},
+  "twoLocationSearch": {
+    "onePinFirstVariants": 15524,
+    "arbitraryPairFirstVariants": 331980,
+    "result": "No valid repair under the implemented topological/depth restrictions."
+  },
+  "neutralThreeLocationSearch": {
+    "distinctOneStepSeedsWithChangedInternalFunction": 3,
+    "arbitraryPairFirstVariantsAcrossSeeds": 995940,
+    "result": "No valid repair. This does not exhaust all three-location mutations."
+  },
+  "stochasticFromNearMiss": {
+    "seed": 6063,
+    "seconds": 180,
+    "candidateEvaluations": 243128747,
+    "restarts": 487,
+    "bestWrongOutputBitCount": 1,
+    "validImprovementFound": false,
+    "distinctCandidatesKnown": false
+  },
+  "fullInputFocusedSat": {"unknown": 4, "unsat": 1},
+  "dynamicDepthCegis": {
+    "searchStatuses": {"sat": 4, "unknown": 9},
+    "subsetSatModelsRejectedByFullVerification": 4,
+    "counterexampleCounts": [42, 20, 34, 40],
+    "validImprovementFound": false,
+    "knownValidDynamicDepthSelfTest": "PASS"
+  },
+  "reproduction": {
+    "script": "reproduce_repair.py",
+    "rawNetlistSha256": "e3c109514b8ff3589e87c3ed3456ec040baae875a77e3507e6eccac6b0aba1c1",
+    "full256ScalarCheck": "PASS",
+    "internalTruthFunctionSetEqualToPrevious117GateDonor": true
+  },
+  "caveats": [
+    "Correct repair restores known valid logic and is not a new better architecture.",
+    "Reference is repository snapshot 123477186, not a freshly read live chain leaderboard.",
+    "SAT unknown/timeouts are not UNSAT.",
+    "Local UNSAT does not prove global optimality.",
+    "No on-chain transaction was submitted."
+  ]
+}
