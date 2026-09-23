@@ -1,0 +1,48 @@
+name: ABC depth-driven medium synthesis
+
+on:
+  push:
+    paths:
+      - ".github/workflows/abc-depth.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  abc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: "t059-D1", task: "059", delay: 1 }
+          - { name: "t059-D2", task: "059", delay: 2 }
+          - { name: "t059-D3", task: "059", delay: 3 }
+          - { name: "t208-D1", task: "208", delay: 1 }
+          - { name: "t208-D2", task: "208", delay: 2 }
+          - { name: "t208-D3", task: "208", delay: 3 }
+          - { name: "t191-D1", task: "191", delay: 1 }
+          - { name: "t156-D1", task: "156", delay: 1 }
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install Yosys
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y yosys
+      - name: Depth-driven mapping
+        shell: bash
+        run: |
+          set -euxo pipefail
+          BLIF="$(ls data/latest/blif/tapeout/task-${{ matrix.task }}-circuit-*.blif | head -n1)"
+          OUT="offline-results/${{ matrix.name }}"
+          mkdir -p "$OUT"
+          yosys -p "read_blif $BLIF; hierarchy -auto-top; proc; flatten; opt; lut2mux; simplemap; opt; abc -g NAND -D ${{ matrix.delay }}; opt_clean; stat; write_json $OUT/mapped.json" | tee "$OUT/yosys.log"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "${{ matrix.name }}"
+          path: "offline-results/${{ matrix.name }}"
+          if-no-files-found: warn
+          retention-days: 30
