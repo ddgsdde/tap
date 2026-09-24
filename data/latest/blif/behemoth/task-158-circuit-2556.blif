@@ -1,0 +1,455 @@
+# TapeOut Behemoth task 158, circuit 2556
+.model task158_circuit2556
+.inputs i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 i10 i11 i12 i13 i14 i15
+.outputs o0 o1 o2 o3 o4
+.names zero
+.names one
+1
+.names i9 i8 g0
+0- 1
+-0 1
+.names i13 i12 g1
+0- 1
+-0 1
+.names i14 g1 g2
+0- 1
+-0 1
+.names i14 i15 g3
+0- 1
+-0 1
+.names i10 i11 g4
+0- 1
+-0 1
+.names g3 g5
+0 1
+.names i6 i7 g6
+0- 1
+-0 1
+.names i5 i4 g7
+0- 1
+-0 1
+.names g4 i11 g8
+0- 1
+-0 1
+.names i5 g7 g9
+0- 1
+-0 1
+.names i4 g7 g10
+0- 1
+-0 1
+.names g6 i7 g11
+0- 1
+-0 1
+.names i1 i0 g12
+0- 1
+-0 1
+.names i9 g0 g13
+0- 1
+-0 1
+.names g0 i8 g14
+0- 1
+-0 1
+.names i10 g4 g15
+0- 1
+-0 1
+.names g3 i15 g16
+0- 1
+-0 1
+.names g8 g15 g17
+0- 1
+-0 1
+.names g13 g14 g18
+0- 1
+-0 1
+.names g6 i6 g19
+0- 1
+-0 1
+.names g10 g9 g20
+0- 1
+-0 1
+.names g2 g5 g21
+0- 1
+-0 1
+.names g19 g11 g22
+0- 1
+-0 1
+.names g18 g17 g23
+0- 1
+-0 1
+.names i2 i3 g24
+0- 1
+-0 1
+.names g1 i13 g25
+0- 1
+-0 1
+.names i14 g3 g26
+0- 1
+-0 1
+.names g26 g16 g27
+0- 1
+-0 1
+.names g23 g18 g28
+0- 1
+-0 1
+.names i12 g1 g29
+0- 1
+-0 1
+.names g25 g29 g30
+0- 1
+-0 1
+.names g24 i3 g31
+0- 1
+-0 1
+.names g24 i2 g32
+0- 1
+-0 1
+.names g31 g32 g33
+0- 1
+-0 1
+.names g12 i0 g34
+0- 1
+-0 1
+.names i1 g12 g35
+0- 1
+-0 1
+.names g34 g35 g36
+0- 1
+-0 1
+.names g6 g37
+0 1
+.names g7 one g38
+0- 1
+-0 1
+.names g36 g33 g39
+0- 1
+-0 1
+.names one g0 g40
+0- 1
+-0 1
+.names g38 g37 g41
+0- 1
+-0 1
+.names g4 g0 g42
+0- 1
+-0 1
+.names g1 g3 g43
+0- 1
+-0 1
+.names g7 g6 g44
+0- 1
+-0 1
+.names g24 g45
+0 1
+.names g20 g22 g46
+0- 1
+-0 1
+.names g20 g46 g47
+0- 1
+-0 1
+.names i3 g12 g48
+0- 1
+-0 1
+.names g4 i8 g49
+0- 1
+-0 1
+.names g36 g39 g50
+0- 1
+-0 1
+.names g27 g30 g51
+0- 1
+-0 1
+.names g45 g48 g52
+0- 1
+-0 1
+.names g33 g39 g53
+0- 1
+-0 1
+.names g17 g23 g54
+0- 1
+-0 1
+.names g27 g51 g55
+0- 1
+-0 1
+.names g54 g28 g56
+0- 1
+-0 1
+.names g46 g22 g57
+0- 1
+-0 1
+.names g51 g30 g58
+0- 1
+-0 1
+.names g40 g49 g59
+0- 1
+-0 1
+.names g42 g59 g60
+0- 1
+-0 1
+.names g43 g21 g61
+0- 1
+-0 1
+.names g55 g58 g62
+0- 1
+-0 1
+.names g57 g47 g63
+0- 1
+-0 1
+.names g12 g24 g64
+0- 1
+-0 1
+.names g56 g62 g65
+0- 1
+-0 1
+.names g44 g41 g66
+0- 1
+-0 1
+.names g64 g52 g67
+0- 1
+-0 1
+.names g39 g67 g68
+0- 1
+-0 1
+.names g46 g66 g69
+0- 1
+-0 1
+.names g23 g60 g70
+0- 1
+-0 1
+.names g50 g53 g71
+0- 1
+-0 1
+.names g51 g61 g72
+0- 1
+-0 1
+.names g62 g65 g73
+0- 1
+-0 1
+.names g63 g71 g74
+0- 1
+-0 1
+.names g69 g68 g75
+0- 1
+-0 1
+.names g72 g60 g76
+0- 1
+-0 1
+.names one g21 g77
+0- 1
+-0 1
+.names g72 g70 g78
+0- 1
+-0 1
+.names g70 g61 g79
+0- 1
+-0 1
+.names g59 g21 g80
+0- 1
+-0 1
+.names g65 g81
+0 1
+.names g76 g79 g82
+0- 1
+-0 1
+.names g56 g65 g83
+0- 1
+-0 1
+.names g71 g74 g84
+0- 1
+-0 1
+.names g73 g83 g85
+0- 1
+-0 1
+.names g81 g82 g86
+0- 1
+-0 1
+.names g44 g12 g87
+0- 1
+-0 1
+.names g69 g75 g88
+0- 1
+-0 1
+.names g87 g67 g89
+0- 1
+-0 1
+.names g75 g68 g90
+0- 1
+-0 1
+.names g88 g90 g91
+0- 1
+-0 1
+.names g63 g74 g92
+0- 1
+-0 1
+.names g74 g91 g93
+0- 1
+-0 1
+.names g84 g92 g94
+0- 1
+-0 1
+.names g88 g74 g95
+0- 1
+-0 1
+.names g74 g41 g96
+0- 1
+-0 1
+.names g75 g52 g97
+0- 1
+-0 1
+.names g78 g82 g98
+0- 1
+-0 1
+.names g97 g41 g99
+0- 1
+-0 1
+.names g65 g98 g100
+0- 1
+-0 1
+.names g96 g89 g101
+0- 1
+-0 1
+.names g75 g89 g102
+0- 1
+-0 1
+.names g102 g95 g103
+0- 1
+-0 1
+.names g93 g103 g104
+0- 1
+-0 1
+.names g101 g99 g105
+0- 1
+-0 1
+.names g100 g86 g106
+0- 1
+-0 1
+.names g85 g94 g107
+0- 1
+-0 1
+.names g59 g61 g108
+0- 1
+-0 1
+.names g106 g107 g109
+0- 1
+-0 1
+.names g77 g108 g110
+0- 1
+-0 1
+.names g104 g109 g111
+0- 1
+-0 1
+.names g110 g107 g112
+0- 1
+-0 1
+.names g100 g112 g113
+0- 1
+-0 1
+.names g91 g86 g114
+0- 1
+-0 1
+.names g80 g78 g115
+0- 1
+-0 1
+.names g78 g115 g116
+0- 1
+-0 1
+.names g104 g100 g117
+0- 1
+-0 1
+.names g109 g113 g118
+0- 1
+-0 1
+.names g110 g116 g119
+0- 1
+-0 1
+.names g99 g97 g120
+0- 1
+-0 1
+.names g113 g111 g121
+0- 1
+-0 1
+.names g110 g120 g122
+0- 1
+-0 1
+.names g119 g86 g123
+0- 1
+-0 1
+.names g120 one g124
+0- 1
+-0 1
+.names g110 g105 g125
+0- 1
+-0 1
+.names g123 g105 g126
+0- 1
+-0 1
+.names g105 g126 g127
+0- 1
+-0 1
+.names g122 g128
+0 1
+.names g123 g126 g129
+0- 1
+-0 1
+.names g112 g124 g130
+0- 1
+-0 1
+.names g107 g117 g131
+0- 1
+-0 1
+.names g129 g127 g132
+0- 1
+-0 1
+.names g126 g128 g133
+0- 1
+-0 1
+.names g132 g121 g134
+0- 1
+-0 1
+.names g133 g130 g135
+0- 1
+-0 1
+.names g114 g106 g136
+0- 1
+-0 1
+.names g136 g131 g137
+0- 1
+-0 1
+.names g118 g104 g138
+0- 1
+-0 1
+.names g119 g125 g139
+0- 1
+-0 1
+.names g126 g139 g140
+0- 1
+-0 1
+.names g140 g121 g141
+0- 1
+-0 1
+.names g132 g137 g142
+0- 1
+-0 1
+.names g109 g137 g143
+0- 1
+-0 1
+.names g85 g107 g144
+0- 1
+-0 1
+.names g94 g107 g145
+0- 1
+-0 1
+.names g145 g144 o0
+0- 1
+-0 1
+.names g138 g143 o1
+0- 1
+-0 1
+.names g141 g142 o2
+0- 1
+-0 1
+.names g134 g135 o3
+0- 1
+-0 1
+.names g130 o4
+0 1
+.end
