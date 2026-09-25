@@ -1,0 +1,47 @@
+{
+  "taskId": 33,
+  "srcId": 34,
+  "taskName": "4-bit unsigned adder with carry-in",
+  "nIn": 9,
+  "nOut": 5,
+  "nState": 0,
+  "processorAddress": "0x1F5Cb4aeaE1807Bf60c3b9C0D8aDBCC14e91f12C",
+  "status": "VALID_BEATS_BEHEMOTH_SNAPSHOT",
+  "onChainSubmitted": false,
+  "globallyOptimalProved": false,
+  "baseline": {
+    "snapshotBlock": 123888327,
+    "snapshotTimeUTC": "2026-09-25T04:53:48Z",
+    "circuitId": "2025",
+    "gateCount": 49,
+    "depth": 8,
+    "cost": 25088
+  },
+  "origin": {
+    "method": "Exact existing TapeOut netlist reused for Behemoth",
+    "sourceRepositoryPath": "data/latest/netlists/tapeout/task-033-circuit-13234.json",
+    "newCircuitArchitecture": false
+  },
+  "rawNetlist": "0x0000000600000a0000000200000a0000000a00000c000000020000060000000600000e0000000d00000f0000000b0000100000000c00000e0000000b0000120000000200001300000003000007000000030000030000000700000700000016000017000000150000180000000b0000130000001900001a0000000b0000150000001800001c000000120000180000001d00001e0000001f00001f00000018000020000000040000080000002200000800000022000004000000230000240000002500001f0000002600001f00000020000025000000220000220000000500000900000009000009000000050000050000002b00002c0000002a00002d0000002900002e0000002a0000220000003000002d0000003100002d0000002f000032000000330000260000002500002e0000003500001f0000003600001f0000002500002d000000380000380000003900001f000000110000140000001b00002100000027000028000000340000370000003100003a",
+  "verification": {
+    "valid": true,
+    "gateCount": 53,
+    "depth": 7,
+    "outputDepths": [5, 7, 7, 7, 7],
+    "cost": 18179,
+    "testedInputs": 512,
+    "passedInputs": 512,
+    "counterexamples": [],
+    "rawNetlistSha256": "8caa263e5c816b6fb40a0c8ed1cdc29378f1ad0492d659e961c5426b5b2fb023",
+    "truthTableSha256": "44b2c0e540a151ff44ac2b659cf2b70265450d469210c213609f240229d19bf0",
+    "expectedTruthTableSha256": "44b2c0e540a151ff44ac2b659cf2b70265450d469210c213609f240229d19bf0"
+  },
+  "inputLayout": {
+    "w0": "constant 0",
+    "w1": "constant 1",
+    "w2..w5": "A[0..3]",
+    "w6..w9": "B[0..3]",
+    "w10": "Cin"
+  },
+  "outputLayout": "Final five physical NAND gates: S0, S1, S2, S3, Cout."
+}
