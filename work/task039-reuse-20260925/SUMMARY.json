@@ -1,0 +1,125 @@
+{
+  "taskId": 39,
+  "result": "NO_VALID_COST_IMPROVEMENT",
+  "baseline": {
+    "sourceCommit": "0a8bb5b3765600a7f121b30d365473c69b291e8f",
+    "snapshotBlock": 123848100,
+    "snapshotTimeUTC": "2026-09-24T23:51:59Z",
+    "manifestGeneratedAt": "2026-09-24T23:52:50.173Z",
+    "processor": "TapeOut",
+    "circuitId": "16160",
+    "gateCount": 248,
+    "depth": 11,
+    "cost": 330088,
+    "liveRpcQueried": false
+  },
+  "bestValid": {
+    "file": "tapeout_16160.json",
+    "newAchievement": false,
+    "gateCount": 248,
+    "depth": 11,
+    "cost": 330088,
+    "beatsSnapshot": false
+  },
+  "reusedSources": [
+    {
+      "taskId": 39,
+      "circuitId": "16160",
+      "processor": "TapeOut",
+      "gateCount": 248,
+      "depth": 11,
+      "cost": 330088
+    },
+    {
+      "taskId": 39,
+      "circuitId": "2466",
+      "processor": "Behemoth",
+      "gateCount": 210,
+      "depth": 12,
+      "cost": 362880
+    },
+    {
+      "taskId": 35,
+      "circuitId": "13809",
+      "processor": "TapeOut",
+      "gateCount": 220,
+      "depth": 12,
+      "cost": 380160,
+      "cinZeroSpecialization": {
+        "file": "task035_specialized.json",
+        "gateCount": 215,
+        "depth": 12,
+        "cost": 371520,
+        "allInputEquivalent": true
+      }
+    },
+    {
+      "taskId": 38,
+      "circuitId": "12033",
+      "processor": "TapeOut",
+      "gateCount": 99,
+      "depth": 9,
+      "cost": 72171,
+      "use": "Exact subfunction donation with shifts, operand swaps and complements; not a complete task39 candidate"
+    }
+  ],
+  "strictImprovementBudgets": [
+    {
+      "depth": 12,
+      "maximumGates": 191,
+      "costAtMaximumGates": 330048
+    },
+    {
+      "depth": 11,
+      "maximumGates": 247,
+      "costAtMaximumGates": 328757
+    },
+    {
+      "depth": 10,
+      "maximumGates": 330,
+      "costAtMaximumGates": 330000
+    }
+  ],
+  "localSatTotals": {
+    "queries": 3009,
+    "statuses": {
+      "unsat": 2958,
+      "unknown": 51
+    },
+    "globalSearch": false
+  },
+  "restrictedBasis": {
+    "functionsIncludingInputs": 282,
+    "nandInputPairsEnumerated": 39903,
+    "nandProductions": 877,
+    "positiveControl248Gates11Layers": "sat; decoded witness independently BDD/Z3 verified",
+    "247Gates11Layers": "unsat",
+    "fullOriginalFunctionBasis10Layers": "unsat",
+    "relaxedOutputCopyCosts": "same two UNSAT results",
+    "newIntermediateFunctionsAllowed": false,
+    "globalOptimalityProved": false,
+    "independentDratCheck": false
+  },
+  "verification": {
+    "arithmeticTarget": "zero-extended 17-bit A+B, with 16-bit unsigned A and B",
+    "methods": [
+      "Reduced ordered BDD canonical equivalence",
+      "Z3 bit-vector arithmetic miter"
+    ],
+    "symbolicallyCoveredInputs": 4294967296,
+    "literalFullEnumerationPerformed": false,
+    "supplementaryScalarVectorsPerAuditedCircuit": 10065,
+    "negativeControlCorrectlyRejected": true,
+    "report": "verification_report.json"
+  },
+  "savedRepositoryFiles": [
+    "circuit.py",
+    "verify39.py",
+    "tapeout_16160.json",
+    "SUMMARY.json",
+    "README.md"
+  ],
+  "restrictedBasisScriptUpload": "blocked by connector check; script is in the conversation ZIP, not this repository directory",
+  "onChainSubmitted": false,
+  "continuesAfterResponse": false
+}
