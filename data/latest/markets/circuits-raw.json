@@ -1,10 +1,30 @@
 {
-  "generatedAt": "2026-10-30T20:42:20.591Z",
-  "block": 130730908,
+  "generatedAt": "2026-10-31T00:42:20.579Z",
+  "block": 130762903,
   "marketAddr": "0x6feEbbEbC07BcB90bd1Ac8b0CF9BaA4f0fF2B46f",
-  "maxId": 26867,
+  "maxId": 26868,
   "procStale": false,
   "listings": [
+    {
+      "id": 26868,
+      "seller": "0x76F6568461A0174020544C547837f606cF783945",
+      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
+      "circuitId": "2220",
+      "price": "59000000000000000",
+      "feeBps": 100,
+      "valid": true,
+      "procName": "Genesis CPU",
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 3,
+      "width": 2,
+      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-2220",
+      "ownGates": null,
+      "refs": 0,
+      "eligible": false,
+      "revoked": null
+    },
     {
       "id": 26867,
       "seller": "0xc1c59C6EC5D37Ef390282Cbf2Ae2908df3DBdf98",
@@ -126,31 +146,11 @@
       "revoked": false
     },
     {
-      "id": 26857,
-      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "18133",
-      "price": "119340000000000000",
-      "feeBps": 100,
-      "valid": true,
-      "procName": "TapeOut",
-      "nIn": 2,
-      "nOut": 1,
-      "nState": 0,
-      "gateCount": 3,
-      "width": 2,
-      "key": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c-18133",
-      "ownGates": 3,
-      "refs": 0,
-      "eligible": true,
-      "revoked": false
-    },
-    {
       "id": 26845,
       "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
       "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
       "circuitId": "1956",
-      "price": "32599000000000000",
+      "price": "31990000000000000",
       "feeBps": 100,
       "valid": true,
       "procName": "TapeAI",
@@ -190,7 +190,7 @@
       "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
       "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
       "circuitId": "4102",
-      "price": "32599000000000000",
+      "price": "31990000000000000",
       "feeBps": 100,
       "valid": true,
       "procName": "TapeAI",
@@ -210,7 +210,7 @@
       "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
       "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
       "circuitId": "1506",
-      "price": "32599000000000000",
+      "price": "31990000000000000",
       "feeBps": 100,
       "valid": true,
       "procName": "TapeAI",
@@ -1130,7 +1130,7 @@
       "seller": "0x368A597535B16dE31DBFaB9844E3ec36914A0157",
       "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
       "circuitId": "823",
-      "price": "160000000000000000",
+      "price": "110000000000000000",
       "feeBps": 100,
       "valid": true,
       "procName": "TapeOut",
@@ -10624,26 +10624,6 @@
       "refs": 0,
       "eligible": false,
       "revoked": null
-    },
-    {
-      "id": 24989,
-      "seller": "0xfA7524e6751BFF29240ED6632D063c2369f33eC6",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "17991",
-      "price": "450100000000000000",
-      "feeBps": 100,
-      "valid": true,
-      "procName": "TapeOut",
-      "nIn": 3,
-      "nOut": 2,
-      "nState": 0,
-      "gateCount": 9,
-      "width": 3,
-      "key": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c-17991",
-      "ownGates": 9,
-      "refs": 0,
-      "eligible": true,
-      "revoked": false
     },
     {
       "id": 24988,
@@ -124168,6 +124148,16 @@
   ],
   "trades": [
     {
+      "id": "26857",
+      "buyer": "0xa0CFE91c0F38968dD81cB17270bEFc125f8F5078",
+      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "circuitId": "18133",
+      "price": "119340000000000000",
+      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
+      "ts": 1793399188,
+      "tx": "0xe4d66f6e4c3c59c409b9ee389336538f7cd35cf748f788bf368f0b5a25ea6d7a"
+    },
+    {
       "id": "26818",
       "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
       "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
@@ -154156,18 +154146,8 @@
       "seller": "0x3e630BC1f0eE1537cD1E0F7047da2238160eb5A3",
       "ts": 1790407854,
       "tx": "0xdc539b38f4f86fddd9edfa9664fa2aff942128ea23c17f016052cd8cacdd6a02"
-    },
-    {
-      "id": "13343",
-      "buyer": "0xcb9c94CC52e69268B1C2Ddd04bFEe67C4059B304",
-      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
-      "circuitId": "4330",
-      "price": "6000000000000000",
-      "seller": "0xdFebF5d9f46cd0A52CC4B72fAf08351CcBa17dA8",
-      "ts": 1790406104,
-      "tx": "0x2c864efbf528e4208f4023260c4d3cf2bfa26e1cb882e8ac0ff48787311ad643"
     }
   ],
-  "vol24h": "5349414000000000000",
-  "volTotal": "2265518699282144741915"
+  "vol24h": "5419295000000000000",
+  "volTotal": "2265632039282144741915"
 }
