@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-11-14T17:02:14.180Z",
-  "block": 133580216,
+  "generatedAt": "2026-11-14T21:24:22.806Z",
+  "block": 133615116,
   "market": "0x6feEbbEbC07BcB90bd1Ac8b0CF9BaA4f0fF2B46f",
-  "listingCount": 6255,
+  "listingCount": 6242,
   "tradeCountInSnapshot": 3000,
   "volume24h": {
-    "wei": "14622800000000000000",
-    "bnb": "14.6228"
+    "wei": "15607800000000000000",
+    "bnb": "15.6078"
   },
   "volumeTotal": {
-    "wei": "1972577939033452930262",
-    "bnb": "1972.577939033452930262"
+    "wei": "1941736139033452930262",
+    "bnb": "1941.736139033452930262"
   },
   "listingsByProcessor": {
+    "0xec9c5a1602e92db89e3fb61652019fb3ac30d075": 23,
+    "0x50a994e71615474b55559ff4f500928fbc339dd9": 1876,
+    "0xd55d6eaa1692f78b9e81408dd121e49fb617bd8d": 7,
     "0x1f5cb4aeae1807bf60c3b9c0d8adbcc14e91f12c": 90,
-    "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c": 378,
+    "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c": 377,
     "0x4169895ecdfb4cfd436e2ce9146bb554e5a38a3f": 21,
     "0xd01cc5f48539d87b6603886b0081acff4eefc510": 5,
     "0x4f6b7df52d3e7e8a596d4a6f42f2b8b5eda61248": 1,
-    "0xd55d6eaa1692f78b9e81408dd121e49fb617bd8d": 6,
-    "0xcc6b5acac871bcb1f60cce29d5917266d8fb956d": 471,
+    "0xcc6b5acac871bcb1f60cce29d5917266d8fb956d": 453,
     "0xef1fe5d124fe8278c96f71ccf325f2e167e70340": 2,
     "0xc38c95899cd21522ef5db37cd6be4cb422cef58a": 113,
-    "0x50a994e71615474b55559ff4f500928fbc339dd9": 1874,
-    "0xec9c5a1602e92db89e3fb61652019fb3ac30d075": 20,
     "0x2a275b2b90a4332fb4075fbd9fb21fe963937f3c": 7,
     "0x967155af1d946b78aac00c8e0ded77c6628a0c20": 5,
     "0x5a4eaff589c9e410260a61d658a893876710ba83": 10,
@@ -383,9 +383,9 @@
     "0x0c2926790b208d3518083ae44b9a5bcf5bce978c": 1
   },
   "tradesByProcessor": {
-    "0xcc6b5acac871bcb1f60cce29d5917266d8fb956d": 1703,
+    "0xcc6b5acac871bcb1f60cce29d5917266d8fb956d": 1721,
+    "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c": 612,
     "0xc38c95899cd21522ef5db37cd6be4cb422cef58a": 565,
-    "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c": 630,
     "0x50a994e71615474b55559ff4f500928fbc339dd9": 45,
     "0x1f5cb4aeae1807bf60c3b9c0d8adbcc14e91f12c": 24,
     "0xd55d6eaa1692f78b9e81408dd121e49fb617bd8d": 1,
@@ -1309,6 +1309,75 @@
       "revoked": null
     },
     {
+      "id": 27914,
+      "seller": "0xebaE577653637723625fE98011621CedF3f9e295",
+      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
+      "circuitId": "12936",
+      "price": {
+        "wei": "2000000000000000",
+        "bnb": "0.002"
+      },
+      "feeBps": 100,
+      "valid": true,
+      "procName": "Genesis CPU",
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 1,
+      "width": 2,
+      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-12936",
+      "ownGates": null,
+      "refs": 0,
+      "eligible": false,
+      "revoked": null
+    },
+    {
+      "id": 27915,
+      "seller": "0xebaE577653637723625fE98011621CedF3f9e295",
+      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
+      "circuitId": "12935",
+      "price": {
+        "wei": "2000000000000000",
+        "bnb": "0.002"
+      },
+      "feeBps": 100,
+      "valid": true,
+      "procName": "Genesis CPU",
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 1,
+      "width": 2,
+      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-12935",
+      "ownGates": null,
+      "refs": 0,
+      "eligible": false,
+      "revoked": null
+    },
+    {
+      "id": 27934,
+      "seller": "0x2f3BD90AA1644f387f71B535458D14006Ab2e9F7",
+      "circuits": "0xec9C5A1602E92Db89E3fb61652019fB3AC30D075",
+      "circuitId": "247",
+      "price": {
+        "wei": "2000000000000000",
+        "bnb": "0.002"
+      },
+      "feeBps": 100,
+      "valid": true,
+      "procName": "Keccak-256 IP Core",
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 3,
+      "width": 2,
+      "key": "0xec9c5a1602e92db89e3fb61652019fb3ac30d075-247",
+      "ownGates": null,
+      "refs": 0,
+      "eligible": false,
+      "revoked": null
+    },
+    {
       "id": 27621,
       "seller": "0x3eCE6183E506323E31b83Daf228bf5e346Cd9fbb",
       "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
@@ -2022,6 +2091,29 @@
       "revoked": null
     },
     {
+      "id": 27935,
+      "seller": "0x2f3BD90AA1644f387f71B535458D14006Ab2e9F7",
+      "circuits": "0xec9C5A1602E92Db89E3fb61652019fB3AC30D075",
+      "circuitId": "246",
+      "price": {
+        "wei": "3000000000000000",
+        "bnb": "0.003"
+      },
+      "feeBps": 100,
+      "valid": true,
+      "procName": "Keccak-256 IP Core",
+      "nIn": 2,
+      "nOut": 1,
+      "nState": 0,
+      "gateCount": 3,
+      "width": 2,
+      "key": "0xec9c5a1602e92db89e3fb61652019fb3ac30d075-246",
+      "ownGates": null,
+      "refs": 0,
+      "eligible": false,
+      "revoked": null
+    },
+    {
       "id": 23606,
       "seller": "0xeA154a4Cc6dFBc1d1BcFD196d40B52497A7121b4",
       "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
@@ -2618,101 +2710,256 @@
       "refs": 0,
       "eligible": false,
       "revoked": null
-    },
-    {
-      "id": 17808,
-      "seller": "0x3B49D1A75a83d566098786a43D766345aee69Ca4",
-      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
-      "circuitId": "10390",
-      "price": {
-        "wei": "6990000000000000",
-        "bnb": "0.00699"
-      },
-      "feeBps": 100,
-      "valid": true,
-      "procName": "Genesis CPU",
-      "nIn": 2,
-      "nOut": 1,
-      "nState": 0,
-      "gateCount": 1,
-      "width": 2,
-      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-10390",
-      "ownGates": null,
-      "refs": 0,
-      "eligible": false,
-      "revoked": null
-    },
-    {
-      "id": 17809,
-      "seller": "0x3B49D1A75a83d566098786a43D766345aee69Ca4",
-      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
-      "circuitId": "10391",
-      "price": {
-        "wei": "6990000000000000",
-        "bnb": "0.00699"
-      },
-      "feeBps": 100,
-      "valid": true,
-      "procName": "Genesis CPU",
-      "nIn": 2,
-      "nOut": 1,
-      "nState": 0,
-      "gateCount": 1,
-      "width": 2,
-      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-10391",
-      "ownGates": null,
-      "refs": 0,
-      "eligible": false,
-      "revoked": null
-    },
-    {
-      "id": 17810,
-      "seller": "0x3B49D1A75a83d566098786a43D766345aee69Ca4",
-      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
-      "circuitId": "10392",
-      "price": {
-        "wei": "6990000000000000",
-        "bnb": "0.00699"
-      },
-      "feeBps": 100,
-      "valid": true,
-      "procName": "Genesis CPU",
-      "nIn": 2,
-      "nOut": 1,
-      "nState": 0,
-      "gateCount": 1,
-      "width": 2,
-      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-10392",
-      "ownGates": null,
-      "refs": 0,
-      "eligible": false,
-      "revoked": null
-    },
-    {
-      "id": 17811,
-      "seller": "0x3B49D1A75a83d566098786a43D766345aee69Ca4",
-      "circuits": "0x50A994E71615474b55559fF4F500928fbc339DD9",
-      "circuitId": "10393",
-      "price": {
-        "wei": "6990000000000000",
-        "bnb": "0.00699"
-      },
-      "feeBps": 100,
-      "valid": true,
-      "procName": "Genesis CPU",
-      "nIn": 2,
-      "nOut": 1,
-      "nState": 0,
-      "gateCount": 1,
-      "width": 2,
-      "key": "0x50a994e71615474b55559ff4f500928fbc339dd9-10393",
-      "ownGates": null,
-      "refs": 0,
-      "eligible": false,
-      "revoked": null
     }
   ],
   "latestTrades": [
+    {
+      "id": "27917",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2281",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679582,
+      "tx": "0xe9bb692f8a5252df8c513319d701e52142026961dfd05365f35369cad82b298c"
+    },
+    {
+      "id": "27916",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2282",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679524,
+      "tx": "0x610c263a8fdf632315c2cd419da67fab389d3cd464164e652cd3c55c1ed04a70"
+    },
+    {
+      "id": "27919",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2189",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679524,
+      "tx": "0x610c263a8fdf632315c2cd419da67fab389d3cd464164e652cd3c55c1ed04a70"
+    },
+    {
+      "id": "27920",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2188",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679524,
+      "tx": "0x610c263a8fdf632315c2cd419da67fab389d3cd464164e652cd3c55c1ed04a70"
+    },
+    {
+      "id": "27922",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2186",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679524,
+      "tx": "0x610c263a8fdf632315c2cd419da67fab389d3cd464164e652cd3c55c1ed04a70"
+    },
+    {
+      "id": "27923",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2185",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679496,
+      "tx": "0xe829f85c4e508e05144be22b038117d7dd42a8872e432adb53be666281cc4b8e"
+    },
+    {
+      "id": "27925",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2101",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679496,
+      "tx": "0xe829f85c4e508e05144be22b038117d7dd42a8872e432adb53be666281cc4b8e"
+    },
+    {
+      "id": "27927",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2099",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679496,
+      "tx": "0xe829f85c4e508e05144be22b038117d7dd42a8872e432adb53be666281cc4b8e"
+    },
+    {
+      "id": "27928",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2098",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679496,
+      "tx": "0xe829f85c4e508e05144be22b038117d7dd42a8872e432adb53be666281cc4b8e"
+    },
+    {
+      "id": "27930",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2021",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679496,
+      "tx": "0xe829f85c4e508e05144be22b038117d7dd42a8872e432adb53be666281cc4b8e"
+    },
+    {
+      "id": "27918",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2280",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679402,
+      "tx": "0xbc0f61d3edf8f9ca52ba37b99e1f630fd9f6b6062c1a5bba3cd912fd62f7023e"
+    },
+    {
+      "id": "27921",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2187",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679353,
+      "tx": "0x3230527aac28388bd8256b2f2e7305a9bbc4cc115d2f7d3879ef808baeea2353"
+    },
+    {
+      "id": "27924",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2102",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679353,
+      "tx": "0x3230527aac28388bd8256b2f2e7305a9bbc4cc115d2f7d3879ef808baeea2353"
+    },
+    {
+      "id": "27926",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2100",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679353,
+      "tx": "0x3230527aac28388bd8256b2f2e7305a9bbc4cc115d2f7d3879ef808baeea2353"
+    },
+    {
+      "id": "27929",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2022",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794679353,
+      "tx": "0x3230527aac28388bd8256b2f2e7305a9bbc4cc115d2f7d3879ef808baeea2353"
+    },
+    {
+      "id": "27896",
+      "buyer": "0xEACDc05d92C3d0A94361fC2E21565A8BcdeE7fDf",
+      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "circuitId": "11004",
+      "price": {
+        "wei": "355000000000000000",
+        "bnb": "0.355"
+      },
+      "seller": "0xd18B9615388AfACf2c95282980c6B84A235a32a8",
+      "ts": 1794677710,
+      "tx": "0xe276775612c0adcbb6e45e5822596a57e601026c29e211da62d945d5c35a2d01"
+    },
+    {
+      "id": "27931",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2020",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794677658,
+      "tx": "0xd9106cadc46611d007bcfa08c878bc41792724a56fd2f7567835a116c551c855"
+    },
+    {
+      "id": "27932",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2019",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794677539,
+      "tx": "0x3d43e9fce141a20c0df7b1cd0ca3d70ccecb791682f70dd9424b2c8e2d842fa7"
+    },
+    {
+      "id": "27933",
+      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
+      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
+      "circuitId": "2018",
+      "price": {
+        "wei": "35000000000000000",
+        "bnb": "0.035"
+      },
+      "seller": "0x3bf17BEE547af8c16F1C87c1c6365b52411153E4",
+      "ts": 1794677539,
+      "tx": "0x3d43e9fce141a20c0df7b1cd0ca3d70ccecb791682f70dd9424b2c8e2d842fa7"
+    },
     {
       "id": "27908",
       "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
@@ -3765,253 +4012,6 @@
       "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
       "ts": 1794493659,
       "tx": "0x47eef27607c71ac2a79fa969e78e2cb33a67745e3937a4bf3492f32c4b298b5b"
-    },
-    {
-      "id": "27795",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "5267",
-      "price": {
-        "wei": "46000000000000000",
-        "bnb": "0.046"
-      },
-      "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
-      "ts": 1794493659,
-      "tx": "0x47eef27607c71ac2a79fa969e78e2cb33a67745e3937a4bf3492f32c4b298b5b"
-    },
-    {
-      "id": "27789",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "7655",
-      "price": {
-        "wei": "45900000000000000",
-        "bnb": "0.0459"
-      },
-      "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
-      "ts": 1794493486,
-      "tx": "0xde48d512b6829ce65dcceb57ac17f7c4149ee3a2bb900d1a4c312a5d2b4f5a29"
-    },
-    {
-      "id": "27791",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "6804",
-      "price": {
-        "wei": "45900000000000000",
-        "bnb": "0.0459"
-      },
-      "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
-      "ts": 1794493486,
-      "tx": "0xde48d512b6829ce65dcceb57ac17f7c4149ee3a2bb900d1a4c312a5d2b4f5a29"
-    },
-    {
-      "id": "27790",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "6338",
-      "price": {
-        "wei": "45900000000000000",
-        "bnb": "0.0459"
-      },
-      "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
-      "ts": 1794493486,
-      "tx": "0xde48d512b6829ce65dcceb57ac17f7c4149ee3a2bb900d1a4c312a5d2b4f5a29"
-    },
-    {
-      "id": "27792",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "5128",
-      "price": {
-        "wei": "45900000000000000",
-        "bnb": "0.0459"
-      },
-      "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
-      "ts": 1794493486,
-      "tx": "0xde48d512b6829ce65dcceb57ac17f7c4149ee3a2bb900d1a4c312a5d2b4f5a29"
-    },
-    {
-      "id": "27793",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "3274",
-      "price": {
-        "wei": "45900000000000000",
-        "bnb": "0.0459"
-      },
-      "seller": "0x2868589ED282d45C15d3c65C2A23427dCB5A44d4",
-      "ts": 1794493486,
-      "tx": "0xde48d512b6829ce65dcceb57ac17f7c4149ee3a2bb900d1a4c312a5d2b4f5a29"
-    },
-    {
-      "id": "27774",
-      "buyer": "0x05d426FBbB88358d90cABEAAA32D818B77750341",
-      "circuits": "0xc38C95899Cd21522eF5dB37CD6BE4CB422cef58a",
-      "circuitId": "502",
-      "price": {
-        "wei": "333000000000000000",
-        "bnb": "0.333"
-      },
-      "seller": "0xfe70DC2596B3388eFAAa3437802cB9F1d79ef9a1",
-      "ts": 1794486577,
-      "tx": "0x3e2c257a872617a2bb8c4c943c03397a63650304596215d9af3e8706510ea5fd"
-    },
-    {
-      "id": "27770",
-      "buyer": "0x7795960A65779ad5f832c30Cc5771D85Bae5Cc58",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "6063",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485919,
-      "tx": "0x5e2977d9864c3b9eda0cffa8ef0f608c2d1d9686ab4e5071fc5bace17318fb47"
-    },
-    {
-      "id": "27771",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "5424",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485817,
-      "tx": "0x4965b010893b7d66e2659ded8783a1c1b4db8fbe6929d17fb46391ffa3c5f39f"
-    },
-    {
-      "id": "27772",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "5295",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485817,
-      "tx": "0x4965b010893b7d66e2659ded8783a1c1b4db8fbe6929d17fb46391ffa3c5f39f"
-    },
-    {
-      "id": "27773",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "4633",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485750,
-      "tx": "0xdf4bde050fc7cad481d4a7eeab4fe2d0a94a60f238183443488df45cea952764"
-    },
-    {
-      "id": "27766",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "4482",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485750,
-      "tx": "0xdf4bde050fc7cad481d4a7eeab4fe2d0a94a60f238183443488df45cea952764"
-    },
-    {
-      "id": "27768",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "3557",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485750,
-      "tx": "0xdf4bde050fc7cad481d4a7eeab4fe2d0a94a60f238183443488df45cea952764"
-    },
-    {
-      "id": "27767",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xcC6b5AcAC871bcB1f60cce29D5917266d8fb956D",
-      "circuitId": "1268",
-      "price": {
-        "wei": "47000000000000000",
-        "bnb": "0.047"
-      },
-      "seller": "0xEE0Eb81D4a8B52Da72aaF76fE4A5b1c208dCF4C9",
-      "ts": 1794485540,
-      "tx": "0x539e51861e0c417b609f997fb4c14c69ddaf5cef94de2603a5723af635ccfc38"
-    },
-    {
-      "id": "27762",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "8886",
-      "price": {
-        "wei": "67255000000000000",
-        "bnb": "0.067255"
-      },
-      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
-      "ts": 1794478854,
-      "tx": "0x0fb2bf903f00b32f4153d9fe5dbd0b8d42b3018dd5b8e79ec416a314909a5f37"
-    },
-    {
-      "id": "27763",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "8882",
-      "price": {
-        "wei": "67255000000000000",
-        "bnb": "0.067255"
-      },
-      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
-      "ts": 1794477806,
-      "tx": "0x9372d7d2dcc8a7e7c805da77375bfd2272245391d28fcd6caa2663640a50e6b7"
-    },
-    {
-      "id": "27759",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "8887",
-      "price": {
-        "wei": "67259000000000000",
-        "bnb": "0.067259"
-      },
-      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
-      "ts": 1794477709,
-      "tx": "0xf214f716206760958ece2b25d3890fa24247e4fdc0d9ed260d77d18f3ab70d03"
-    },
-    {
-      "id": "27758",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "8889",
-      "price": {
-        "wei": "67258500000000000",
-        "bnb": "0.0672585"
-      },
-      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
-      "ts": 1794477689,
-      "tx": "0xd24f0924cb33a05d88515c73170729477d078fa8309e2e83f5646fa23f5c0771"
-    },
-    {
-      "id": "27753",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "8955",
-      "price": {
-        "wei": "67266346450000000",
-        "bnb": "0.06726634645"
-      },
-      "seller": "0xc62bdf99ec7CEe12E18196f03B5752c9b1167E4A",
-      "ts": 1794473757,
-      "tx": "0x72536bff9e420c5ba8606d413a0fa39aaabc887274f464cb2b09a465ee5a7c30"
     }
   ]
 }
