@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-16T09:33:03.390Z",
-  "block": 133904228,
+  "generatedAt": "2026-11-16T20:23:03.077Z",
+  "block": 133990862,
   "tokenCount": 2988,
   "activeTokenCount": 106,
   "rows": [
@@ -99,39 +99,42 @@
       "tokenId": 0,
       "type": "NAND",
       "topBid": {
-        "id": 125984,
+        "id": 125989,
+        "price": {
+          "wei": "331000000000000000",
+          "bnb": "0.331"
+        },
+        "remaining": "2"
+      },
+      "openBook": {
+        "bids": 71,
+        "quantity": "1179885",
+        "notional": {
+          "wei": "50357255314111110000",
+          "bnb": "50.35725531411111"
+        }
+      },
+      "latestTrade": {
+        "timestamp": 1794831690,
         "price": {
           "wei": "400000000000000000",
           "bnb": "0.4"
         },
-        "remaining": "30"
-      },
-      "openBook": {
-        "bids": 73,
-        "quantity": "1179923",
-        "notional": {
-          "wei": "64118055314111110000",
-          "bnb": "64.11805531411111"
-        }
-      },
-      "latestTrade": {
-        "timestamp": 1794499918,
-        "price": {
-          "wei": "251100000000000000",
-          "bnb": "0.2511"
-        },
-        "quantity": "2"
+        "quantity": "30"
       },
       "trailing24h": {
-        "trades": 0,
-        "quantity": "0",
+        "trades": 1,
+        "quantity": "30",
         "notional": {
-          "wei": "0",
-          "bnb": "0.0"
+          "wei": "12000000000000000000",
+          "bnb": "12.0"
         },
-        "vwap": null
+        "vwap": {
+          "wei": "400000000000000000",
+          "bnb": "0.4"
+        }
       },
-      "allTradesInSnapshot": 4499
+      "allTradesInSnapshot": 4500
     },
     {
       "key": "0xe2dfd802081c7a05341e20b6582b04b908e8550c-1",
@@ -1863,19 +1866,19 @@
       "tokenId": 0,
       "type": "NAND",
       "topBid": {
-        "id": 125951,
+        "id": 125988,
         "price": {
-          "wei": "27100000000000000",
-          "bnb": "0.0271"
+          "wei": "27230000000000000",
+          "bnb": "0.02723"
         },
-        "remaining": "8"
+        "remaining": "6"
       },
       "openBook": {
-        "bids": 78,
-        "quantity": "120011451841",
+        "bids": 77,
+        "quantity": "120011451819",
         "notional": {
-          "wei": "26669370100002000000",
-          "bnb": "26.669370100002"
+          "wei": "26226650100002000000",
+          "bnb": "26.226650100002"
         }
       },
       "latestTrade": {
@@ -1929,16 +1932,13 @@
         "quantity": "35"
       },
       "trailing24h": {
-        "trades": 1,
-        "quantity": "35",
+        "trades": 0,
+        "quantity": "0",
         "notional": {
-          "wei": "840000000000000000",
-          "bnb": "0.84"
+          "wei": "0",
+          "bnb": "0.0"
         },
-        "vwap": {
-          "wei": "24000000000000000",
-          "bnb": "0.024"
-        }
+        "vwap": null
       },
       "allTradesInSnapshot": 2191
     },
