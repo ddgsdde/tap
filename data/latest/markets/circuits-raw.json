@@ -1,10 +1,50 @@
 {
-  "generatedAt": "2026-11-16T20:24:21.261Z",
-  "block": 133990996,
+  "generatedAt": "2026-11-17T03:45:22.466Z",
+  "block": 134049787,
   "marketAddr": "0x6feEbbEbC07BcB90bd1Ac8b0CF9BaA4f0fF2B46f",
-  "maxId": 28004,
+  "maxId": 28006,
   "procStale": false,
   "listings": [
+    {
+      "id": 28006,
+      "seller": "0xd18B9615388AfACf2c95282980c6B84A235a32a8",
+      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "circuitId": "15947",
+      "price": "283000000000000000",
+      "feeBps": 100,
+      "valid": true,
+      "procName": "TapeOut",
+      "nIn": 2,
+      "nOut": 2,
+      "nState": 0,
+      "gateCount": 9,
+      "width": 2,
+      "key": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c-15947",
+      "ownGates": 9,
+      "refs": 0,
+      "eligible": true,
+      "revoked": false
+    },
+    {
+      "id": 28005,
+      "seller": "0xd18B9615388AfACf2c95282980c6B84A235a32a8",
+      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "circuitId": "7882",
+      "price": "793000000000000000",
+      "feeBps": 100,
+      "valid": true,
+      "procName": "TapeOut",
+      "nIn": 0,
+      "nOut": 8,
+      "nState": 8,
+      "gateCount": 25,
+      "width": 8,
+      "key": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c-7882",
+      "ownGates": 25,
+      "refs": 0,
+      "eligible": true,
+      "revoked": false
+    },
     {
       "id": 28004,
       "seller": "0x7fD7bA47D9500429Cee8d9A10C32A6dc62779918",
@@ -821,26 +861,6 @@
       "width": 8,
       "key": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c-14076",
       "ownGates": 10,
-      "refs": 0,
-      "eligible": true,
-      "revoked": false
-    },
-    {
-      "id": 27898,
-      "seller": "0xd18B9615388AfACf2c95282980c6B84A235a32a8",
-      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
-      "circuitId": "5480",
-      "price": "824000000000000000",
-      "feeBps": 100,
-      "valid": true,
-      "procName": "TapeOut",
-      "nIn": 10,
-      "nOut": 1,
-      "nState": 0,
-      "gateCount": 26,
-      "width": 10,
-      "key": "0xb1024b89886b9a34aa4ff5f31c411d708b20a14c-5480",
-      "ownGates": 26,
       "refs": 0,
       "eligible": true,
       "revoked": false
@@ -3092,7 +3112,7 @@
       "circuitId": "2430",
       "price": "135000000000000000",
       "feeBps": 100,
-      "valid": true,
+      "valid": false,
       "procName": "TapeAI",
       "nIn": 0,
       "nOut": 16,
@@ -124788,6 +124808,16 @@
   ],
   "trades": [
     {
+      "id": "27898",
+      "buyer": "0xa9AbC701038B8AE5aEea4466f411bd6623130Af5",
+      "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
+      "circuitId": "5480",
+      "price": "824000000000000000",
+      "seller": "0xd18B9615388AfACf2c95282980c6B84A235a32a8",
+      "ts": 1794881497,
+      "tx": "0xa2d954f94884c18c25510d40648917ad57bf27fe9720bc7f8b644f2d10d9264e"
+    },
+    {
       "id": "27946",
       "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
       "circuits": "0xb1024b89886B9a34Aa4ff5F31C411D708b20a14C",
@@ -154776,18 +154806,8 @@
       "seller": "0xeA154a4Cc6dFBc1d1BcFD196d40B52497A7121b4",
       "ts": 1792027889,
       "tx": "0xb0012f55f14f4bc44fd1d612752819701754a81a596788c49e8e8eace42a085d"
-    },
-    {
-      "id": "21191",
-      "buyer": "0x36DF3423472E03490f6440E7AF485BE7649B3564",
-      "circuits": "0x9320f1AA6D8309CE4727eF63e721E909a49C0f54",
-      "circuitId": "172",
-      "price": "2000000000000000",
-      "seller": "0xeA154a4Cc6dFBc1d1BcFD196d40B52497A7121b4",
-      "ts": 1792027856,
-      "tx": "0xbf460cc0488d4fee8e0a2f754eba3587fd65e966f1fa305d3b5ea3005cc3417b"
     }
   ],
-  "vol24h": "4699600000000000000",
-  "volTotal": "1908525717541649651576"
+  "vol24h": "3003600000000000000",
+  "volTotal": "1909347717541649651576"
 }
